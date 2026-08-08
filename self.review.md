@@ -40,3 +40,22 @@ Today I learned how to use Pandas for data analysis. I practiced loading a real 
 ### Reflection
 
 Today I learned how to perform fundamental NumPy operations that are widely used in machine learning. I practiced calculating array statistics, filtering data with boolean masking, performing matrix operations, and using broadcasting for normalization. I also improved my code by applying feedback from the CIA code review, making it more readable and reproducible.
+
+## W1D4 Self Review
+
+- [x] Loaded the Indian population dataset successfully.
+- [x] Ran df.describe(), df.info(), and df.isnull().sum().
+- [x] Documented 5 EDA observations.
+- [x] Created numeric column distribution plots.
+- [x] Created a correlation heatmap.
+- [x] Created a top-10 category count plot using TRU.
+- [x] Saved output evidence in output_evidence/.
+- [x] Wrote a 200-word EDA narrative.
+- [x] Reviewed the code using CIA Full Stack Mentor Mode.
+- [x] Completed 2 CIA interactions.
+- [x] Committed the W1D4 changes to the Git branch.
+- [x] Pushed the W1D4 changes to GitHub.
+
+### Reflection
+
+Today I learned how to perform Exploratory Data Analysis using Pandas, Matplotlib, and Seaborn. I practiced examining descriptive statistics, dataset information, and missing values. I also created numeric distribution plots, a correlation heatmap, and a top-category count plot to understand patterns in the Indian population dataset. The CIA Full Stack Mentor reviews helped me identify areas for improving code quality and reproducibility. This task improved my understanding of how data is explored and prepared before applying machine learning models.
