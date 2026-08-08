@@ -59,3 +59,23 @@ Today I learned how to perform fundamental NumPy operations that are widely used
 ### Reflection
 
 Today I learned how to perform Exploratory Data Analysis using Pandas, Matplotlib, and Seaborn. I practiced examining descriptive statistics, dataset information, and missing values. I also created numeric distribution plots, a correlation heatmap, and a top-category count plot to understand patterns in the Indian population dataset. The CIA Full Stack Mentor reviews helped me identify areas for improving code quality and reproducibility. This task improved my understanding of how data is explored and prepared before applying machine learning models.
+
+## W1D5 Self Review
+
+- [x] Loaded the Indian population dataset successfully.
+- [x] Created a top-10 district population bar chart.
+- [x] Created a population distribution histogram.
+- [x] Created a male vs female population scatter plot.
+- [x] Created a population correlation heatmap.
+- [x] Saved all visualization output evidence in output_evidence/w1d5_plots/.
+- [x] Used Matplotlib and Seaborn for data visualisation.
+- [x] Reviewed the code using CIA Full Stack Mentor Mode.
+- [x] Applied CIA review suggestions for code quality and validation.
+- [x] Successfully tested the visualization script.
+- [x] Committed the W1D5 changes to the Git branch.
+- [x] Pushed the W1D5 changes to GitHub.
+- [x] Added W1D5 changes to the Pull Request.
+
+### Reflection
+
+Today I learned how to transform raw population data into meaningful visual insights using Matplotlib and Seaborn. I created bar, histogram, scatter, and correlation heatmap visualisations to understand population rankings, distributions, relationships, and correlations. I also improved the code based on CIA review feedback by adding validation, a reusable plotting helper, and a main function. This task strengthened my understanding of data visualisation as an important step in EDA before machine learning.
