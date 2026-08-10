@@ -79,3 +79,36 @@ Today I learned how to perform Exploratory Data Analysis using Pandas, Matplotli
 ### Reflection
 
 Today I learned how to transform raw population data into meaningful visual insights using Matplotlib and Seaborn. I created bar, histogram, scatter, and correlation heatmap visualisations to understand population rankings, distributions, relationships, and correlations. I also improved the code based on CIA review feedback by adding validation, a reusable plotting helper, and a main function. This task strengthened my understanding of data visualisation as an important step in EDA before machine learning.
+
+## W2D1 Self Review
+
+- [x] Applied LabelEncoder to a categorical column.
+- [x] Applied OneHotEncoder to a categorical column.
+- [x] Applied OrdinalEncoder to a categorical column.
+- [x] Documented encoding trade-offs.
+- [x] Applied StandardScaler.
+- [x] Applied MinMaxScaler.
+- [x] Applied RobustScaler.
+- [x] Created scaling comparison visualization.
+- [x] Used SelectKBest to identify the top 5 features.
+- [x] Documented why the top 5 features matter.
+- [x] Saved encoding results as output evidence.
+- [x] Saved scaling visualization as output evidence.
+- [x] Saved top 5 feature scores as output evidence.
+- [x] Reviewed the code using CIA Full Stack Mentor Mode.
+- [x] Applied CIA review improvements.
+- [x] Completed final CIA review with READY FOR SUBMISSION verdict.
+- [x] Committed W2D1 implementation.
+- [x] Working on the Week 2 branch.
+
+### Top 5 Feature Importance
+
+- **TOT_M:** Represents total male population and contributes directly to total population.
+- **TOT_F:** Represents total female population and contributes directly to total population.
+- **NON_WORK_P:** Represents the non-working population and describes population composition.
+- **TOT_WORK_P:** Represents the working population and captures an important population characteristic.
+- **P_LIT:** Represents the literate population and provides an indicator of literacy.
+
+### Reflection
+
+Today I learned how feature engineering prepares data for machine learning. I practiced categorical encoding using LabelEncoder, OneHotEncoder, and OrdinalEncoder and compared their trade-offs. I also applied StandardScaler, MinMaxScaler, and RobustScaler to understand different scaling methods. Finally, I used SelectKBest to identify the five most relevant features. CIA feedback helped me improve code organization, reduce repetition, and document methodological limitations.
