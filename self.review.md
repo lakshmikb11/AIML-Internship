@@ -112,3 +112,37 @@ Today I learned how to transform raw population data into meaningful visual insi
 ### Reflection
 
 Today I learned how feature engineering prepares data for machine learning. I practiced categorical encoding using LabelEncoder, OneHotEncoder, and OrdinalEncoder and compared their trade-offs. I also applied StandardScaler, MinMaxScaler, and RobustScaler to understand different scaling methods. Finally, I used SelectKBest to identify the five most relevant features. CIA feedback helped me improve code organization, reduce repetition, and document methodological limitations.
+
+## W2D2 Self Review
+
+- [x] Applied LabelEncoder to a categorical column.
+- [x] Applied OneHotEncoder to a categorical column.
+- [x] Applied OrdinalEncoder to a categorical column.
+- [x] Documented encoding trade-offs.
+- [x] Applied StandardScaler to numeric predictor features.
+- [x] Applied MinMaxScaler to numeric predictor features.
+- [x] Applied RobustScaler to numeric predictor features.
+- [x] Created before/after scaling distribution plots.
+- [x] Used SelectKBest with `f_regression` to identify the top 5 features for numeric target `TOT_P`.
+- [x] Documented why the selected top 5 features matter.
+- [x] Generated and verified output evidence.
+- [x] Completed CIA Full Stack Mentor review interaction 1.
+- [x] Completed CIA Full Stack Mentor review interaction 2.
+- [x] Applied CIA review feedback to the scaling implementation.
+- [x] Tested the updated code successfully.
+- [x] Committed the W2D2 feature engineering and scaling implementation.
+- [ ] Created the second required commit.
+- [ ] Pushed changes to GitHub.
+- [ ] Raised/updated the Pull Request.
+
+### W2D2 Top 5 Features
+
+- **TOT_M:** Total male population is a major component of total population.
+- **TOT_F:** Total female population is a major component of total population.
+- **NON_WORK_P:** Represents the non-working population and provides information about population composition.
+- **TOT_WORK_P:** Represents the total working population and provides information about the working population.
+- **P_LIT:** Represents the literate population and provides information about literacy within the population.
+
+### Reflection
+
+Today I learned how feature scaling and feature selection can prepare numerical data for machine learning. I applied StandardScaler, MinMaxScaler, and RobustScaler to numeric predictor features and compared their distributions before and after scaling. I also used SelectKBest with f_regression to identify the five features with the strongest linear relationships with the numeric target TOT_P. CIA review helped me identify that the target variable should not be used for the scaling demonstration and guided me to apply the scalers to predictor features instead. I tested the corrected implementation successfully and verified the generated output evidence.
