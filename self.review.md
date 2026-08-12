@@ -131,9 +131,9 @@ Today I learned how feature engineering prepares data for machine learning. I pr
 - [x] Applied CIA review feedback to the scaling implementation.
 - [x] Tested the updated code successfully.
 - [x] Committed the W2D2 feature engineering and scaling implementation.
-- [ ] Created the second required commit.
-- [ ] Pushed changes to GitHub.
-- [ ] Raised/updated the Pull Request.
+- [x] Created the second required commit.
+- [x] Pushed changes to GitHub.
+- [x] Raised/updated the Pull Request.
 
 ### W2D2 Top 5 Features
 
@@ -146,3 +146,27 @@ Today I learned how feature engineering prepares data for machine learning. I pr
 ### Reflection
 
 Today I learned how feature scaling and feature selection can prepare numerical data for machine learning. I applied StandardScaler, MinMaxScaler, and RobustScaler to numeric predictor features and compared their distributions before and after scaling. I also used SelectKBest with f_regression to identify the five features with the strongest linear relationships with the numeric target TOT_P. CIA review helped me identify that the target variable should not be used for the scaling demonstration and guided me to apply the scalers to predictor features instead. I tested the corrected implementation successfully and verified the generated output evidence.
+
+## W2D3 Self Review
+
+- [x] Loaded the Indian population dataset successfully.
+- [x] Checked the class distribution of the target variable.
+- [x] Split the data into training and testing sets before applying SMOTE.
+- [x] Applied SMOTE only to the training data to prevent data leakage.
+- [x] Used `k_neighbors=1` because the minority class had only 2 training samples.
+- [x] Verified class distribution before SMOTE.
+- [x] Verified class distribution after SMOTE.
+- [x] Created before-SMOTE class distribution evidence.
+- [x] Created SMOTE class distribution evidence.
+- [x] Saved the SMOTE-resampled dataset as output evidence.
+- [x] Wrote clean and commented code.
+- [x] Successfully tested the W2D3 script.
+- [x] Reviewed the implementation using CIA Full Stack Mentor Mode.
+- [x] Applied CIA review suggestions.
+- [x] Completed the required CIA review interactions.
+- [x] Committed the W2D3 implementation.
+- [x] Pushed the W2D3 implementation to the Week 2 branch.
+
+### Reflection
+
+Today I learned how SMOTE can be used to handle imbalanced classification data. I checked the original and training class distributions, split the data before oversampling, and applied SMOTE only to the training set to prevent data leakage. Because the minority class contained only two training samples, I used `k_neighbors=1`. I also generated evidence showing the class distribution before and after SMOTE. The implementation was reviewed using CIA Full Stack Mentor Mode, and the suggested improvements were applied before committing and pushing the code.
