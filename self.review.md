@@ -170,3 +170,23 @@ Today I learned how feature scaling and feature selection can prepare numerical 
 ### Reflection
 
 Today I learned how SMOTE can be used to handle imbalanced classification data. I checked the original and training class distributions, split the data before oversampling, and applied SMOTE only to the training set to prevent data leakage. Because the minority class contained only two training samples, I used `k_neighbors=1`. I also generated evidence showing the class distribution before and after SMOTE. The implementation was reviewed using CIA Full Stack Mentor Mode, and the suggested improvements were applied before committing and pushing the code.
+
+## W2D4 Self Review
+
+- [x] Loaded the Indian population dataset successfully.
+- [x] Prepared numeric predictor features and separated the target variable.
+- [x] Performed an 80/20 train/test split.
+- [x] Used quantile-based target bins for stratified train/test splitting.
+- [x] Used random_state=42 for reproducibility.
+- [x] Applied StandardScaler inside a Pipeline to prevent data leakage.
+- [x] Performed 5-fold cross-validation on the training data only.
+- [x] Evaluated the model using R², MAE, and RMSE.
+- [x] Evaluated the final model on the unseen test set.
+- [x] Generated train/test target distribution evidence.
+- [x] Saved cross-validation results as CSV evidence.
+- [x] Saved train/test and cross-validation summary as CSV evidence.
+- [x] Tested the W2D4 script successfully.
+- [x] Reviewed the implementation using CIA Full Stack Mentor Mode.
+- [x] Applied CIA review considerations regarding data leakage and reproducibility.
+- [x] Committed the W2D4 implementation.
+- [x] Pushed the W2D4 implementation to the Week 2 branch.
