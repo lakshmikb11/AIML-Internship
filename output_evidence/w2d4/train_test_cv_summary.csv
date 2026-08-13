@@ -1,0 +1,13 @@
+metric,value
+total_samples,108.0
+training_samples,86.0
+testing_samples,22.0
+feature_count,90.0
+cv_folds,5.0
+cv_mean_r2,1.0
+cv_std_r2,0.0
+cv_mean_mae,2.5597614010954213e-07
+cv_mean_rmse,4.784224464719617e-07
+test_mae,2.988698807629672e-07
+test_rmse,8.751192689068406e-07
+test_r2,1.0
