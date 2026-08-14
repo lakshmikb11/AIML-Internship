@@ -190,3 +190,35 @@ Today I learned how SMOTE can be used to handle imbalanced classification data. 
 - [x] Applied CIA review considerations regarding data leakage and reproducibility.
 - [x] Committed the W2D4 implementation.
 - [x] Pushed the W2D4 implementation to the Week 2 branch.
+
+## W2D5 Self Review
+
+- [x] Loaded the Titanic dataset successfully.
+- [x] Performed basic EDA and checked missing values.
+- [x] Generated and saved EDA distribution evidence.
+- [x] Explicitly handled unused columns (`PassengerId`, `Name`, `Ticket`, `Cabin`).
+- [x] Treated `Pclass` as a categorical/ordinal feature.
+- [x] Separated target variable `Survived` from predictor features.
+- [x] Performed an 80/20 train/test split.
+- [x] Used `RANDOM_STATE = 42` for reproducibility.
+- [x] Applied missing-value imputation using a preprocessing pipeline.
+- [x] Applied `StandardScaler` to numeric features.
+- [x] Applied `OneHotEncoder` to categorical features with `handle_unknown="ignore"`.
+- [x] Fitted the preprocessing pipeline only on the training data to prevent data leakage.
+- [x] Transformed the test data using the training-fitted pipeline.
+- [x] Generated the ML-ready dataset successfully.
+- [x] Verified that the ML-ready dataset contains no missing values.
+- [x] Verified that the `Survived` target column is present.
+- [x] Saved the ML-ready CSV as output evidence.
+- [x] Saved the fitted preprocessing pipeline as a `.joblib` file.
+- [x] Added a module-level docstring and comments for major processing steps.
+- [x] Reviewed the implementation using CIA Full Stack Mentor Mode.
+- [x] Completed the required 2 CIA review interactions.
+- [x] Applied CIA review suggestions and corrected the implementation.
+- [x] Successfully tested the final W2D5 script.
+- [x] Committed the W2D5 implementation to the Week 2 branch.
+- [x] Pushed the W2D5 implementation to GitHub.
+
+### Reflection
+
+Today I learned how to build an end-to-end preprocessing pipeline for machine learning using the Titanic dataset. I practiced EDA, missing-value imputation, categorical encoding, feature scaling, and train/test splitting. I also learned how fitting preprocessing only on training data prevents data leakage. The CIA reviews helped me improve the treatment of `Pclass`, explicitly handle unused columns, ensure reproducibility, and persist the preprocessing pipeline. I verified the final ML-ready output and saved the required evidence and preprocessing artifact.
