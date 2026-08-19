@@ -222,3 +222,33 @@ Today I learned how SMOTE can be used to handle imbalanced classification data. 
 ### Reflection
 
 Today I learned how to build an end-to-end preprocessing pipeline for machine learning using the Titanic dataset. I practiced EDA, missing-value imputation, categorical encoding, feature scaling, and train/test splitting. I also learned how fitting preprocessing only on training data prevents data leakage. The CIA reviews helped me improve the treatment of `Pclass`, explicitly handle unused columns, ensure reproducibility, and persist the preprocessing pipeline. I verified the final ML-ready output and saved the required evidence and preprocessing artifact.
+
+# Week 3 Self Review
+
+## W3D1 Self Review
+
+- [x] Trained LinearRegression on the California Housing dataset.
+- [x] Printed model coefficients and intercept.
+- [x] Evaluated the LinearRegression model using MSE.
+- [x] Evaluated the LinearRegression model using RMSE.
+- [x] Evaluated the LinearRegression model using MAE.
+- [x] Evaluated the LinearRegression model using R².
+- [x] Created the predicted vs actual plot.
+- [x] Created the residual plot.
+- [x] Added Ridge Regression.
+- [x] Added Lasso Regression.
+- [x] Compared LinearRegression, Ridge, and Lasso models.
+- [x] Saved model comparison results as CSV evidence.
+- [x] Saved predicted vs actual plot as output evidence.
+- [x] Saved residual plot as output evidence.
+- [x] Reviewed the implementation using CIA Full Stack Mentor Mode.
+- [x] Applied CIA review suggestions.
+- [x] Successfully tested the W3D1 script.
+- [x] Committed the W3D1 implementation.
+- [x] Created the required second descriptive commit.
+- [x] Pushed the W3D1 changes to the Week 3 branch.
+- [x] Raised/updated the W3D1 Pull Request.
+
+### Reflection
+
+Today I learned how to build and evaluate regression models using Scikit-Learn. I trained LinearRegression on a real dataset and evaluated it using MSE, RMSE, MAE, and R². I also learned how predicted-vs-actual and residual plots help evaluate regression performance. Finally, I compared LinearRegression with Ridge and Lasso regression and documented the results as output evidence. CIA review helped me verify the implementation and improve the overall quality of the W3D1 work.
