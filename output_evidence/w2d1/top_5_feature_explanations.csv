@@ -1,0 +1,6 @@
+Feature,SelectKBest_Score,Why_it_matters
+TOT_M,3752494.793527857,Total male population is a major component of total population.
+TOT_F,3337916.0320624774,Total female population is a major component of total population.
+NON_WORK_P,70850.2636610255,Non-working population provides information about the population not engaged in work.
+TOT_WORK_P,31548.348301891412,Total working population represents the economically active population.
+P_LIT,19763.499665757998,Literate population provides information about the size of the literate population.
