@@ -252,3 +252,6 @@ Today I learned how to build an end-to-end preprocessing pipeline for machine le
 ### Reflection
 
 Today I learned how to build and evaluate regression models using Scikit-Learn. I trained LinearRegression on a real dataset and evaluated it using MSE, RMSE, MAE, and R². I also learned how predicted-vs-actual and residual plots help evaluate regression performance. Finally, I compared LinearRegression with Ridge and Lasso regression and documented the results as output evidence. CIA review helped me verify the implementation and improve the overall quality of the W3D1 work.
+##W3D2 self review
+reflection
+Today I learned how to build and evaluate a multiclass classification model using Logistic Regression and the Iris dataset. I practiced preparing the data, performing a stratified train/test split, scaling features without causing data leakage, and training a Logistic Regression classifier. I evaluated the model using accuracy, precision, recall, and F1-score and generated a classification report and confusion matrix to understand the model's performance. I also created a decision boundary visualization to understand how the classifier separates different Iris classes. The CIA Full Stack Mentor reviews helped me validate the implementation, improve code quality, and ensure the solution was ready for submission.
