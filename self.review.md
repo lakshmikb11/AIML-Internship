@@ -255,3 +255,16 @@ Today I learned how to build and evaluate regression models using Scikit-Learn. 
 ##W3D2 self review
 reflection
 Today I learned how to build and evaluate a multiclass classification model using Logistic Regression and the Iris dataset. I practiced preparing the data, performing a stratified train/test split, scaling features without causing data leakage, and training a Logistic Regression classifier. I evaluated the model using accuracy, precision, recall, and F1-score and generated a classification report and confusion matrix to understand the model's performance. I also created a decision boundary visualization to understand how the classifier separates different Iris classes. The CIA Full Stack Mentor reviews helped me validate the implementation, improve code quality, and ensure the solution was ready for submission.
+
+##W3D3 self review
+Created the first W3D3 descriptive Git commit.
+
+Created the second required W3D3 descriptive Git commit.
+
+Pushed the W3D3 changes to the Week 3 branch.
+
+Raised/updated the W3D3 Pull Request.
+
+Reflection
+
+Today I learned how Decision Tree classifiers can be used for multiclass classification using the Iris dataset. I trained Decision Trees using both Gini impurity and entropy/information gain and compared their training and testing performance. Both models achieved a testing accuracy of 0.9333 on the selected test set. I also examined tree depth and the number of leaves to understand model complexity and generated a visualization of the trained Decision Tree. Validation tests were added to verify the implementation, and the final script passed all validation tests. The implementation was reviewed and improved for code quality, reproducibility, and validation.
