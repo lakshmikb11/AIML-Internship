@@ -268,3 +268,34 @@ Raised/updated the W3D3 Pull Request.
 Reflection
 
 Today I learned how Decision Tree classifiers can be used for multiclass classification using the Iris dataset. I trained Decision Trees using both Gini impurity and entropy/information gain and compared their training and testing performance. Both models achieved a testing accuracy of 0.9333 on the selected test set. I also examined tree depth and the number of leaves to understand model complexity and generated a visualization of the trained Decision Tree. Validation tests were added to verify the implementation, and the final script passed all validation tests. The implementation was reviewed and improved for code quality, reproducibility, and validation.
+
+W3D4 Results
+SVM
+Best parameters: C=0.1, kernel=linear, gamma=scale
+Cross-validation accuracy: 0.975
+Test accuracy: 0.9333
+Precision: 0.9333
+Recall: 0.9333
+F1-score: 0.9333
+KNN
+Best parameters: n_neighbors=5, weights=uniform, metric=euclidean
+Cross-validation accuracy: 0.9667
+Test accuracy: 0.9333
+Precision: 0.9444
+Recall: 0.9333
+F1-score: 0.9327
+Model Comparison
+
+Both SVM and KNN achieved a test accuracy of 93.33% on the selected test set.
+
+KNN achieved slightly higher precision, while SVM achieved a slightly higher F1-score.
+
+When to Use What
+
+SVM is useful when a strong classification boundary is required, particularly for datasets with high-dimensional feature spaces or cases where kernel methods can model complex decision boundaries.
+
+KNN is useful when similar observations tend to have similar labels and when a simple, intuitive classification method is appropriate. Because KNN relies on distance calculations, feature scaling is important and prediction can become more computationally expensive as the dataset grows.
+
+Reflection
+
+Today I learned how Support Vector Machine and K-Nearest Neighbors classifiers can be used for multiclass classification using the Iris dataset. I practiced applying feature scaling through Scikit-Learn Pipelines and learned how hyperparameter tuning with GridSearchCV can be used to select suitable model configurations. I evaluated both models using accuracy, precision, recall, and F1-score and generated confusion matrices and comparison evidence to understand their performance. I also learned that SVM and KNN have different strengths and should be selected based on dataset characteristics and requirements. The implementation was tested successfully and reviewed for code quality, reproducibility, and prevention of data leakage.
