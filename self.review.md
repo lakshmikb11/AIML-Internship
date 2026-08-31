@@ -299,3 +299,28 @@ KNN is useful when similar observations tend to have similar labels and when a s
 Reflection
 
 Today I learned how Support Vector Machine and K-Nearest Neighbors classifiers can be used for multiclass classification using the Iris dataset. I practiced applying feature scaling through Scikit-Learn Pipelines and learned how hyperparameter tuning with GridSearchCV can be used to select suitable model configurations. I evaluated both models using accuracy, precision, recall, and F1-score and generated confusion matrices and comparison evidence to understand their performance. I also learned that SVM and KNN have different strengths and should be selected based on dataset characteristics and requirements. The implementation was tested successfully and reviewed for code quality, reproducibility, and prevention of data leakage.
+
+W3D5 Results
+
+SVM — GridSearchCV
+
+Best CV accuracy: 0.975
+Test accuracy: 0.9333
+
+SVM — RandomizedSearchCV
+
+Best CV accuracy: 0.975
+Test accuracy: 0.9333
+
+KNN — GridSearchCV
+
+Best CV accuracy: 0.9667
+Test accuracy: 0.9333
+
+KNN — RandomizedSearchCV
+
+Best CV accuracy: 0.9667
+Test accuracy: 0.9667
+Reflection
+
+Today I learned how hyperparameter tuning can improve the process of selecting suitable machine learning model configurations. I implemented both GridSearchCV and RandomizedSearchCV for SVM and KNN using the Iris dataset. I used 5-fold cross-validation and placed feature scaling inside Scikit-Learn Pipelines to prevent data leakage. I compared the best cross-validation scores and evaluated the tuned models on an unseen test set using accuracy, precision, recall, and F1-score. The results showed that KNN with RandomizedSearchCV achieved the highest test accuracy of 96.67% on the selected test set. I also generated CSV and visualization evidence and verified the implementation for reproducibility and code quality.
