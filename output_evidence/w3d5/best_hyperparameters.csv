@@ -1,0 +1,5 @@
+Model,Best Parameters,Best CV Accuracy
+SVM - GridSearch,"{'svm__C': 0.1, 'svm__gamma': 'scale', 'svm__kernel': 'linear'}",0.975
+SVM - RandomSearch,"{'svm__kernel': 'linear', 'svm__gamma': 'auto', 'svm__C': 0.1}",0.975
+KNN - GridSearch,"{'knn__metric': 'euclidean', 'knn__n_neighbors': 5, 'knn__weights': 'uniform'}",0.9666666666666668
+KNN - RandomSearch,"{'knn__weights': 'distance', 'knn__n_neighbors': 14, 'knn__metric': 'minkowski'}",0.9666666666666668
