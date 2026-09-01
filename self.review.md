@@ -352,3 +352,47 @@ Implemented model evaluation using the Breast Cancer Wisconsin dataset and Logis
 
 ### Verification
 W4D1 script executed successfully without errors and the working tree was verified to be clean after the implementation commit.
+
+## W4D2 - Bias-Variance Tradeoff & Regularisation
+
+### Task Completed
+
+Implemented Linear Regression, Ridge Regression, and Lasso Regression using the California Housing dataset. Applied systematic hyperparameter tuning using GridSearchCV and RandomizedSearchCV with 5-fold cross-validation. Demonstrated the effect of different Ridge regularisation strengths on training and validation error to study the bias-variance tradeoff.
+
+### Model Results
+
+| Model                    |      MSE |     RMSE |      MAE |       R² |
+| ------------------------ | -------: | -------: | -------: | -------: |
+| Linear Regression        | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
+| Ridge GridSearchCV       | 0.555891 | 0.745581 | 0.533200 | 0.575788 |
+| Lasso GridSearchCV       | 0.555745 | 0.745483 | 0.533192 | 0.575900 |
+| Ridge RandomizedSearchCV | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
+| Lasso RandomizedSearchCV | 0.555309 | 0.745191 | 0.533172 | 0.576232 |
+
+### Best Hyperparameters
+
+* Ridge GridSearchCV: `alpha = 0.01`
+* Lasso GridSearchCV: `alpha = 0.0001`
+* Ridge RandomizedSearchCV: `alpha = 0.001`
+* Lasso RandomizedSearchCV: `alpha ≈ 0.0004037`
+
+
+
+### Evidence
+
+* `output_evidence/w4d2/model_comparison.csv`
+* `output_evidence/w4d2/model_comparison_r2.png`
+* `output_evidence/w4d2/ridge_grid_search_results.csv`
+* `output_evidence/w4d2/lasso_grid_search_results.csv`
+* `output_evidence/w4d2/ridge_randomized_search_results.csv`
+* `output_evidence/w4d2/lasso_randomized_search_results.csv`
+* `output_evidence/w4d2/bias_variance_results.csv`
+* `output_evidence/w4d2/bias_variance_tradeoff.png`
+
+### Verification
+
+W4D2 script executed successfully without errors. The implementation was tested using the California Housing dataset, and the generated model comparison, hyperparameter search, and bias-variance evidence files were verified.
+
+### Reflection
+
+Today I learned how regularisation can help control model complexity and how Ridge and Lasso use different approaches to penalise model coefficients. I learned that GridSearchCV evaluates predefined hyperparameter combinations systematically, while RandomizedSearchCV samples configurations from a larger search space. I also practiced using Scikit-Learn Pipelines with StandardScaler to ensure preprocessing is performed correctly during cross-validation and to help prevent data leakage. The results showed that Lasso with RandomizedSearchCV achieved the best test-set performance among the evaluated models, although the improvement over the baseline was small. I also observed how increasing Ridge regularisation strength can increase both training and validation error, illustrating the effect of stronger regularisation on model bias and complexity.
