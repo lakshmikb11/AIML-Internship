@@ -449,3 +449,56 @@ Today I learned how trained machine learning models can be saved and restored us
 ### Verification
 
 The W4D3 script executed successfully without errors. Joblib and Pickle restoration were verified by comparing their predictions with the original model, and all generated evidence files were successfully created.
+
+
+## W4D4 - FastAPI Model Serving Endpoint
+
+### Task Completed
+
+Implemented a FastAPI model-serving application that loads the serialized Linear Regression model created during W4D3 and provides health-check and prediction endpoints.
+
+### Checklist
+
+* [x] Loaded the serialized Linear Regression model from W4D3 using Joblib.
+* [x] Created a FastAPI application.
+* [x] Defined the California Housing model input schema using Pydantic.
+* [x] Implemented the `/health` endpoint.
+* [x] Implemented the `/predict` POST endpoint.
+* [x] Added input validation for all 8 model features.
+* [x] Used NumPy to prepare prediction input data.
+* [x] Returned the predicted `MedHouseVal` value from the API.
+* [x] Tested the FastAPI application successfully.
+* [x] Verified that the model loads correctly.
+* [x] Tested the `/health` endpoint successfully.
+* [x] Tested the `/predict` endpoint successfully.
+* [x] Verified the `/docs` Swagger documentation endpoint.
+* [x] Verified `/docs` returned HTTP status code 200.
+* [x] Used FastAPI and Uvicorn for model serving.
+* [x] Removed generated `__pycache__` files before committing.
+* [x] Wrote clean and commented code.
+* [x] Created the first descriptive W4D4 implementation commit.
+* [x] Created the second descriptive W4D4 self-review commit.
+* [x] Pushed the W4D4 changes to GitHub.
+* [ ] Raised/updated the W4D4 Pull Request.
+
+### API Testing Evidence
+
+#### Health Endpoint
+
+The `/health` endpoint was tested successfully and returned:
+
+* Status: `healthy`
+* Model loaded: `True`
+* Model: `Linear Regression`
+
+#### Prediction Endpoint
+
+The `/predict` endpoint was tested successfully using all eight California Housing features and returned a prediction for the target variable `MedHouseVal`.
+
+#### Documentation Endpoint
+
+The `/docs` endpoint was verified successfully and returned HTTP status code `200`.
+
+### Reflection
+
+Today I learned how to serve a trained machine learning model through a REST API using FastAPI and Uvicorn. I loaded the Linear Regression model serialized during W4D3 using Joblib and created endpoints for health checking and prediction. I used Pydantic to validate incoming request data and ensured that all eight California Housing features are provided before making a prediction. I also tested the API using PowerShell requests and verified the automatically generated Swagger documentation. This task helped me understand how a trained machine learning model can be exposed as an API for integration with other applications.
