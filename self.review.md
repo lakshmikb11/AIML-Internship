@@ -396,3 +396,56 @@ W4D2 script executed successfully without errors. The implementation was tested 
 ### Reflection
 
 Today I learned how regularisation can help control model complexity and how Ridge and Lasso use different approaches to penalise model coefficients. I learned that GridSearchCV evaluates predefined hyperparameter combinations systematically, while RandomizedSearchCV samples configurations from a larger search space. I also practiced using Scikit-Learn Pipelines with StandardScaler to ensure preprocessing is performed correctly during cross-validation and to help prevent data leakage. The results showed that Lasso with RandomizedSearchCV achieved the best test-set performance among the evaluated models, although the improvement over the baseline was small. I also observed how increasing Ridge regularisation strength can increase both training and validation error, illustrating the effect of stronger regularisation on model bias and complexity.
+
+## W4D3 - Model Serialisation
+
+### Task Completed
+
+Implemented model serialisation using Joblib and Pickle with a Linear Regression model trained on the California Housing dataset.
+
+### Checklist
+
+- [x] Loaded the California Housing dataset.
+- [x] Performed train/test split.
+- [x] Trained Linear Regression model.
+- [x] Evaluated the original model using MSE, RMSE, MAE, and R².
+- [x] Serialized the trained model using Joblib.
+- [x] Serialized the trained model using Pickle.
+- [x] Loaded the Joblib model successfully.
+- [x] Loaded the Pickle model successfully.
+- [x] Verified restored-model predictions against the original model.
+- [x] Confirmed Joblib predictions match the original predictions.
+- [x] Confirmed Pickle predictions match the original predictions.
+- [x] Compared original and restored model metrics.
+- [x] Saved serialization evidence.
+- [x] Successfully tested the W4D3 script.
+- [x] Wrote clean and commented code.
+
+### Model Results
+
+| Model | MSE | RMSE | MAE | R² |
+|---|---:|---:|---:|---:|
+| Original Linear Regression | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
+| Joblib Restored Model | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
+| Pickle Restored Model | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
+
+### Serialization Verification
+
+- Joblib predictions match original: `True`
+- Pickle predictions match original: `True`
+
+### Evidence
+
+- `output_evidence/w4d3/linear_regression_model.joblib`
+- `output_evidence/w4d3/linear_regression_model.pkl`
+- `output_evidence/w4d3/serialization_model_comparison.csv`
+- `output_evidence/w4d3/serialization_prediction_evidence.csv`
+- `output_evidence/w4d3/serialization_verification.csv`
+
+### Reflection
+
+Today I learned how trained machine learning models can be saved and restored using Joblib and Pickle. I trained a Linear Regression model on the California Housing dataset, evaluated its performance, serialized it using both methods, and loaded the saved models back into memory. I verified that the restored models produced the same predictions and evaluation metrics as the original model. This demonstrated how model serialization can preserve a trained model for later use without retraining it. I also practiced generating reproducible evidence and organizing model artifacts for future deployment workflows.
+
+### Verification
+
+The W4D3 script executed successfully without errors. Joblib and Pickle restoration were verified by comparing their predictions with the original model, and all generated evidence files were successfully created.
