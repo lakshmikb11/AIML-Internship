@@ -502,3 +502,67 @@ The `/docs` endpoint was verified successfully and returned HTTP status code `20
 ### Reflection
 
 Today I learned how to serve a trained machine learning model through a REST API using FastAPI and Uvicorn. I loaded the Linear Regression model serialized during W4D3 using Joblib and created endpoints for health checking and prediction. I used Pydantic to validate incoming request data and ensured that all eight California Housing features are provided before making a prediction. I also tested the API using PowerShell requests and verified the automatically generated Swagger documentation. This task helped me understand how a trained machine learning model can be exposed as an API for integration with other applications.
+
+## W4D5 - 1M Capstone: Sentiment Classifier
+
+### Task Completed
+
+Implemented a binary sentiment classification pipeline using TF-IDF feature extraction, Logistic Regression, and Random Forest. Compared both models using accuracy, precision, recall, and ROC-AUC, and generated evaluation evidence.
+
+### Checklist
+
+- [x] Created a binary sentiment classification dataset.
+- [x] Used 1,000 sentiment samples with balanced positive and negative classes.
+- [x] Split the dataset into training and testing sets.
+- [x] Applied TF-IDF vectorization to the text data.
+- [x] Trained a Logistic Regression classifier.
+- [x] Printed the Logistic Regression classification report.
+- [x] Generated the Logistic Regression confusion matrix.
+- [x] Generated the Logistic Regression ROC-AUC curve.
+- [x] Calculated Logistic Regression accuracy.
+- [x] Calculated Logistic Regression precision.
+- [x] Calculated Logistic Regression recall.
+- [x] Calculated Logistic Regression ROC-AUC.
+- [x] Trained a Random Forest classifier.
+- [x] Printed the Random Forest classification report.
+- [x] Generated the Random Forest confusion matrix.
+- [x] Calculated Random Forest accuracy.
+- [x] Calculated Random Forest precision.
+- [x] Calculated Random Forest recall.
+- [x] Calculated Random Forest ROC-AUC.
+- [x] Compared Logistic Regression and Random Forest performance.
+- [x] Saved model comparison results.
+- [x] Saved prediction evidence.
+- [x] Created all required evaluation evidence files.
+- [x] Tested the W4D5 script successfully without errors.
+- [x] Wrote clean and commented code.
+- [x] Created the first descriptive W4D5 implementation commit.
+- [ ] Created the second descriptive W4D5 self-review commit.
+- [ ] Pushed the W4D5 changes to GitHub.
+- [ ] Raised/updated the W4D5 Pull Request.
+
+### Model Results
+
+Both models achieved the following results on the test set:
+
+| Model | Accuracy | Precision | Recall | ROC-AUC |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| Random Forest | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+
+The dataset used for this task is a controlled sentiment dataset, so the perfect test scores should not be interpreted as proof of production-level performance.
+
+### Evidence Generated
+
+- `output_evidence/w4d5/classification_metrics.csv`
+- `output_evidence/w4d5/logistic_confusion_matrix.png`
+- `output_evidence/w4d5/logistic_roc_auc_curve.png`
+- `output_evidence/w4d5/random_forest_confusion_matrix.png`
+- `output_evidence/w4d5/model_comparison.csv`
+- `output_evidence/w4d5/roc_auc_comparison.png`
+- `output_evidence/w4d5/prediction_evidence.csv`
+- `output_evidence/w4d5/sentiment_dataset.csv`
+
+### Reflection
+
+Today I learned how to build a complete binary sentiment classification pipeline using TF-IDF and machine learning classifiers. I trained and evaluated Logistic Regression and Random Forest models and compared their accuracy, precision, recall, and ROC-AUC scores. I also generated confusion matrices and ROC-AUC visualizations to understand model performance. This task helped me understand how text data can be converted into numerical features using TF-IDF and then used for supervised classification. I also learned that very high evaluation scores on a controlled dataset should be interpreted carefully and may not represent performance on real-world data.
