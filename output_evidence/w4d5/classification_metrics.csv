@@ -1,0 +1,5 @@
+Metric,Logistic_Regression,Random_Forest
+Accuracy,1.0,1.0
+Precision,1.0,1.0
+Recall,1.0,1.0
+ROC_AUC,1.0,1.0

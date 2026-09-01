@@ -1,0 +1,9 @@
+W4D1 Model Evaluation Results
+=============================
+
+Dataset: Breast Cancer Wisconsin
+Model: Logistic Regression
+
+Precision: 0.9595
+Recall:    0.9861
+ROC-AUC:   0.9954

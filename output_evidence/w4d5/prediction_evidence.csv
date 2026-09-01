@@ -1,0 +1,201 @@
+text,actual_sentiment,logistic_prediction,random_forest_prediction,logistic_probability_positive,random_forest_probability_positive
+"Honestly, the service was outstanding and friendly. I am completely satisfied.",1,1,1,0.8994118822736247,1.0
+"From my experience, i would not recommend this product. I would warn others about it.",0,0,0,0.19262722570844537,0.07
+"From my experience, the movie was boring and disappointing. I am completely dissatisfied.",0,0,0,0.09747273969055634,0.0
+"Overall, i had a horrible experience with this service. It was a very bad choice.",0,0,0,0.0677672061580755,0.01
+"In my opinion, this was a fantastic experience and i recommend it. It was a great choice.",1,1,1,0.8985521946856652,1.0
+"Honestly, the product quality is fantastic. I am completely satisfied.",1,1,1,0.8938512285392753,0.99
+"In my opinion, i am happy with this purchase. It made me very happy.",1,1,1,0.8626880187370856,0.98
+"For me, i am very pleased with the quality. It made me very happy.",1,1,1,0.8777887714509349,1.0
+"In my opinion, the quality was poor and i am very dissatisfied. I am completely dissatisfied.",0,0,0,0.07229427480956231,0.0
+"For me, i hated this product because it was terrible. It made me very disappointed.",0,0,0,0.0735668949989216,0.01
+"Overall, the product is reliable and excellent. It was a great choice.",1,1,1,0.9204463438913388,1.0
+"In my opinion, the quality was excellent and i am very satisfied. It was a great choice.",1,1,1,0.9305951114144196,1.0
+"Overall, i am very pleased with the quality. I would buy it again.",1,1,1,0.6818373794458026,0.73
+"For me, this purchase was a waste of money. I would never buy it again.",0,0,0,0.23727260514662932,0.14
+"Honestly, this was one of the worst experiences. I would never buy it again.",0,0,0,0.2916407691474432,0.12
+"Overall, i would not recommend this product. It made me very disappointed.",0,0,0,0.1850928015924107,0.08
+"In my opinion, i am very pleased with the quality. I would buy it again.",1,1,1,0.6880979036373462,0.76
+"Overall, i had a horrible experience with this service. I would warn others about it.",0,0,0,0.12167309518358797,0.02
+"From my experience, i loved this product because it was excellent. I would buy it again.",1,1,1,0.8356375797469785,0.99
+"In my opinion, this was one of the worst experiences. It was a very bad choice.",0,0,0,0.11694611343451396,0.0
+"Overall, i am happy with this purchase. It made me very happy.",1,1,1,0.8565798119183833,0.98
+"From my experience, this was one of the worst experiences. It was a very bad choice.",0,0,0,0.12156510122561459,0.0
+"Overall, this product exceeded my expectations. It made me very happy.",1,1,1,0.8685666302682784,1.0
+"Honestly, the product is unreliable and terrible. It was a very bad choice.",0,0,0,0.07623297765251401,0.0
+"Overall, i am very pleased with the quality. It was a great choice.",1,1,1,0.8727897899487284,1.0
+"For me, everything worked perfectly and i am satisfied. I am completely satisfied.",1,1,1,0.9490473232680359,1.0
+"In my opinion, the service was outstanding and friendly. I am completely satisfied.",1,1,1,0.8966922536912145,1.0
+"In my opinion, this was one of the best experiences. I would buy it again.",1,1,1,0.7348425095545246,0.9
+"For me, i had a horrible experience with this service. It made me very disappointed.",0,0,0,0.1072109860384022,0.0
+"Honestly, the quality was excellent and i am very satisfied. I would recommend it to others.",1,1,1,0.9015242015471596,1.0
+"Honestly, the movie was boring and disappointing. I would never buy it again.",0,0,0,0.209085478432424,0.03
+"Honestly, i am happy with this purchase. I am completely satisfied.",1,1,1,0.9092429553320415,0.99
+"Overall, the service was great and very helpful. It made me very happy.",1,1,1,0.9011835534610668,1.0
+"From my experience, the product quality is fantastic. I am completely satisfied.",1,1,1,0.8904698712323501,0.99
+"For me, the quality was excellent and i am very satisfied. I would buy it again.",1,1,1,0.898978148561814,0.97
+"From my experience, the product quality is awful. I am completely dissatisfied.",0,0,0,0.10706693367397621,0.01
+"In my opinion, this purchase was a waste of money. I would never buy it again.",0,0,0,0.26315594426935035,0.12
+"Honestly, i really disliked using this product. I would never buy it again.",0,0,0,0.245658222037509,0.06
+"For me, the experience was unpleasant and frustrating. I would warn others about it.",0,0,0,0.11410747775667245,0.0
+"In my opinion, i am very disappointed with the quality. I would never buy it again.",0,0,0,0.19693311599916982,0.03
+"Honestly, nothing worked properly and i am dissatisfied. It made me very disappointed.",0,0,0,0.11335409803222135,0.0
+"In my opinion, this product was amazing and worked perfectly. It made me very happy.",1,1,1,0.9028118085829805,1.0
+"For me, the experience was pleasant and satisfying. I am completely satisfied.",1,1,1,0.9397612443254806,1.0
+"In my opinion, nothing worked properly and i am dissatisfied. I would warn others about it.",0,0,0,0.11396720045272239,0.0
+"In my opinion, the movie was boring and disappointing. I am completely dissatisfied.",0,0,0,0.09929658282238758,0.0
+"Overall, i am happy with this purchase. I am completely satisfied.",1,1,1,0.8962754148963568,0.99
+"Overall, this purchase was a waste of money. I am completely dissatisfied.",0,0,0,0.10716931032581466,0.0
+"In my opinion, the movie was brilliant and enjoyable. It was a great choice.",1,1,1,0.8983391107977166,1.0
+"In my opinion, i loved this product because it was excellent. It made me very happy.",1,1,1,0.898483733706604,1.0
+"In my opinion, the experience was unpleasant and frustrating. I would warn others about it.",0,0,0,0.13749610548180852,0.02
+"For me, i am happy with this purchase. I would buy it again.",1,1,1,0.7985158106489297,0.9
+"Honestly, nothing worked properly and i am dissatisfied. It was a very bad choice.",0,0,0,0.09619226776380312,0.0
+"From my experience, the service was outstanding and friendly. It made me very happy.",1,1,1,0.8945152368025174,1.0
+"For me, this was a terrible experience and i do not recommend it. It made me very disappointed.",0,0,0,0.1242434867068068,0.0
+"Overall, the movie was boring and disappointing. It made me very disappointed.",0,0,0,0.12298902459961798,0.0
+"In my opinion, the service was bad and very unhelpful. It made me very disappointed.",0,0,0,0.10578909722588169,0.0
+"From my experience, the service was outstanding and friendly. I am completely satisfied.",1,1,1,0.9081284031138884,1.0
+"Honestly, i really disliked using this product. It was a very bad choice.",0,0,0,0.10949139912295447,0.0
+"Honestly, the product quality is awful. I am completely dissatisfied.",0,0,0,0.1119247909567299,0.02
+"Overall, this was a fantastic experience and i recommend it. It was a great choice.",1,1,1,0.8967910128471612,1.0
+"For me, the product quality is fantastic. I am completely satisfied.",1,1,1,0.9051446426255214,0.99
+"From my experience, i am very pleased with the quality. I would recommend it to others.",1,1,1,0.8076716947026756,0.96
+"In my opinion, the product is reliable and excellent. I would buy it again.",1,1,1,0.8468335530300628,0.98
+"In my opinion, the movie was boring and disappointing. It was a very bad choice.",0,0,0,0.10394834463568896,0.0
+"In my opinion, this product failed to meet my expectations. I would never buy it again.",0,0,0,0.20743875870963785,0.01
+"In my opinion, the product quality is awful. I would warn others about it.",0,0,0,0.14581818271649685,0.03
+"From my experience, i am happy with this purchase. It made me very happy.",1,1,1,0.8695654209761281,0.99
+"From my experience, i loved this product because it was excellent. I would recommend it to others.",1,1,1,0.8719238281302878,0.99
+"Honestly, this product was awful and did not work. It was a very bad choice.",0,0,0,0.0825523742623939,0.0
+"Honestly, the experience was unpleasant and frustrating. It was a very bad choice.",0,0,0,0.11522257957603674,0.0
+"In my opinion, the service was bad and very unhelpful. I would never buy it again.",0,0,0,0.16893955112329723,0.02
+"For me, i really disliked using this product. It was a very bad choice.",0,0,0,0.08344857562500801,0.0
+"In my opinion, this was a fantastic experience and i recommend it. I would recommend it to others.",1,1,1,0.8443838436286529,0.98
+"For me, this purchase was worth the money. I am completely satisfied.",1,1,1,0.9105224026816697,1.0
+"Overall, this was one of the best experiences. It was a great choice.",1,1,1,0.8853806454745168,0.99
+"For me, i really enjoyed using this product. It made me very happy.",1,1,1,0.9083209227256814,0.99
+"From my experience, this product failed to meet my expectations. It made me very disappointed.",0,0,0,0.10947044046708491,0.0
+"Honestly, i disliked the poor customer service. It was a very bad choice.",0,0,0,0.06395557892562392,0.0
+"Overall, this was a fantastic experience and i recommend it. I would buy it again.",1,1,1,0.7700752329802633,0.98
+"For me, i would not recommend this product. I would never buy it again.",0,0,0,0.47533531186806044,0.14
+"Honestly, the experience was unpleasant and frustrating. I am completely dissatisfied.",0,0,0,0.10416978837415534,0.0
+"In my opinion, the experience was pleasant and satisfying. I would recommend it to others.",1,1,1,0.8500092530278095,0.97
+"From my experience, the movie was brilliant and enjoyable. It made me very happy.",1,1,1,0.8823793533244985,1.0
+"For me, the movie was brilliant and enjoyable. I would recommend it to others.",1,1,1,0.8780383176963471,0.99
+"For me, i enjoyed the excellent customer service. It was a great choice.",1,1,1,0.9508140402617986,1.0
+"Honestly, the quality was poor and i am very dissatisfied. I would never buy it again.",0,0,0,0.14645211069958894,0.02
+"From my experience, i am unhappy with this purchase. I would never buy it again.",0,0,0,0.2587381288408424,0.08
+"Overall, i hated this product because it was terrible. It made me very disappointed.",0,0,0,0.09235546341563436,0.0
+"From my experience, nothing worked properly and i am dissatisfied. I would never buy it again.",0,0,0,0.17790851504833705,0.01
+"Honestly, this was a terrible experience and i do not recommend it. I would never buy it again.",0,0,0,0.27578613790040757,0.1
+"Honestly, this product was amazing and worked perfectly. It was a great choice.",1,1,1,0.9195291565174052,1.0
+"Overall, i enjoyed the excellent customer service. I am completely satisfied.",1,1,1,0.9181120020628841,1.0
+"From my experience, the product is reliable and excellent. I would recommend it to others.",1,1,1,0.8829537074184279,0.99
+"In my opinion, i am very disappointed with the quality. I am completely dissatisfied.",0,0,0,0.08607591219039407,0.0
+"In my opinion, i hated this product because it was terrible. I would warn others about it.",0,0,0,0.09665437825423191,0.0
+"Honestly, this product was amazing and worked perfectly. I am completely satisfied.",1,1,1,0.9205641475666013,1.0
+"From my experience, this purchase was worth the money. It was a great choice.",1,1,1,0.88836594505834,1.0
+"For me, i disliked the poor customer service. I would warn others about it.",0,0,0,0.09838902483921314,0.0
+"In my opinion, this product was amazing and worked perfectly. I would buy it again.",1,1,1,0.8398059045761874,0.99
+"Overall, the experience was unpleasant and frustrating. I am completely dissatisfied.",0,0,0,0.10156405558231227,0.0
+"Overall, the product quality is fantastic. I would buy it again.",1,1,1,0.778419058076744,0.97
+"For me, this was one of the worst experiences. I would warn others about it.",0,0,0,0.14562778968574167,0.03
+"For me, this was one of the worst experiences. I would never buy it again.",0,0,0,0.2816639095538721,0.22
+"From my experience, this purchase was worth the money. It made me very happy.",1,1,1,0.8594237420006425,0.99
+"From my experience, the service was outstanding and friendly. It was a great choice.",1,1,1,0.9077913113572768,0.99
+"From my experience, i am very pleased with the quality. I would buy it again.",1,1,1,0.684074742560225,0.74
+"From my experience, nothing worked properly and i am dissatisfied. It was a very bad choice.",0,0,0,0.09180042605217772,0.0
+"Honestly, the experience was pleasant and satisfying. It made me very happy.",1,1,1,0.8817870261292623,1.0
+"In my opinion, i am unhappy with this purchase. I am completely dissatisfied.",0,0,0,0.10561008049403195,0.0
+"Overall, i would definitely recommend this product. I would recommend it to others.",1,1,1,0.8270851404516464,0.98
+"In my opinion, i had a wonderful experience with this service. It made me very happy.",1,1,1,0.872209791515133,0.99
+"In my opinion, i had a wonderful experience with this service. It was a great choice.",1,1,1,0.9133155996384892,0.99
+"Overall, the experience was unpleasant and frustrating. It made me very disappointed.",0,0,0,0.12751337292354217,0.01
+"For me, this product exceeded my expectations. I would recommend it to others.",1,1,1,0.8687662029522962,0.98
+"In my opinion, i am very disappointed with the quality. It was a very bad choice.",0,0,0,0.08873470222028133,0.01
+"For me, this product was awful and did not work. It was a very bad choice.",0,0,0,0.06902831265222319,0.0
+"For me, i am very pleased with the quality. I would buy it again.",1,1,1,0.6917702417387257,0.72
+"Overall, i am happy with this purchase. I would recommend it to others.",1,1,1,0.847125666491628,0.95
+"From my experience, the product is unreliable and terrible. It made me very disappointed.",0,0,0,0.08947380864431553,0.0
+"For me, the product is unreliable and terrible. I am completely dissatisfied.",0,0,0,0.054047126148017946,0.0
+"In my opinion, i am unhappy with this purchase. I would warn others about it.",0,0,0,0.14134453936808472,0.02
+"In my opinion, this was one of the best experiences. It was a great choice.",1,1,1,0.8739450591598126,0.99
+"In my opinion, the service was horrible and unfriendly. I would warn others about it.",0,0,0,0.10817959212401188,0.01
+"Honestly, i would definitely recommend this product. It was a great choice.",1,1,1,0.897665087374772,1.0
+"For me, the experience was unpleasant and frustrating. I would never buy it again.",0,0,0,0.1809365271960422,0.08
+"Honestly, nothing worked properly and i am dissatisfied. I would warn others about it.",0,0,0,0.12400885481520295,0.0
+"For me, this product was awful and did not work. I would warn others about it.",0,0,0,0.08754929137089919,0.01
+"Overall, i had a horrible experience with this service. I would never buy it again.",0,0,0,0.24818137926961445,0.09
+"For me, i hated this product because it was terrible. I would never buy it again.",0,0,0,0.13151000882694192,0.03
+"Overall, i had a horrible experience with this service. I am completely dissatisfied.",0,0,0,0.08849370540460283,0.01
+"For me, the product quality is awful. It made me very disappointed.",0,0,0,0.1199156728935831,0.03
+"In my opinion, the service was outstanding and friendly. I would recommend it to others.",1,1,1,0.8510758298969505,1.0
+"For me, the service was bad and very unhelpful. It was a very bad choice.",0,0,0,0.0781606326320649,0.01
+"Honestly, this was a terrible experience and i do not recommend it. It made me very disappointed.",0,0,0,0.15342172851366168,0.02
+"In my opinion, the experience was unpleasant and frustrating. It was a very bad choice.",0,0,0,0.11229037770232317,0.01
+"Overall, the service was bad and very unhelpful. It made me very disappointed.",0,0,0,0.10395291463253134,0.0
+"From my experience, the service was bad and very unhelpful. It made me very disappointed.",0,0,0,0.10154551458785022,0.01
+"From my experience, this product failed to meet my expectations. I would warn others about it.",0,0,0,0.11525166112541359,0.0
+"From my experience, the quality was poor and i am very dissatisfied. It made me very disappointed.",0,0,0,0.08265714197564425,0.0
+"In my opinion, the product is unreliable and terrible. I would warn others about it.",0,0,0,0.0949989460172834,0.0
+"Honestly, the service was great and very helpful. It was a great choice.",1,1,1,0.9083052217586158,1.0
+"Overall, i would definitely recommend this product. It made me very happy.",1,1,1,0.8655920565429434,1.0
+"Overall, this was a terrible experience and i do not recommend it. I am completely dissatisfied.",0,0,0,0.10615995747438754,0.02
+"Honestly, i disliked the poor customer service. It made me very disappointed.",0,0,0,0.09681414544488331,0.0
+"Honestly, the experience was pleasant and satisfying. I am completely satisfied.",1,1,1,0.9167896010251129,1.0
+"Overall, this was one of the worst experiences. I would warn others about it.",0,0,0,0.15644017631447482,0.02
+"From my experience, the service was horrible and unfriendly. It was a very bad choice.",0,0,0,0.08134961390584651,0.0
+"For me, i had a wonderful experience with this service. It was a great choice.",1,1,1,0.9351494821452623,1.0
+"From my experience, the quality was excellent and i am very satisfied. I am completely satisfied.",1,1,1,0.9272165388394135,1.0
+"Honestly, i disliked the poor customer service. I would warn others about it.",0,0,0,0.10484912541930266,0.0
+"From my experience, this product was awful and did not work. I would warn others about it.",0,0,0,0.100168643907009,0.0
+"Overall, the service was horrible and unfriendly. It made me very disappointed.",0,0,0,0.10039440007096805,0.0
+"Honestly, i am very pleased with the quality. I would recommend it to others.",1,1,1,0.8221123439049826,0.97
+"For me, this product exceeded my expectations. It made me very happy.",1,1,1,0.8888576453781483,0.99
+"From my experience, this product exceeded my expectations. It made me very happy.",1,1,1,0.8735090290424201,0.98
+"Honestly, i disliked the poor customer service. I am completely dissatisfied.",0,0,0,0.07979718784513133,0.0
+"From my experience, this product was amazing and worked perfectly. I would recommend it to others.",1,1,1,0.8782688875813426,1.0
+"For me, everything worked perfectly and i am satisfied. It was a great choice.",1,1,1,0.9540015943979632,1.0
+"From my experience, this purchase was a waste of money. It made me very disappointed.",0,0,0,0.13707710377754562,0.0
+"In my opinion, i am unhappy with this purchase. It was a very bad choice.",0,0,0,0.11097237869840405,0.01
+"In my opinion, the service was great and very helpful. I am completely satisfied.",1,1,1,0.916394304327782,1.0
+"Honestly, the product is reliable and excellent. It made me very happy.",1,1,1,0.912570154133338,1.0
+"From my experience, the service was great and very helpful. I am completely satisfied.",1,1,1,0.9273854314638369,1.0
+"Overall, nothing worked properly and i am dissatisfied. I would warn others about it.",0,0,0,0.11383453693438118,0.0
+"For me, the quality was excellent and i am very satisfied. I would recommend it to others.",1,1,1,0.9255148579311281,1.0
+"In my opinion, i would definitely recommend this product. I would buy it again.",1,1,1,0.7234112046582742,0.95
+"Overall, the product quality is fantastic. It made me very happy.",1,1,1,0.8685491116692748,0.99
+"For me, the quality was poor and i am very dissatisfied. It was a very bad choice.",0,0,0,0.05295610501655963,0.0
+"Honestly, i had a horrible experience with this service. I would warn others about it.",0,0,0,0.14078549397953363,0.01
+"For me, the product quality is awful. It was a very bad choice.",0,0,0,0.09484505398702708,0.03
+"From my experience, this purchase was a waste of money. I would warn others about it.",0,0,0,0.14418183160417752,0.01
+"Overall, the product is unreliable and terrible. I would never buy it again.",0,0,0,0.14596657966783974,0.0
+"In my opinion, this purchase was worth the money. It made me very happy.",1,1,1,0.8592942944037231,0.99
+"In my opinion, the quality was poor and i am very dissatisfied. I would warn others about it.",0,0,0,0.09354262480925847,0.0
+"Overall, everything worked perfectly and i am satisfied. It made me very happy.",1,1,1,0.9253836098062035,0.99
+"Overall, i would definitely recommend this product. It was a great choice.",1,1,1,0.8850549179630677,1.0
+"From my experience, i am unhappy with this purchase. It made me very disappointed.",0,0,0,0.13446841918976749,0.0
+"In my opinion, the product quality is awful. It made me very disappointed.",0,0,0,0.14272712757776854,0.02
+"From my experience, the experience was unpleasant and frustrating. It was a very bad choice.",0,0,0,0.11572639209068332,0.0
+"In my opinion, the service was great and very helpful. I would recommend it to others.",1,1,1,0.8734905293023526,0.99
+"Overall, the service was great and very helpful. I would buy it again.",1,1,1,0.8318783130181945,0.98
+"From my experience, the service was bad and very unhelpful. It was a very bad choice.",0,0,0,0.09061870288223607,0.01
+"From my experience, this was one of the best experiences. It made me very happy.",1,1,1,0.8673335703846758,1.0
+"Honestly, the product quality is awful. I would never buy it again.",0,0,0,0.2385036512109969,0.12
+"From my experience, the experience was pleasant and satisfying. I am completely satisfied.",1,1,1,0.9124703033391277,1.0
+"For me, i enjoyed the excellent customer service. It made me very happy.",1,1,1,0.9263708125993548,0.99
+"From my experience, the product is reliable and excellent. I am completely satisfied.",1,1,1,0.9256288429244711,1.0
+"In my opinion, everything worked perfectly and i am satisfied. I would recommend it to others.",1,1,1,0.9015903421165153,1.0
+"In my opinion, i am happy with this purchase. It was a great choice.",1,1,1,0.9034477990268497,0.98
+"Overall, this purchase was worth the money. It made me very happy.",1,1,1,0.8562991029698099,1.0
+"From my experience, i disliked the poor customer service. It made me very disappointed.",0,0,0,0.10539435935422604,0.0
+"Overall, i loved this product because it was excellent. I would recommend it to others.",1,1,1,0.8733067921902351,0.99
+"From my experience, this product was amazing and worked perfectly. I am completely satisfied.",1,1,1,0.9182725371183849,1.0
+"In my opinion, i enjoyed the excellent customer service. I am completely satisfied.",1,1,1,0.918177156499553,1.0
+"Honestly, the service was outstanding and friendly. It was a great choice.",1,1,1,0.8989467159371721,0.99
+"In my opinion, this was one of the best experiences. It made me very happy.",1,1,1,0.8502892112381437,0.99
+"In my opinion, i loved this product because it was excellent. I am completely satisfied.",1,1,1,0.9162352290810368,1.0
+"From my experience, this was one of the worst experiences. I would warn others about it.",0,0,0,0.1620036463861864,0.03
+"From my experience, the quality was excellent and i am very satisfied. It was a great choice.",1,1,1,0.9313968092461218,1.0
+"Overall, the experience was pleasant and satisfying. I am completely satisfied.",1,1,1,0.915786035371726,1.0
