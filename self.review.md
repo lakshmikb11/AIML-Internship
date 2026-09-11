@@ -566,3 +566,52 @@ The dataset used for this task is a controlled sentiment dataset, so the perfect
 ### Reflection
 
 Today I learned how to build a complete binary sentiment classification pipeline using TF-IDF and machine learning classifiers. I trained and evaluated Logistic Regression and Random Forest models and compared their accuracy, precision, recall, and ROC-AUC scores. I also generated confusion matrices and ROC-AUC visualizations to understand model performance. This task helped me understand how text data can be converted into numerical features using TF-IDF and then used for supervised classification. I also learned that very high evaluation scores on a controlled dataset should be interpreted carefully and may not represent performance on real-world data.
+## W5D1 - Running LLMs Locally with Ollama
+
+### Task Completed
+
+Set up Ollama for local LLM inference, pulled the Llama 3.2 3B and Qwen 2.5 3B models, created a Python script using the Ollama API with a custom system prompt, tested five AI/ML questions, and compared both models using the same three questions.
+
+### Checklist
+
+* [x] Installed and verified Ollama.
+* [x] Pulled `llama3.2:3b` successfully.
+* [x] Ran the first local LLM inference successfully.
+* [x] Created `w5d1_ollama_inference.py`.
+* [x] Used a custom system prompt for the local LLM.
+* [x] Tested five AI/ML prompts using the Python script.
+* [x] Confirmed all five prompts completed successfully.
+* [x] Pulled `qwen2.5:3b` successfully.
+* [x] Compared Llama 3.2 3B and Qwen 2.5 3B using the same three questions.
+* [x] Documented differences between the two models.
+* [x] Created W5D1 output evidence.
+* [x] Tested the Python script successfully without errors.
+* [x] Used clean and commented code.
+* [ ] Completed CIA Full Stack Mentor code review.
+* [ ] Created the first descriptive W5D1 commit.
+* [ ] Created the second descriptive W5D1 self-review commit.
+* [ ] Pushed W5D1 changes to GitHub.
+* [ ] Raised/updated the W5D1 Pull Request.
+
+### Models Compared
+
+* `llama3.2:3b`
+* `qwen2.5:3b`
+
+### Comparison Summary
+
+Based on the three comparison questions, Llama 3.2 3B produced responses that were generally more conversational and beginner-friendly, with simple examples and explanations.
+
+Qwen 2.5 3B produced more structured and detailed responses and included more technical terminology and techniques.
+
+For the beginner-focused system prompt used in this task, Llama 3.2 3B was easier to read, while Qwen 2.5 3B was useful when more technical detail was preferred.
+
+### Evidence Generated
+
+* `w5d1_ollama_inference.py`
+* `output_evidence/w5d1/model_comparison.md`
+* Terminal output copied into the W5D1 evidence document.
+
+### Reflection
+
+Today I learned how to run large language models locally using Ollama and interact with them through the Ollama API. I created a Python script with a custom system prompt and tested it using five AI/ML questions. I also compared Llama 3.2 3B and Qwen 2.5 3B using the same questions. The comparison showed that different local LLMs can produce different response styles and levels of detail even when given the same prompts. This task helped me understand the basics of local LLM inference and API-based interaction with locally hosted models.
