@@ -701,3 +701,44 @@ Implemented a ChromaDB vector store with 20 AI/ML documents, cosine similarity s
 Today I learned how vector databases can be used to store and retrieve information using embeddings and similarity search. I created a ChromaDB collection containing 20 AI/ML documents and practiced cosine similarity search and metadata filtering. I also learned how documents can be split into smaller chunks and stored as vectors for retrieval. Finally, I combined ChromaDB with Ollama to build a simple retrieval-augmented generation workflow, where the top-3 relevant PDF chunks were retrieved and passed to the local LLM to generate a context-grounded answer.
 
 
+
+## W5D4 - Semantic Search with ChromaDB
+
+### Task Completed
+
+Implemented a separate ChromaDB semantic search workflow with 20 AI/ML documents, cosine similarity search, metadata filtering, PDF chunk retrieval, and Ollama-based RAG.
+
+### Checklist
+
+- [x] Installed and verified ChromaDB.
+- [x] Created a separate W5D4 ChromaDB collection.
+- [x] Added 20 AI/ML documents with embeddings.
+- [x] Configured cosine similarity.
+- [x] Performed similarity search.
+- [x] Performed metadata filtering.
+- [x] Manually verified search and filtering results.
+- [x] Created a separate W5D4 AI/ML reference PDF.
+- [x] Extracted PDF text using pypdf.
+- [x] Split the PDF into chunks.
+- [x] Stored PDF chunks in ChromaDB.
+- [x] Retrieved the top-3 PDF chunks.
+- [x] Passed retrieved chunks to Ollama.
+- [x] Verified the Ollama answer against the retrieved context.
+- [x] Generated W5D4 output evidence.
+- [x] Created manual verification evidence.
+- [x] Tested the W5D4 implementation successfully.
+- [x] Created the first W5D4 implementation commit.
+- [ ] Created the second descriptive W5D4 self-review commit.
+- [ ] Pushed the W5D4 changes to GitHub.
+- [ ] Raised/updated the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w5d4/chromadb_setup_results.txt
+- output_evidence/w5d4/pdf_rag_results.txt
+- output_evidence/w5d4/manual_verification.md
+- data/w5d4/ai_ml_reference.pdf
+
+### Reflection
+
+Today I learned how semantic search can retrieve relevant information based on meaning rather than exact keyword matching. I created a separate W5D4 ChromaDB collection containing 20 AI/ML documents and practiced cosine similarity search and metadata filtering. I also learned how PDF content can be divided into chunks and retrieved using vector similarity. Finally, I combined ChromaDB with Ollama to retrieve the top-3 relevant chunks and generate a context-based answer.
