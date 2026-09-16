@@ -742,3 +742,37 @@ Implemented a separate ChromaDB semantic search workflow with 20 AI/ML documents
 ### Reflection
 
 Today I learned how semantic search can retrieve relevant information based on meaning rather than exact keyword matching. I created a separate W5D4 ChromaDB collection containing 20 AI/ML documents and practiced cosine similarity search and metadata filtering. I also learned how PDF content can be divided into chunks and retrieved using vector similarity. Finally, I combined ChromaDB with Ollama to retrieve the top-3 relevant chunks and generate a context-based answer.
+
+## W5D5 - Week 5 Project: Local Q&A Bot
+
+### Task Completed
+
+Implemented a local Q&A workflow using Ollama and compared llama3.2:3b with qwen2.5:3b using the same three AI/ML questions.
+
+### Checklist
+
+- [x] Verified Ollama installation.
+- [x] Verified llama3.2:3b is available locally.
+- [x] Verified qwen2.5:3b is available locally.
+- [x] Created a Python script for Ollama API calls.
+- [x] Added a custom system prompt.
+- [x] Tested 5 prompts successfully.
+- [x] Compared llama3.2:3b and qwen2.5:3b on the same 3 questions.
+- [x] Manually reviewed response differences.
+- [x] Documented model comparison results.
+- [x] Generated W5D5 output evidence.
+- [x] Tested the W5D5 implementation successfully.
+- [x] Created the first W5D5 implementation commit.
+- [ ] Created the second W5D5 self-review commit.
+- [ ] Pushed the W5D5 changes to GitHub.
+- [ ] Updated the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w5d5/qa_bot_results.txt
+- output_evidence/w5d5/model_comparison_results.txt
+- output_evidence/w5d5/model_comparison.md
+
+### Reflection
+
+Today I learned how to interact with local large language models through the Ollama API. I created a Python-based local Q&A bot with a custom system prompt and tested five AI/ML questions. I also compared llama3.2:3b and qwen2.5:3b using the same three questions and documented differences in response style, examples, structure, and level of detail.
