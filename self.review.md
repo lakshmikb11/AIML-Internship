@@ -1,4 +1,4 @@
-# Week 1 Self Review Checklist
+﻿# Week 1 Self Review Checklist
 
 - [x] Code runs successfully
 - [x] Duplicate rows removed from student_scores.csv
@@ -180,7 +180,7 @@ Today I learned how SMOTE can be used to handle imbalanced classification data. 
 - [x] Used random_state=42 for reproducibility.
 - [x] Applied StandardScaler inside a Pipeline to prevent data leakage.
 - [x] Performed 5-fold cross-validation on the training data only.
-- [x] Evaluated the model using R², MAE, and RMSE.
+- [x] Evaluated the model using RÂ², MAE, and RMSE.
 - [x] Evaluated the final model on the unseen test set.
 - [x] Generated train/test target distribution evidence.
 - [x] Saved cross-validation results as CSV evidence.
@@ -232,7 +232,7 @@ Today I learned how to build an end-to-end preprocessing pipeline for machine le
 - [x] Evaluated the LinearRegression model using MSE.
 - [x] Evaluated the LinearRegression model using RMSE.
 - [x] Evaluated the LinearRegression model using MAE.
-- [x] Evaluated the LinearRegression model using R².
+- [x] Evaluated the LinearRegression model using RÂ².
 - [x] Created the predicted vs actual plot.
 - [x] Created the residual plot.
 - [x] Added Ridge Regression.
@@ -251,7 +251,7 @@ Today I learned how to build an end-to-end preprocessing pipeline for machine le
 
 ### Reflection
 
-Today I learned how to build and evaluate regression models using Scikit-Learn. I trained LinearRegression on a real dataset and evaluated it using MSE, RMSE, MAE, and R². I also learned how predicted-vs-actual and residual plots help evaluate regression performance. Finally, I compared LinearRegression with Ridge and Lasso regression and documented the results as output evidence. CIA review helped me verify the implementation and improve the overall quality of the W3D1 work.
+Today I learned how to build and evaluate regression models using Scikit-Learn. I trained LinearRegression on a real dataset and evaluated it using MSE, RMSE, MAE, and RÂ². I also learned how predicted-vs-actual and residual plots help evaluate regression performance. Finally, I compared LinearRegression with Ridge and Lasso regression and documented the results as output evidence. CIA review helped me verify the implementation and improve the overall quality of the W3D1 work.
 ##W3D2 self review
 reflection
 Today I learned how to build and evaluate a multiclass classification model using Logistic Regression and the Iris dataset. I practiced preparing the data, performing a stratified train/test split, scaling features without causing data leakage, and training a Logistic Regression classifier. I evaluated the model using accuracy, precision, recall, and F1-score and generated a classification report and confusion matrix to understand the model's performance. I also created a decision boundary visualization to understand how the classifier separates different Iris classes. The CIA Full Stack Mentor reviews helped me validate the implementation, improve code quality, and ensure the solution was ready for submission.
@@ -302,22 +302,22 @@ Today I learned how Support Vector Machine and K-Nearest Neighbors classifiers c
 
 W3D5 Results
 
-SVM — GridSearchCV
+SVM â€” GridSearchCV
 
 Best CV accuracy: 0.975
 Test accuracy: 0.9333
 
-SVM — RandomizedSearchCV
+SVM â€” RandomizedSearchCV
 
 Best CV accuracy: 0.975
 Test accuracy: 0.9333
 
-KNN — GridSearchCV
+KNN â€” GridSearchCV
 
 Best CV accuracy: 0.9667
 Test accuracy: 0.9333
 
-KNN — RandomizedSearchCV
+KNN â€” RandomizedSearchCV
 
 Best CV accuracy: 0.9667
 Test accuracy: 0.9667
@@ -361,7 +361,7 @@ Implemented Linear Regression, Ridge Regression, and Lasso Regression using the 
 
 ### Model Results
 
-| Model                    |      MSE |     RMSE |      MAE |       R² |
+| Model                    |      MSE |     RMSE |      MAE |       RÂ² |
 | ------------------------ | -------: | -------: | -------: | -------: |
 | Linear Regression        | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
 | Ridge GridSearchCV       | 0.555891 | 0.745581 | 0.533200 | 0.575788 |
@@ -374,7 +374,7 @@ Implemented Linear Regression, Ridge Regression, and Lasso Regression using the 
 * Ridge GridSearchCV: `alpha = 0.01`
 * Lasso GridSearchCV: `alpha = 0.0001`
 * Ridge RandomizedSearchCV: `alpha = 0.001`
-* Lasso RandomizedSearchCV: `alpha ≈ 0.0004037`
+* Lasso RandomizedSearchCV: `alpha â‰ˆ 0.0004037`
 
 
 
@@ -408,7 +408,7 @@ Implemented model serialisation using Joblib and Pickle with a Linear Regression
 - [x] Loaded the California Housing dataset.
 - [x] Performed train/test split.
 - [x] Trained Linear Regression model.
-- [x] Evaluated the original model using MSE, RMSE, MAE, and R².
+- [x] Evaluated the original model using MSE, RMSE, MAE, and RÂ².
 - [x] Serialized the trained model using Joblib.
 - [x] Serialized the trained model using Pickle.
 - [x] Loaded the Joblib model successfully.
@@ -423,7 +423,7 @@ Implemented model serialisation using Joblib and Pickle with a Linear Regression
 
 ### Model Results
 
-| Model | MSE | RMSE | MAE | R² |
+| Model | MSE | RMSE | MAE | RÂ² |
 |---|---:|---:|---:|---:|
 | Original Linear Regression | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
 | Joblib Restored Model | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
@@ -776,3 +776,40 @@ Implemented a local Q&A workflow using Ollama and compared llama3.2:3b with qwen
 ### Reflection
 
 Today I learned how to interact with local large language models through the Ollama API. I created a Python-based local Q&A bot with a custom system prompt and tested five AI/ML questions. I also compared llama3.2:3b and qwen2.5:3b using the same three questions and documented differences in response style, examples, structure, and level of detail.
+
+## W6D1 - LangChain Fundamentals: Chains & Prompts
+
+### Task Completed
+
+Implemented and tested LangChain fundamentals using an Ollama LLM, including a prompt chain, conversation memory, and a simple agent with two tools.
+
+### Checklist
+
+- [x] Installed and verified LangChain packages.
+- [x] Verified Ollama models are available locally.
+- [x] Created a PromptTemplate -> Ollama LLM -> StrOutputParser chain.
+- [x] Tested the chain with 5 inputs.
+- [x] Added ConversationBufferMemory.
+- [x] Tested conversation memory across 5 turns.
+- [x] Verified that 10 messages were stored in conversation history.
+- [x] Created a simple LangChain agent.
+- [x] Added a web search stub tool.
+- [x] Added a calculator tool.
+- [x] Tested the agent with 3 tasks.
+- [x] Verified all 3 agent tasks completed successfully.
+- [x] Generated W6D1 output evidence.
+- [x] Tested the W6D1 implementation successfully.
+- [x] Created the first W6D1 implementation commit.
+- [ ] Created the second W6D1 self-review commit.
+- [ ] Pushed the W6D1 changes to GitHub.
+- [ ] Raised the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w6d1/langchain_fundamentals_results.txt
+
+### Reflection
+
+Today I learned the fundamentals of LangChain chains, prompts, conversation memory, and agents. I created a PromptTemplate to Ollama LLM to StrOutputParser workflow and tested it with five inputs. I also used ConversationBufferMemory to maintain conversation history across five turns. Finally, I created a simple agent with a web search stub and calculator tool and verified it with three tasks.
+
+
