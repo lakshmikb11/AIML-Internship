@@ -654,3 +654,50 @@ Implemented local LLM prompt engineering and model comparison using Ollama. Test
 
 Today I learned how to interact with locally hosted large language models using Ollama and a custom system prompt. I practiced prompt engineering by testing five AI/ML questions and compared Llama 3.2 3B with Qwen 2.5 3B using the same three questions. The comparison showed differences in response style, structure, level of detail, and use of examples. I also learned how to document qualitative model comparisons and organize reproducible output evidence.
 
+
+## W5D3 - ChromaDB Vector Store Setup and PDF RAG
+
+### Task Completed
+
+Implemented a ChromaDB vector store with 20 AI/ML documents, cosine similarity search, metadata filtering, and a PDF-based RAG workflow using ChromaDB and Ollama.
+
+### Checklist
+
+- [x] Installed ChromaDB and verified version 1.5.9.
+- [x] Created a persistent ChromaDB collection.
+- [x] Configured cosine similarity.
+- [x] Added 20 AI/ML documents with embeddings.
+- [x] Performed similarity search.
+- [x] Performed metadata filtering using topic = classification.
+- [x] Manually verified similarity search results.
+- [x] Manually verified metadata filtering results.
+- [x] Created an AI/ML reference PDF for the RAG workflow.
+- [x] Extracted text from the PDF using pypdf.
+- [x] Split the PDF text into 5 chunks.
+- [x] Stored the PDF chunks in ChromaDB.
+- [x] Retrieved the top-3 PDF chunks using cosine similarity.
+- [x] Passed the retrieved chunks to Ollama.
+- [x] Generated an answer using the retrieved PDF context.
+- [x] Verified that the final answer was grounded in the retrieved context.
+- [x] Generated W5D3 output evidence.
+- [x] Created manual verification evidence.
+- [x] Tested the W5D3 implementation successfully.
+- [x] Created the first descriptive W5D3 implementation commit.
+- [ ] Completed CIA Full Stack Mentor code review.
+- [ ] Applied CIA review suggestions, if applicable.
+- [ ] Created the second descriptive W5D3 self-review commit.
+- [ ] Pushed the W5D3 changes to GitHub.
+- [ ] Raised/updated the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w5d3/chromadb_setup_results.txt
+- output_evidence/w5d3/pdf_rag_results.txt
+- output_evidence/w5d3/manual_verification.md
+- data/w5d3/ai_ml_reference.pdf
+
+### Reflection
+
+Today I learned how vector databases can be used to store and retrieve information using embeddings and similarity search. I created a ChromaDB collection containing 20 AI/ML documents and practiced cosine similarity search and metadata filtering. I also learned how documents can be split into smaller chunks and stored as vectors for retrieval. Finally, I combined ChromaDB with Ollama to build a simple retrieval-augmented generation workflow, where the top-3 relevant PDF chunks were retrieved and passed to the local LLM to generate a context-grounded answer.
+
+
