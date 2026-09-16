@@ -614,4 +614,43 @@ For the beginner-focused system prompt used in this task, Llama 3.2 3B was easie
 
 ### Reflection
 
-Today I learned how to run large language models locally using Ollama and interact with them through the Ollama API. I created a Python script with a custom system prompt and tested it using five AI/ML questions. I also compared Llama 3.2 3B and Qwen 2.5 3B using the same questions. The comparison showed that different local LLMs can produce different response styles and levels of detail even when given the same prompts. This task helped me understand the basics of local LLM inference and API-based interaction with locally hosted models.
+Today I learned how to run large language models locally using Ollama and interact with them through the Ollama API. I created a Python script with a custom system prompt and tested it using five AI/ML questions. I also compared Llama 3.2 3B and Qwen 2.5 3B using the same questions. The comparison showed that different local LLMs can produce different response styles and levels of detail even when given the same prompts. This task helped me understand the basics of local LLM inference and API-based interaction with locally hosted models. 
+
+## W5D2 - Local LLM Model Comparison and Prompt Engineering
+
+### Task Completed
+
+Implemented local LLM prompt engineering and model comparison using Ollama. Tested a custom system prompt with five AI/ML questions and compared `llama3.2:3b` and `qwen2.5:3b` using the same three questions. Generated and verified output evidence documenting the qualitative differences between the models.
+
+### Checklist
+
+* [x] Verified Ollama local LLM setup.
+* [x] Used `llama3.2:3b` for local inference.
+* [x] Used `qwen2.5:3b` for model comparison.
+* [x] Created `w5d2_prompt_engineering.py`.
+* [x] Created `w5d2_model_comparison.py`.
+* [x] Used a custom system prompt.
+* [x] Tested five AI/ML prompts.
+* [x] Compared both models using the same three questions.
+* [x] Documented qualitative differences between the models.
+* [x] Generated W5D2 output evidence.
+* [x] Verified the W5D2 evidence files.
+* [x] Tested the W5D2 implementation successfully.
+* [x] Created the W5D2 implementation commit.
+* [x] Pushed the W5D2 changes to GitHub.
+* [ ] Completed CIA Full Stack Mentor code review.
+* [ ] Applied CIA review suggestions, if applicable.
+* [ ] Raised/updated the W5D2 Pull Request.
+
+### Evidence Generated
+
+* `w5d2_prompt_engineering.py`
+* `w5d2_model_comparison.py`
+* `output_evidence/w5d2/inference_results.txt`
+* `output_evidence/w5d2/model_comparison.md`
+* `output_evidence/w5d2/model_comparison_results.txt`
+
+### Reflection
+
+Today I learned how to interact with locally hosted large language models using Ollama and a custom system prompt. I practiced prompt engineering by testing five AI/ML questions and compared Llama 3.2 3B with Qwen 2.5 3B using the same three questions. The comparison showed differences in response style, structure, level of detail, and use of examples. I also learned how to document qualitative model comparisons and organize reproducible output evidence.
+
