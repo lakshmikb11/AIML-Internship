@@ -566,3 +566,213 @@ The dataset used for this task is a controlled sentiment dataset, so the perfect
 ### Reflection
 
 Today I learned how to build a complete binary sentiment classification pipeline using TF-IDF and machine learning classifiers. I trained and evaluated Logistic Regression and Random Forest models and compared their accuracy, precision, recall, and ROC-AUC scores. I also generated confusion matrices and ROC-AUC visualizations to understand model performance. This task helped me understand how text data can be converted into numerical features using TF-IDF and then used for supervised classification. I also learned that very high evaluation scores on a controlled dataset should be interpreted carefully and may not represent performance on real-world data.
+## W5D1 - Running LLMs Locally with Ollama
+
+### Task Completed
+
+Set up Ollama for local LLM inference, pulled the Llama 3.2 3B and Qwen 2.5 3B models, created a Python script using the Ollama API with a custom system prompt, tested five AI/ML questions, and compared both models using the same three questions.
+
+### Checklist
+
+* [x] Installed and verified Ollama.
+* [x] Pulled `llama3.2:3b` successfully.
+* [x] Ran the first local LLM inference successfully.
+* [x] Created `w5d1_ollama_inference.py`.
+* [x] Used a custom system prompt for the local LLM.
+* [x] Tested five AI/ML prompts using the Python script.
+* [x] Confirmed all five prompts completed successfully.
+* [x] Pulled `qwen2.5:3b` successfully.
+* [x] Compared Llama 3.2 3B and Qwen 2.5 3B using the same three questions.
+* [x] Documented differences between the two models.
+* [x] Created W5D1 output evidence.
+* [x] Tested the Python script successfully without errors.
+* [x] Used clean and commented code.
+* [ ] Completed CIA Full Stack Mentor code review.
+* [ ] Created the first descriptive W5D1 commit.
+* [ ] Created the second descriptive W5D1 self-review commit.
+* [ ] Pushed W5D1 changes to GitHub.
+* [ ] Raised/updated the W5D1 Pull Request.
+
+### Models Compared
+
+* `llama3.2:3b`
+* `qwen2.5:3b`
+
+### Comparison Summary
+
+Based on the three comparison questions, Llama 3.2 3B produced responses that were generally more conversational and beginner-friendly, with simple examples and explanations.
+
+Qwen 2.5 3B produced more structured and detailed responses and included more technical terminology and techniques.
+
+For the beginner-focused system prompt used in this task, Llama 3.2 3B was easier to read, while Qwen 2.5 3B was useful when more technical detail was preferred.
+
+### Evidence Generated
+
+* `w5d1_ollama_inference.py`
+* `output_evidence/w5d1/model_comparison.md`
+* Terminal output copied into the W5D1 evidence document.
+
+### Reflection
+
+Today I learned how to run large language models locally using Ollama and interact with them through the Ollama API. I created a Python script with a custom system prompt and tested it using five AI/ML questions. I also compared Llama 3.2 3B and Qwen 2.5 3B using the same questions. The comparison showed that different local LLMs can produce different response styles and levels of detail even when given the same prompts. This task helped me understand the basics of local LLM inference and API-based interaction with locally hosted models. 
+
+## W5D2 - Local LLM Model Comparison and Prompt Engineering
+
+### Task Completed
+
+Implemented local LLM prompt engineering and model comparison using Ollama. Tested a custom system prompt with five AI/ML questions and compared `llama3.2:3b` and `qwen2.5:3b` using the same three questions. Generated and verified output evidence documenting the qualitative differences between the models.
+
+### Checklist
+
+* [x] Verified Ollama local LLM setup.
+* [x] Used `llama3.2:3b` for local inference.
+* [x] Used `qwen2.5:3b` for model comparison.
+* [x] Created `w5d2_prompt_engineering.py`.
+* [x] Created `w5d2_model_comparison.py`.
+* [x] Used a custom system prompt.
+* [x] Tested five AI/ML prompts.
+* [x] Compared both models using the same three questions.
+* [x] Documented qualitative differences between the models.
+* [x] Generated W5D2 output evidence.
+* [x] Verified the W5D2 evidence files.
+* [x] Tested the W5D2 implementation successfully.
+* [x] Created the W5D2 implementation commit.
+* [x] Pushed the W5D2 changes to GitHub.
+* [ ] Completed CIA Full Stack Mentor code review.
+* [ ] Applied CIA review suggestions, if applicable.
+* [ ] Raised/updated the W5D2 Pull Request.
+
+### Evidence Generated
+
+* `w5d2_prompt_engineering.py`
+* `w5d2_model_comparison.py`
+* `output_evidence/w5d2/inference_results.txt`
+* `output_evidence/w5d2/model_comparison.md`
+* `output_evidence/w5d2/model_comparison_results.txt`
+
+### Reflection
+
+Today I learned how to interact with locally hosted large language models using Ollama and a custom system prompt. I practiced prompt engineering by testing five AI/ML questions and compared Llama 3.2 3B with Qwen 2.5 3B using the same three questions. The comparison showed differences in response style, structure, level of detail, and use of examples. I also learned how to document qualitative model comparisons and organize reproducible output evidence.
+
+
+## W5D3 - ChromaDB Vector Store Setup and PDF RAG
+
+### Task Completed
+
+Implemented a ChromaDB vector store with 20 AI/ML documents, cosine similarity search, metadata filtering, and a PDF-based RAG workflow using ChromaDB and Ollama.
+
+### Checklist
+
+- [x] Installed ChromaDB and verified version 1.5.9.
+- [x] Created a persistent ChromaDB collection.
+- [x] Configured cosine similarity.
+- [x] Added 20 AI/ML documents with embeddings.
+- [x] Performed similarity search.
+- [x] Performed metadata filtering using topic = classification.
+- [x] Manually verified similarity search results.
+- [x] Manually verified metadata filtering results.
+- [x] Created an AI/ML reference PDF for the RAG workflow.
+- [x] Extracted text from the PDF using pypdf.
+- [x] Split the PDF text into 5 chunks.
+- [x] Stored the PDF chunks in ChromaDB.
+- [x] Retrieved the top-3 PDF chunks using cosine similarity.
+- [x] Passed the retrieved chunks to Ollama.
+- [x] Generated an answer using the retrieved PDF context.
+- [x] Verified that the final answer was grounded in the retrieved context.
+- [x] Generated W5D3 output evidence.
+- [x] Created manual verification evidence.
+- [x] Tested the W5D3 implementation successfully.
+- [x] Created the first descriptive W5D3 implementation commit.
+- [ ] Completed CIA Full Stack Mentor code review.
+- [ ] Applied CIA review suggestions, if applicable.
+- [ ] Created the second descriptive W5D3 self-review commit.
+- [ ] Pushed the W5D3 changes to GitHub.
+- [ ] Raised/updated the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w5d3/chromadb_setup_results.txt
+- output_evidence/w5d3/pdf_rag_results.txt
+- output_evidence/w5d3/manual_verification.md
+- data/w5d3/ai_ml_reference.pdf
+
+### Reflection
+
+Today I learned how vector databases can be used to store and retrieve information using embeddings and similarity search. I created a ChromaDB collection containing 20 AI/ML documents and practiced cosine similarity search and metadata filtering. I also learned how documents can be split into smaller chunks and stored as vectors for retrieval. Finally, I combined ChromaDB with Ollama to build a simple retrieval-augmented generation workflow, where the top-3 relevant PDF chunks were retrieved and passed to the local LLM to generate a context-grounded answer.
+
+
+
+## W5D4 - Semantic Search with ChromaDB
+
+### Task Completed
+
+Implemented a separate ChromaDB semantic search workflow with 20 AI/ML documents, cosine similarity search, metadata filtering, PDF chunk retrieval, and Ollama-based RAG.
+
+### Checklist
+
+- [x] Installed and verified ChromaDB.
+- [x] Created a separate W5D4 ChromaDB collection.
+- [x] Added 20 AI/ML documents with embeddings.
+- [x] Configured cosine similarity.
+- [x] Performed similarity search.
+- [x] Performed metadata filtering.
+- [x] Manually verified search and filtering results.
+- [x] Created a separate W5D4 AI/ML reference PDF.
+- [x] Extracted PDF text using pypdf.
+- [x] Split the PDF into chunks.
+- [x] Stored PDF chunks in ChromaDB.
+- [x] Retrieved the top-3 PDF chunks.
+- [x] Passed retrieved chunks to Ollama.
+- [x] Verified the Ollama answer against the retrieved context.
+- [x] Generated W5D4 output evidence.
+- [x] Created manual verification evidence.
+- [x] Tested the W5D4 implementation successfully.
+- [x] Created the first W5D4 implementation commit.
+- [ ] Created the second descriptive W5D4 self-review commit.
+- [ ] Pushed the W5D4 changes to GitHub.
+- [ ] Raised/updated the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w5d4/chromadb_setup_results.txt
+- output_evidence/w5d4/pdf_rag_results.txt
+- output_evidence/w5d4/manual_verification.md
+- data/w5d4/ai_ml_reference.pdf
+
+### Reflection
+
+Today I learned how semantic search can retrieve relevant information based on meaning rather than exact keyword matching. I created a separate W5D4 ChromaDB collection containing 20 AI/ML documents and practiced cosine similarity search and metadata filtering. I also learned how PDF content can be divided into chunks and retrieved using vector similarity. Finally, I combined ChromaDB with Ollama to retrieve the top-3 relevant chunks and generate a context-based answer.
+
+## W5D5 - Week 5 Project: Local Q&A Bot
+
+### Task Completed
+
+Implemented a local Q&A workflow using Ollama and compared llama3.2:3b with qwen2.5:3b using the same three AI/ML questions.
+
+### Checklist
+
+- [x] Verified Ollama installation.
+- [x] Verified llama3.2:3b is available locally.
+- [x] Verified qwen2.5:3b is available locally.
+- [x] Created a Python script for Ollama API calls.
+- [x] Added a custom system prompt.
+- [x] Tested 5 prompts successfully.
+- [x] Compared llama3.2:3b and qwen2.5:3b on the same 3 questions.
+- [x] Manually reviewed response differences.
+- [x] Documented model comparison results.
+- [x] Generated W5D5 output evidence.
+- [x] Tested the W5D5 implementation successfully.
+- [x] Created the first W5D5 implementation commit.
+- [ ] Created the second W5D5 self-review commit.
+- [ ] Pushed the W5D5 changes to GitHub.
+- [ ] Updated the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w5d5/qa_bot_results.txt
+- output_evidence/w5d5/model_comparison_results.txt
+- output_evidence/w5d5/model_comparison.md
+
+### Reflection
+
+Today I learned how to interact with local large language models through the Ollama API. I created a Python-based local Q&A bot with a custom system prompt and tested five AI/ML questions. I also compared llama3.2:3b and qwen2.5:3b using the same three questions and documented differences in response style, examples, structure, and level of detail.
