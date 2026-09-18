@@ -1,0 +1,180 @@
+W6D3: LangChain Tools & Agents
+Local Ollama model: llama3.2:3b
+======================================================================
+
+TASK 1: LANGCHAIN CHAIN
+======================================================================
+Input 1: What is supervised learning?
+Welcome to our AI/ML tutorial!
+
+Supervised learning is a type of machine learning where your algorithm is trained on labeled data. In other words, the data is already categorized or labeled with the correct output, and the algorithm learns from that.
+
+Think of it like this: Imagine you're trying to teach a robot to recognize different types of animals. You show the robot a picture of a dog and say "dog". Then, you show it a picture of a cat and say "cat". The robot learns from these examples and starts to recognize the difference between dogs and cats.
+
+In supervised learning, the algorithm (like the robot) learns from the labeled data, so it can make predictions or classifications on new, unseen data. The goal is to get the algorithm to make correct predictions or classifications, just like the teacher did with the labeled examples.
+
+The key characteristics of supervised learning are:
+
+1. **Labeled data**: The data is already labeled with the correct output.
+2. **Training**: The algorithm learns from the labeled data to make predictions or classifications.
+3. **Prediction**: The algorithm makes predictions or classifications on new, unseen data.
+
+Supervised learning is a fundamental concept in machine learning, and it's used in many applications, such as image classification, natural language processing, and more!
+
+Do you have any questions about supervised learning?
+
+Input 2: What is overfitting?
+Don't worry if you're new to AI and ML - I'm here to explain it in a way that's easy to understand!
+
+Overfitting is a common problem that happens when a model is trained on a dataset that's too small or too complex. Think of it like trying to fit a puzzle piece into a hole that's just a little too small.
+
+When a model is overfitting, it becomes too closely tied to the specific data it's trained on, rather than learning the underlying patterns and relationships in the data. As a result, the model starts to perform well on the training data, but poorly on new, unseen data.
+
+Imagine you're trying to predict how well a new movie will do at the box office based on the box office performance of a few old movies. If you train a model on just those old movies, it might do really well on them, but it won't be able to predict how well a new movie will do. That's because it's overfitting to those specific movies, rather than learning about the broader patterns of the movie industry.
+
+Overfitting can happen for a few reasons, including:
+
+* Training on too small of a dataset
+* Using too many features or complex models
+* Not doing enough data augmentation (e.g., adding noise or transformations to the data)
+
+The good news is that there are ways to prevent or fix overfitting, such as:
+
+* Using more data or data augmentation techniques
+* Simplifying the model or reducing the number of features
+* Regularizing the model (e.g., adding penalties for large weights or complex connections)
+
+I hope that helps! Do you have any questions about overfitting or how to prevent it?
+
+Input 3: What is classification?
+Hello and welcome to our AI/ML tutorials!
+
+So, you want to know about classification?
+
+Classification is a fundamental concept in Machine Learning (ML) and Artificial Intelligence (AI).
+
+**What is classification?**
+
+Classification is a type of problem-solving technique where we try to assign one or more labels or categories to a piece of data (like a picture, a word, or a sound).
+
+Think of it like this: imagine you're a teacher, and you want to group your students into different classes based on their performance, interests, or characteristics. You would assign each student to a specific class, like "A", "B", "C", etc.
+
+In the same way, in classification, we use algorithms to assign labels or categories to data points. These labels can be like "dog", "cat", "car", "house", etc.
+
+**Types of classification**
+
+There are two main types of classification:
+
+1. **Binary classification**: This involves assigning a label to a data point as either "yes" or "no", "0" or "1", or "positive" or "negative".
+2. **Multiclass classification**: This involves assigning a label to a data point from a set of multiple categories.
+
+**Why is classification important?**
+
+Classification is essential in many real-world applications, such as:
+
+* Image recognition (e.g., self-driving cars)
+* Sentiment analysis (e.g., movie reviews)
+* Spam detection (e.g., email filters)
+* Medical diagnosis (e.g., disease prediction)
+
+In summary, classification is a technique used to assign labels or categories to data points, helping us to make sense of the data and extract meaningful insights.
+
+Do you have any questions about classification now?
+
+Input 4: What is cosine similarity?
+I'd be happy to explain cosine similarity in a simple way.
+
+**Cosine Similarity: A Measure of How Similar Two Vectors Are**
+
+Imagine you have two vectors, which are like arrows in space. Each vector has a direction and a length.
+
+Cosine similarity is a way to measure how similar these two vectors are. It's called "cosine" because it's related to the cosine (a type of angle) between the two vectors.
+
+Think of it like this:
+
+* If the two vectors are pointing in the same direction, they're very similar.
+* If the two vectors are pointing in opposite directions, they're very dissimilar.
+* If the two vectors are at a 90-degree angle, they're not very similar.
+
+The cosine similarity is a value between 0 and 1, where:
+
+* 1 means the vectors are identical
+* 0 means the vectors are pointing in opposite directions
+* A value between 0 and 1 means the vectors are similar, but not identical
+
+This measure is commonly used in machine learning, particularly in natural language processing and computer vision, to determine how similar two pieces of data are.
+
+That's it! Do you have any questions or would you like more examples?
+
+Input 5: What is a vector database?
+I'd be happy to explain what a vector database is in simple terms.
+
+**What is a Vector Database?**
+
+Imagine you have a big library with millions of books, and each book has many characteristics about it, like its title, author, genre, and even the words it contains.
+
+A vector database is like a super-organized library where these characteristics are stored as vectors (not actual books!). These vectors are like math problems that can be solved quickly to find answers.
+
+Think of a vector as a set of numbers that represent a concept or a feature. In the case of our book library, each vector might represent the title, author, or genre of a book. By using these vectors, we can perform calculations to find similarities or differences between books.
+
+For example, if we want to recommend a book to someone who likes science fiction, we can use the vectors to find books that are most similar to their interests.
+
+**How does it work?**
+
+Vector databases use a type of math called "vector space theory" to store and manipulate these vectors. They're designed to be super-fast and efficient, allowing us to perform complex calculations quickly.
+
+This technology is particularly useful in applications like:
+
+* Image recognition
+* Natural Language Processing (NLP)
+* Recommendation systems
+
+So, that's what a vector database is in a nutshell!
+
+
+Chain verification:
+Total inputs tested: 5
+PromptTemplate -> OllamaLLM -> StrOutputParser chain executed successfully.
+
+
+TASK 2: CONVERSATION BUFFER MEMORY
+======================================================================
+Conversation turns tested: 5
+Messages stored in history: 10
+ConversationBufferMemory maintained all five turns successfully.
+
+Stored conversation history:
+human: My name is Lakshmi.
+ai: Hello Lakshmi! It's nice to meet you. I'm here to help you with any questions or topics you'd like to discuss related to AI and ML. What brings you here today? Are you looking for help with a specific project or topic?
+human: I am learning machine learning.
+ai: Hello Lakshmi! It's great to hear that you're learning machine learning. That's a fascinating field with numerous applications. What specific aspects of machine learning are you currently learning about? Are you focusing on supervised/unsupervised learning, deep learning, or perhaps a particular algorithm like neural networks or decision trees?
+
+Also, what's your current level of experience with machine learning? Are you a beginner, or do you have some background knowledge that you'd like to build upon?
+human: I am currently studying supervised learning.
+ai: Supervised learning is a great foundation for machine learning. You're currently studying supervised learning, which is a fantastic starting point for building predictive models.
+
+Can you tell me a bit more about what specifically you're studying in supervised learning? Are you exploring topics like regression, classification, or both? Are you delving into popular algorithms like logistic regression, decision trees, or support vector machines (SVMs)? I'd be happy to help you understand the concepts better or address any questions you may have!
+human: What topic am I learning?
+ai: You're currently learning about supervised learning. Is that correct?
+human: What is my name?
+ai: Your name is Lakshmi.
+
+
+TASK 3: TWO-TOOL LANGCHAIN AGENT
+======================================================================
+Tools configured: web search stub + calculator
+Tasks executed: 3
+Successful tasks: 3
+
+Agent Task 1: Calculate 125 * 8 + 40.
+Status: success
+Response: The result of the calculation 125 * 8 + 40 is 1040.
+
+Agent Task 2: Search the web for the definition of machine learning.
+Status: success
+Response: Machine learning is a type of artificial intelligence (AI) that allows systems to automatically improve their performance on a task without being explicitly programmed for that task. Machine learning algorithms use large datasets to identify patterns and learn from them, enabling the system to make predictions, classify data, or make decisions.
+
+Agent Task 3: Calculate (250 / 5) + 30.
+Status: success
+Response: The result of the calculation (250 / 5) + 30 is 80.0.
+
