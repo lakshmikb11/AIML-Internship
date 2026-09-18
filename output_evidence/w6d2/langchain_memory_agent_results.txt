@@ -1,0 +1,177 @@
+W6D2: LangChain Memory & Conversation History
+Local Ollama model: llama3.2:3b
+======================================================================
+
+TASK 1: LANGCHAIN CHAIN
+======================================================================
+
+Input 1: What is supervised learning?
+----------------------------------------------------------------------
+I'd be happy to explain supervised learning in simple terms!
+
+Supervised learning is a type of machine learning where the AI or algorithm is trained on labeled data. What does that mean?
+
+**Labeled data**: Data that has been already classified or labeled with the correct output or answer, such as 0 or 1, yes or no, or a specific category.
+
+**Supervised learning**: The algorithm is trained on this labeled data, and it learns to make predictions on new, unseen data based on the patterns it learned from the labeled data.
+
+Think of it like this: imagine you're trying to teach a child to recognize different types of animals.
+
+**Labeled data**: You show the child a picture of a cat and say "this is a cat". You show them a picture of a dog and say "this is a dog". You do this many times, and the child starts to recognize the patterns.
+
+**Supervised learning**: Now, the child is shown a new picture and asked to identify the animal. They use the patterns they learned from the labeled data (the pictures of cats and dogs) to make a prediction, such as "this is a dog".
+
+In supervised learning, the algorithm learns from the labeled data to make predictions on new data, just like the child learns to recognize animals from the labeled pictures.
+
+Input 2: What is overfitting?
+----------------------------------------------------------------------
+I'd be happy to explain overfitting in a simple way.
+
+**What is Overfitting?**
+
+Imagine you're trying to draw a picture of a cat. You look at a lot of pictures of cats and try to memorize their shapes, patterns, and features. You're so good at drawing cats that your picture starts to look almost identical to the ones you've seen before. But, if you show your picture to someone who's never seen a cat before, they'll probably say it doesn't look like a cat at all!
+
+Overfitting is like that. When a machine learning model (like a computer program) is trained on a small dataset, it becomes too good at recognizing patterns in that specific dataset. As a result, it becomes too good at recognizing the exact patterns in that dataset, but it's not good at recognizing patterns in new, unseen data.
+
+Think of it like trying to teach a child to recognize different animals. If you only show them pictures of one or two animals, they'll become experts at recognizing those specific animals. But if you show them a picture of a completely different animal, they'll probably be confused!
+
+In machine learning, overfitting happens when a model becomes too specialized in recognizing patterns in the training data, making it hard for it to generalize to new, unseen data. That's why we use techniques like regularization, cross-validation, and more to prevent overfitting and make our models more robust.
+
+Input 3: What is classification?
+----------------------------------------------------------------------
+Hello there, learner!
+
+Classification is a fundamental concept in Artificial Intelligence (AI) and Machine Learning (ML). I'm here to explain it in a super simple way.
+
+**What is Classification?**
+
+Classification is a type of problem-solving where you try to assign a label or category to a new piece of data, based on patterns and features learned from existing data.
+
+Think of it like this: Imagine you're trying to identify whether a cat is a "black cat" or a "white cat". You have some examples of cats (e.g., pictures or descriptions) and you want to create a system that can tell you, given a new cat you haven't seen before, whether it's a black cat or a white cat.
+
+**How does it work?**
+
+To classify something, you need to:
+
+1. **Collect data**: Gather examples of your class labels (e.g., black cat and white cat).
+2. **Learn patterns**: Analyze the data to find the relationships between the features (e.g., fur color, breed, etc.) and the labels.
+3. **Create a model**: Use the learned patterns to create a model that can make predictions for new, unseen data.
+4. **Make predictions**: Given a new piece of data, use the model to assign a label or category.
+
+**Types of Classification**
+
+There are two main types of classification:
+
+1. **Binary Classification**: Classifying data into two categories (e.g., spam vs. non-spam emails).
+2. **Multi-Class Classification**: Classifying data into multiple categories (e.g., identifying a species of animal).
+
+That's a basic introduction to classification! Do you have any questions or would you like to explore more?
+
+Input 4: What is cosine similarity?
+----------------------------------------------------------------------
+I'd be happy to explain cosine similarity in simple terms!
+
+**What is Cosine Similarity?**
+
+Cosine similarity is a way to measure how similar two vectors (or sets of numbers) are. Think of vectors like arrows in a 2D or 3D space. Imagine you have two arrows, one pointing up and the other pointing slightly to the side. They're not exactly the same direction, but they're not completely different either.
+
+**How Does it Work?**
+
+Cosine similarity calculates how close these two arrows are, using their angles and lengths. Here's a simplified explanation:
+
+1. **Vectorize**: Turn your text (like words or sentences) into numerical vectors (like numbers). This is called tokenization.
+2. **Normalize**: Make each vector have the same length, so they're on the same scale. This helps the comparison.
+3. **Calculate Dot Product**: Find the dot product of the two vectors. This gives you a number that represents the amount of "similarity" between the two vectors.
+4. **Calculate Magnitude**: Calculate the magnitude (length) of each vector.
+5. **Cosine Similarity**: Divide the dot product by the product of the magnitudes. This gives you a value between -1 (completely dissimilar) and 1 (completely similar).
+
+**What Does it Mean?**
+
+A cosine similarity score between 0 and 1 means that the two vectors are similar to each other. Here's what the scores mean:
+
+* **0**: Complete dissimilarity (like the two arrows are pointing in completely different directions).
+* **1**: Exact match (like the two arrows are pointing in exactly the same direction).
+* **Close to 0 or 1**: Moderately similar (like the two arrows are pointing in roughly the same direction, but not exactly).
+
+**When to Use Cosine Similarity?**
+
+Cosine similarity is used in many NLP (Natural Language Processing) applications, such as:
+
+* **Text similarity**: Finding similar documents, sentences, or phrases.
+* **Recommendation systems**: Suggesting products or content based on user preferences.
+* **Clustering**: Grouping similar text or images together.
+
+I hope this explanation helped you understand cosine similarity!
+
+Input 5: What is a vector database?
+----------------------------------------------------------------------
+I'd be happy to explain what a vector database is in simple terms.
+
+**What is a Vector Database?**
+
+Imagine you have a huge collection of images, and you want to search for a specific image that looks like a cat. You can't just compare the images pixel by pixel, that would be too time-consuming and computationally expensive.
+
+A vector database is a type of database that stores information about images in a way that allows for fast and efficient searching. Instead of storing the actual images, it stores a "vector" or a compact representation of the image.
+
+Think of a vector like a mathematical equation that describes the features of an image, such as the shape, color, and texture. These vectors are typically represented as a set of numbers, called "features" or "embeddings", that capture the essence of the image.
+
+For example, if we're searching for an image of a cat, the vector database would store the vector representation of a cat's face, which might include features like:
+
+* The shape of the whiskers
+* The color of the eyes
+* The shape of the ears
+
+When we search for an image of a cat, the vector database can quickly find the images that have similar vector representations, which means the images have similar features.
+
+**Key Benefits:**
+
+1. **Fast Search**: Vector databases allow for fast searching and retrieval of images based on their features.
+2. **Efficient Storage**: Vector databases store much less data than traditional image databases, making them more efficient.
+3. **Scalability**: Vector databases can handle large collections of images and scale to meet the needs of big applications.
+
+That's a basic overview of what a vector database is! Do you have any questions or would you like me to explain further?
+
+Chain verification:
+Total inputs tested: 5
+PromptTemplate -> OllamaLLM -> StrOutputParser chain executed successfully.
+
+
+TASK 2: CONVERSATION BUFFER MEMORY
+======================================================================
+Conversation turns tested: 5
+Messages stored in history: 10
+ConversationBufferMemory maintained all five turns successfully.
+
+Stored conversation history:
+human: My name is Lakshmi.
+ai: Hello Lakshmi! It's nice to meet you. I'm here to help you with any questions or topics you'd like to discuss related to AI and ML. What's on your mind?
+human: I am learning machine learning.
+ai: Hello Lakshmi! That's great to hear that you're learning machine learning. What specific topics or areas of machine learning are you currently exploring? Are you working on a project, or do you have any questions about a particular concept? I'm here to help you learn and improve your skills.
+human: I am currently studying supervised learning.
+ai: Supervised learning is a fundamental concept in machine learning. You're likely working on classification or regression problems, where the model learns from labeled data to make predictions. What specific aspects of supervised learning are you struggling with or would like to know more about, such as bias-variance tradeoff or overfitting?
+human: What topic am I learning?
+ai: You're learning machine learning!
+human: What is my name?
+ai: Your name is Lakshmi.
+
+
+TASK 3: TWO-TOOL LANGCHAIN AGENT
+======================================================================
+Tools configured: web search stub + calculator
+Tasks executed: 3
+Successful tasks: 3
+
+Agent Task 1: Calculate 125 * 8 + 40.
+----------------------------------------------------------------------
+Status: success
+Response: The calculation 125 * 8 + 40 equals 1040.
+
+Agent Task 2: Search the web for the definition of machine learning.
+----------------------------------------------------------------------
+Status: success
+Response: Machine learning is a field of AI that enables systems to learn patterns from data and make predictions or decisions. This is a type of artificial intelligence that allows computers to automatically improve their performance on a task without being explicitly programmed for it. Machine learning algorithms can be trained on data and can improve their accuracy over time as they learn from the data. The goal of machine learning is to enable computers to make decisions or predictions based on data, without being manually programmed for each specific task.
+
+Agent Task 3: Calculate (250 / 5) + 30.
+----------------------------------------------------------------------
+Status: success
+Response: The calculation (250 / 5) + 30 equals 80.0.
