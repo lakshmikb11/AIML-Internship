@@ -813,3 +813,36 @@ Implemented and tested LangChain fundamentals using an Ollama LLM, including a p
 Today I learned the fundamentals of LangChain chains, prompts, conversation memory, and agents. I created a PromptTemplate to Ollama LLM to StrOutputParser workflow and tested it with five inputs. I also used ConversationBufferMemory to maintain conversation history across five turns. Finally, I created a simple agent with a web search stub and calculator tool and verified it with three tasks.
 
 
+
+## W6D2 - LangChain Memory & Conversation History
+
+### Task Completed
+
+Implemented and tested LangChain memory and conversation history using a local Ollama LLM. The implementation includes a LangChain prompt chain, ConversationBufferMemory, and a two-tool LangChain agent.
+
+### Checklist
+
+- [x] Implemented the LangChain prompt chain.
+- [x] Tested the chain with 5 inputs.
+- [x] Added ConversationBufferMemory.
+- [x] Tested conversation memory across 5 turns.
+- [x] Verified that 10 messages were stored in conversation history.
+- [x] Created a two-tool LangChain agent.
+- [x] Added a web search stub tool.
+- [x] Added a calculator tool.
+- [x] Tested the agent with 3 tasks.
+- [x] Verified all 3 agent tasks completed successfully.
+- [x] Generated W6D2 output evidence.
+- [x] Tested the W6D2 implementation successfully.
+- [x] Created the first W6D2 implementation commit.
+- [x] Created the second W6D2 self-review commit.
+- [ ] Pushed the W6D2 changes to GitHub.
+- [ ] Raised the Pull Request.
+
+### Evidence Generated
+
+- output_evidence/w6d2/langchain_memory_agent_results.txt
+
+### Reflection
+
+Today I learned how LangChain can be used to build chains, maintain conversation history, and create tool-using agents. I tested a prompt chain with five inputs, maintained conversation history across five turns using ConversationBufferMemory, and verified that ten messages were stored. I also created a two-tool agent with a web search stub and calculator tool and successfully tested three tasks.
