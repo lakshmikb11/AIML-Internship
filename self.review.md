@@ -879,3 +879,38 @@ Implemented and tested LangChain tools and agents using a local Ollama LLM. The 
 ### Reflection
 
 Today I learned how LangChain can be used to build prompt chains, maintain conversation history, and create tool-using agents. I tested the prompt chain with five inputs, maintained conversation history across five turns using ConversationBufferMemory, and verified that ten messages were stored. I also created a two-tool agent with a web search stub and calculator tool and successfully tested three tasks.
+
+## W6D4 - RAG Pipeline - LangChain + ChromaDB
+
+### Task Completed
+
+Implemented and tested a RAG pipeline using ChromaDB, embeddings, similarity search, PDF retrieval, and a local Ollama LLM.
+
+### Checklist
+
+- [x] Verified ChromaDB installation.
+- [x] Created a ChromaDB collection using cosine distance.
+- [x] Added 20 documents with embeddings.
+- [x] Performed cosine similarity search.
+- [x] Performed metadata filtering.
+- [x] Manually verified similarity search and metadata filtering results.
+- [x] Loaded the AI/ML reference PDF.
+- [x] Split the PDF into 3 chunks.
+- [x] Stored PDF chunks in ChromaDB with embeddings and metadata.
+- [x] Retrieved the top 3 PDF chunks.
+- [x] Passed retrieved context to Ollama llama3.2:3b.
+- [x] Verified the generated answer.
+- [x] Generated W6D4 output evidence.
+- [x] Tested the W6D4 implementation successfully.
+- [ ] Created the first W6D4 implementation commit.
+- [ ] Created the second W6D4 self-review commit.
+- [ ] Pushed the W6D4 changes to GitHub.
+- [x] Existing Week 6 Pull Request #8 will be updated with W6D4 changes.
+
+### Evidence Generated
+
+- output_evidence/w6d4/chromadb_rag_results.txt
+
+### Reflection
+
+Today I learned how ChromaDB can be used as a vector store for embeddings, similarity search, and metadata filtering. I added 20 machine learning documents and verified cosine similarity retrieval. I also built a PDF RAG pipeline by splitting the reference PDF into three chunks, storing the chunks in ChromaDB, retrieving the top three relevant chunks, and passing the retrieved context to the local Ollama llama3.2:3b model to generate an answer.
