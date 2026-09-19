@@ -1022,3 +1022,42 @@ The project uses the current Haystack API available in the environment. PyPDFToD
 ### Completion
 
 W7D2 practical tasks were completed and tested successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the same 10-question evaluation set. All 20 retrieval evaluations were marked CORRECT.
+
+## W7D3: LlamaIndex — Document Indexing & RAG
+
+### Tasks Completed
+
+* [x] Created and indexed 5 text documents using LlamaIndex `VectorStoreIndex`.
+* [x] Configured Ollama embeddings using `nomic-embed-text`.
+* [x] Built a LlamaIndex `QueryEngine`.
+* [x] Ran 10 queries against the indexed documents.
+* [x] Verified the retrieved source document for all 10 queries.
+* [x] Connected LlamaIndex to ChromaDB as the vector store.
+* [x] Re-ran the same 10 queries using the ChromaDB-backed index.
+* [x] Compared query latency between the default vector store and ChromaDB.
+* [x] Saved W7D3 results and evaluation evidence.
+
+### Results
+
+* Number of text documents: 5
+* Number of queries: 10
+* Default vector store source verification: 10/10
+* ChromaDB source verification: 10/10
+* Default average latency: 4715.50 ms
+* ChromaDB average latency: 3610.00 ms
+* Measured latency difference: 1105.50 ms lower with ChromaDB in this run
+
+### Implementation Note
+
+The implementation uses `llama3.2:3b` as the Ollama language model and `nomic-embed-text` for embeddings. The LlamaIndex query configuration uses a 2048-token context window and `similarity_top_k=1` to keep local model memory usage manageable.
+
+### Evidence
+
+* `w7d3_llamaindex_rag.py`
+* `w7d3_data/` containing 5 text documents
+* `output_evidence/w7d3/llamaindex_rag_results.txt`
+
+### Completion
+
+W7D3 practical tasks were completed and tested successfully. All 10 queries were source-verified with the default LlamaIndex vector store, and the same 10 queries were source-verified again using ChromaDB. Latency comparison evidence was saved successfully.
+
