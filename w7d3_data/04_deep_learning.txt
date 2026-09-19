@@ -1,0 +1,8 @@
+Deep learning uses neural networks with multiple layers to learn
+patterns from data.
+
+Backpropagation calculates gradients of the loss with respect to
+model parameters so the parameters can be updated during training.
+
+Activation functions introduce non-linearity into neural networks.
+Common activation functions include ReLU, sigmoid, and tanh.

@@ -1,0 +1,6 @@
+Python is a high-level, general-purpose programming language.
+Python uses readable syntax and supports procedural, object-oriented,
+and functional programming.
+
+Functions are reusable blocks of code that perform a specific task.
+They help organize programs, improve code reuse, and reduce repetition.
