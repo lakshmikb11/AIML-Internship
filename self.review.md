@@ -947,3 +947,39 @@ Implemented and tested a LangChain document chatbot workflow using a PromptTempl
 ### Reflection
 
 Today I learned how LangChain can be used to build prompt chains, maintain conversation history, and create tool-using agents. I tested the prompt chain with five inputs, maintained conversation history across five turns using ConversationBufferMemory, and verified that ten messages were stored. I also created a two-tool agent with a web search stub and calculator tool and successfully tested three tasks.
+## W7D1: Haystack Pipeline Architecture
+
+### Tasks Completed
+
+* [x] Built a Haystack retrieval pipeline using the current Haystack API.
+* [x] Loaded and indexed 5 PDF documents.
+* [x] Created a BM25 retriever and executed 10 evaluation questions.
+* [x] Evaluated BM25 retrieval quality using Precision@1.
+* [x] Replaced BM25 retrieval with dense embedding retrieval.
+* [x] Used `sentence-transformers/all-MiniLM-L6-v2` for dense embeddings.
+* [x] Compared BM25 and dense retrieval on the same 10 questions.
+* [x] Saved retrieval results and evaluation evidence in `output_evidence/w7d1/`.
+
+### Results
+
+* Number of PDF documents: 5
+* Number of evaluation questions: 10
+* BM25 Precision@1: 100.00%
+* Dense Retrieval Precision@1: 100.00%
+* Difference: 0.00%
+
+### Implementation Note
+
+The project uses the current Haystack API available in the environment. `PyPDFToDocument` is used for PDF conversion, `InMemoryDocumentStore` is used for document storage, and `InMemoryBM25Retriever` / `InMemoryEmbeddingRetriever` are used for retrieval. The older Reader component referenced in the assignment is not exposed by the installed Haystack version, so the implementation uses the currently supported retrieval components.
+
+### Evidence
+
+* `w7d1_haystack_pipeline.py`
+* `create_w7d1_pdfs.py`
+* `w7d1_data/` containing 5 PDF documents
+* `output_evidence/w7d1/haystack_retrieval_results.txt`
+
+### Completion
+
+W7D1 practical tasks were completed and tested successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the 10-question evaluation set.
+
