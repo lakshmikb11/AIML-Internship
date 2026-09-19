@@ -983,3 +983,42 @@ The project uses the current Haystack API available in the environment. `PyPDFTo
 
 W7D1 practical tasks were completed and tested successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the 10-question evaluation set.
 
+
+## W7D2: Haystack Retrieval — BM25 & Dense Retrieval
+
+### Tasks Completed
+
+* [x] Built a Haystack retrieval pipeline using the current Haystack API.
+* [x] Created and indexed 5 PDF documents.
+* [x] Created a BM25 retriever and tested 10 evaluation questions.
+* [x] Created dense embeddings using sentence-transformers/all-MiniLM-L6-v2.
+* [x] Created a dense embedding retriever and tested the same 10 questions.
+* [x] Compared BM25 and dense retrieval using Precision@1.
+* [x] Manually evaluated the top-1 retrieved document for all 10 questions.
+* [x] Generated W7D2 retrieval output evidence.
+* [x] Tested the W7D2 implementation successfully.
+
+### Results
+
+* Number of PDF documents: 5
+* Number of evaluation questions: 10
+* BM25 Precision@1: 100.00%
+* Dense Retrieval Precision@1: 100.00%
+* Difference: 0.00%
+* BM25 correct results: 10/10
+* Dense correct results: 10/10
+
+### Implementation Note
+
+The project uses the current Haystack API available in the environment. PyPDFToDocument is used for PDF conversion, InMemoryDocumentStore is used for document storage, and InMemoryBM25Retriever / InMemoryEmbeddingRetriever are used for retrieval. The older Reader component referenced in the assignment is not exposed by the installed Haystack version, so the implementation uses the currently supported retrieval components.
+
+### Evidence
+
+* w7d2_haystack_retrieval.py
+* create_w7d2_pdfs.py
+* w7d2_data/ containing 5 PDF documents
+* output_evidence/w7d2/haystack_retrieval_results.txt
+
+### Completion
+
+W7D2 practical tasks were completed and tested successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the same 10-question evaluation set. All 20 retrieval evaluations were marked CORRECT.
