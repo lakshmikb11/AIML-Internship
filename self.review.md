@@ -1,4 +1,4 @@
-# Week 1 Self Review Checklist
+﻿# Week 1 Self Review Checklist
 
 - [x] Code runs successfully
 - [x] Duplicate rows removed from student_scores.csv
@@ -180,7 +180,7 @@ Today I learned how SMOTE can be used to handle imbalanced classification data. 
 - [x] Used random_state=42 for reproducibility.
 - [x] Applied StandardScaler inside a Pipeline to prevent data leakage.
 - [x] Performed 5-fold cross-validation on the training data only.
-- [x] Evaluated the model using R², MAE, and RMSE.
+- [x] Evaluated the model using RÂ², MAE, and RMSE.
 - [x] Evaluated the final model on the unseen test set.
 - [x] Generated train/test target distribution evidence.
 - [x] Saved cross-validation results as CSV evidence.
@@ -232,7 +232,7 @@ Today I learned how to build an end-to-end preprocessing pipeline for machine le
 - [x] Evaluated the LinearRegression model using MSE.
 - [x] Evaluated the LinearRegression model using RMSE.
 - [x] Evaluated the LinearRegression model using MAE.
-- [x] Evaluated the LinearRegression model using R².
+- [x] Evaluated the LinearRegression model using RÂ².
 - [x] Created the predicted vs actual plot.
 - [x] Created the residual plot.
 - [x] Added Ridge Regression.
@@ -251,7 +251,7 @@ Today I learned how to build an end-to-end preprocessing pipeline for machine le
 
 ### Reflection
 
-Today I learned how to build and evaluate regression models using Scikit-Learn. I trained LinearRegression on a real dataset and evaluated it using MSE, RMSE, MAE, and R². I also learned how predicted-vs-actual and residual plots help evaluate regression performance. Finally, I compared LinearRegression with Ridge and Lasso regression and documented the results as output evidence. CIA review helped me verify the implementation and improve the overall quality of the W3D1 work.
+Today I learned how to build and evaluate regression models using Scikit-Learn. I trained LinearRegression on a real dataset and evaluated it using MSE, RMSE, MAE, and RÂ². I also learned how predicted-vs-actual and residual plots help evaluate regression performance. Finally, I compared LinearRegression with Ridge and Lasso regression and documented the results as output evidence. CIA review helped me verify the implementation and improve the overall quality of the W3D1 work.
 ##W3D2 self review
 reflection
 Today I learned how to build and evaluate a multiclass classification model using Logistic Regression and the Iris dataset. I practiced preparing the data, performing a stratified train/test split, scaling features without causing data leakage, and training a Logistic Regression classifier. I evaluated the model using accuracy, precision, recall, and F1-score and generated a classification report and confusion matrix to understand the model's performance. I also created a decision boundary visualization to understand how the classifier separates different Iris classes. The CIA Full Stack Mentor reviews helped me validate the implementation, improve code quality, and ensure the solution was ready for submission.
@@ -302,22 +302,22 @@ Today I learned how Support Vector Machine and K-Nearest Neighbors classifiers c
 
 W3D5 Results
 
-SVM — GridSearchCV
+SVM â€” GridSearchCV
 
 Best CV accuracy: 0.975
 Test accuracy: 0.9333
 
-SVM — RandomizedSearchCV
+SVM â€” RandomizedSearchCV
 
 Best CV accuracy: 0.975
 Test accuracy: 0.9333
 
-KNN — GridSearchCV
+KNN â€” GridSearchCV
 
 Best CV accuracy: 0.9667
 Test accuracy: 0.9333
 
-KNN — RandomizedSearchCV
+KNN â€” RandomizedSearchCV
 
 Best CV accuracy: 0.9667
 Test accuracy: 0.9667
@@ -361,7 +361,7 @@ Implemented Linear Regression, Ridge Regression, and Lasso Regression using the 
 
 ### Model Results
 
-| Model                    |      MSE |     RMSE |      MAE |       R² |
+| Model                    |      MSE |     RMSE |      MAE |       RÂ² |
 | ------------------------ | -------: | -------: | -------: | -------: |
 | Linear Regression        | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
 | Ridge GridSearchCV       | 0.555891 | 0.745581 | 0.533200 | 0.575788 |
@@ -374,7 +374,7 @@ Implemented Linear Regression, Ridge Regression, and Lasso Regression using the 
 * Ridge GridSearchCV: `alpha = 0.01`
 * Lasso GridSearchCV: `alpha = 0.0001`
 * Ridge RandomizedSearchCV: `alpha = 0.001`
-* Lasso RandomizedSearchCV: `alpha ≈ 0.0004037`
+* Lasso RandomizedSearchCV: `alpha â‰ˆ 0.0004037`
 
 
 
@@ -408,7 +408,7 @@ Implemented model serialisation using Joblib and Pickle with a Linear Regression
 - [x] Loaded the California Housing dataset.
 - [x] Performed train/test split.
 - [x] Trained Linear Regression model.
-- [x] Evaluated the original model using MSE, RMSE, MAE, and R².
+- [x] Evaluated the original model using MSE, RMSE, MAE, and RÂ².
 - [x] Serialized the trained model using Joblib.
 - [x] Serialized the trained model using Pickle.
 - [x] Loaded the Joblib model successfully.
@@ -423,7 +423,7 @@ Implemented model serialisation using Joblib and Pickle with a Linear Regression
 
 ### Model Results
 
-| Model | MSE | RMSE | MAE | R² |
+| Model | MSE | RMSE | MAE | RÂ² |
 |---|---:|---:|---:|---:|
 | Original Linear Regression | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
 | Joblib Restored Model | 0.555892 | 0.745581 | 0.533200 | 0.575788 |
@@ -947,3 +947,211 @@ Implemented and tested a LangChain document chatbot workflow using a PromptTempl
 ### Reflection
 
 Today I learned how LangChain can be used to build prompt chains, maintain conversation history, and create tool-using agents. I tested the prompt chain with five inputs, maintained conversation history across five turns using ConversationBufferMemory, and verified that ten messages were stored. I also created a two-tool agent with a web search stub and calculator tool and successfully tested three tasks.
+## W7D1: Haystack Pipeline Architecture
+
+### Tasks Completed
+
+* [x] Built a Haystack retrieval pipeline using the current Haystack API.
+* [x] Loaded and indexed 5 PDF documents.
+* [x] Created a BM25 retriever and executed 10 evaluation questions.
+* [x] Evaluated BM25 retrieval quality using Precision@1.
+* [x] Replaced BM25 retrieval with dense embedding retrieval.
+* [x] Used `sentence-transformers/all-MiniLM-L6-v2` for dense embeddings.
+* [x] Compared BM25 and dense retrieval on the same 10 questions.
+* [x] Saved retrieval results and evaluation evidence in `output_evidence/w7d1/`.
+
+### Results
+
+* Number of PDF documents: 5
+* Number of evaluation questions: 10
+* BM25 Precision@1: 100.00%
+* Dense Retrieval Precision@1: 100.00%
+* Difference: 0.00%
+
+### Implementation Note
+
+The project uses the current Haystack API available in the environment. `PyPDFToDocument` is used for PDF conversion, `InMemoryDocumentStore` is used for document storage, and `InMemoryBM25Retriever` / `InMemoryEmbeddingRetriever` are used for retrieval. The older Reader component referenced in the assignment is not exposed by the installed Haystack version, so the implementation uses the currently supported retrieval components.
+
+### Evidence
+
+* `w7d1_haystack_pipeline.py`
+* `create_w7d1_pdfs.py`
+* `w7d1_data/` containing 5 PDF documents
+* `output_evidence/w7d1/haystack_retrieval_results.txt`
+
+### Completion
+
+W7D1 practical tasks were completed and tested successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the 10-question evaluation set.
+
+
+## W7D2: Haystack Retrieval — BM25 & Dense Retrieval
+
+### Tasks Completed
+
+* [x] Built a Haystack retrieval pipeline using the current Haystack API.
+* [x] Created and indexed 5 PDF documents.
+* [x] Created a BM25 retriever and tested 10 evaluation questions.
+* [x] Created dense embeddings using sentence-transformers/all-MiniLM-L6-v2.
+* [x] Created a dense embedding retriever and tested the same 10 questions.
+* [x] Compared BM25 and dense retrieval using Precision@1.
+* [x] Manually evaluated the top-1 retrieved document for all 10 questions.
+* [x] Generated W7D2 retrieval output evidence.
+* [x] Tested the W7D2 implementation successfully.
+
+### Results
+
+* Number of PDF documents: 5
+* Number of evaluation questions: 10
+* BM25 Precision@1: 100.00%
+* Dense Retrieval Precision@1: 100.00%
+* Difference: 0.00%
+* BM25 correct results: 10/10
+* Dense correct results: 10/10
+
+### Implementation Note
+
+The project uses the current Haystack API available in the environment. PyPDFToDocument is used for PDF conversion, InMemoryDocumentStore is used for document storage, and InMemoryBM25Retriever / InMemoryEmbeddingRetriever are used for retrieval. The older Reader component referenced in the assignment is not exposed by the installed Haystack version, so the implementation uses the currently supported retrieval components.
+
+### Evidence
+
+* w7d2_haystack_retrieval.py
+* create_w7d2_pdfs.py
+* w7d2_data/ containing 5 PDF documents
+* output_evidence/w7d2/haystack_retrieval_results.txt
+
+### Completion
+
+W7D2 practical tasks were completed and tested successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the same 10-question evaluation set. All 20 retrieval evaluations were marked CORRECT.
+
+## W7D3: LlamaIndex — Document Indexing & RAG
+
+### Tasks Completed
+
+* [x] Created and indexed 5 text documents using LlamaIndex `VectorStoreIndex`.
+* [x] Configured Ollama embeddings using `nomic-embed-text`.
+* [x] Built a LlamaIndex `QueryEngine`.
+* [x] Ran 10 queries against the indexed documents.
+* [x] Verified the retrieved source document for all 10 queries.
+* [x] Connected LlamaIndex to ChromaDB as the vector store.
+* [x] Re-ran the same 10 queries using the ChromaDB-backed index.
+* [x] Compared query latency between the default vector store and ChromaDB.
+* [x] Saved W7D3 results and evaluation evidence.
+
+### Results
+
+* Number of text documents: 5
+* Number of queries: 10
+* Default vector store source verification: 10/10
+* ChromaDB source verification: 10/10
+* Default average latency: 4715.50 ms
+* ChromaDB average latency: 3610.00 ms
+* Measured latency difference: 1105.50 ms lower with ChromaDB in this run
+
+### Implementation Note
+
+The implementation uses `llama3.2:3b` as the Ollama language model and `nomic-embed-text` for embeddings. The LlamaIndex query configuration uses a 2048-token context window and `similarity_top_k=1` to keep local model memory usage manageable.
+
+### Evidence
+
+* `w7d3_llamaindex_rag.py`
+* `w7d3_data/` containing 5 text documents
+* `output_evidence/w7d3/llamaindex_rag_results.txt`
+
+### Completion
+
+W7D3 practical tasks were completed and tested successfully. All 10 queries were source-verified with the default LlamaIndex vector store, and the same 10 queries were source-verified again using ChromaDB. Latency comparison evidence was saved successfully.
+
+## W7D4: LlamaIndex + Ollama - Local RAG
+
+### Tasks Completed
+
+* [x] Verified Ollama installation and local Ollama API availability.
+* [x] Verified llama3.2:3b and qwen2.5:3b models were available locally.
+* [x] Ran the first local inference using llama3.2:3b.
+* [x] Built a Python script to call the Ollama local API.
+* [x] Added a custom system prompt for AI/ML explanations.
+* [x] Tested llama3.2:3b with 5 prompts.
+* [x] Compared llama3.2:3b and qwen2.5:3b using the same 3 questions.
+* [x] Documented differences in response style, structure, detail, and factual accuracy.
+* [x] Saved W7D4 inference and model comparison evidence.
+
+### Results
+
+* Ollama version: 0.34.2
+* Primary model: llama3.2:3b
+* Comparison model: qwen2.5:3b
+* Custom system prompt: AI/ML learning assistant focused on clear and concise explanations
+* Number of Task 2 prompts: 5
+* Number of model comparison questions: 3
+* Local Ollama API calls completed successfully: 11
+
+### Model Comparison Observations
+
+* llama3.2:3b generally produced longer, example-oriented explanations.
+* qwen2.5:3b generally produced more concise and structured explanations.
+* Both models gave broadly relevant answers to the machine-learning question.
+* For the RAG question, qwen2.5:3b correctly described Retrieval-Augmented Generation, while the observed llama3.2:3b response incorrectly interpreted RAG as a different concept.
+* Both models provided relevant advantages and use cases for vector databases.
+* The comparison demonstrates that locally generated responses should be verified against reliable source material, particularly for technical concepts.
+
+### Evidence
+
+* w7d4_ollama_local_inference.py
+* output_evidence/w7d4/ollama_local_inference_results.txt
+* output_evidence/w7d4/model_comparison.md
+
+### Completion
+
+W7D4 practical tasks were completed and tested successfully. Ollama local inference was verified, the custom API script successfully completed 5 prompt tests, and both local models were compared using the same 3 questions. Response differences were documented and evidence was saved successfully.
+
+## W7D5: Multi-document RAG System
+
+### Tasks Completed
+
+* [x] Created a separate five-document knowledge corpus in `w7d5_data/`.
+* [x] Implemented a multi-document RAG pipeline using LangGraph.
+* [x] Implemented document retrieval and answer generation nodes.
+* [x] Connected the pipeline to the local Ollama model `llama3.2:3b`.
+* [x] Ran five questions against the document collection.
+* [x] Verified the expected source documents for all five questions.
+* [x] Achieved a source verification rate of 5/5, or 100%.
+* [x] Integrated CrewAI using an agent, task, and crew.
+* [x] Imported and verified Ragas version 0.4.3.
+* [x] Performed a Ragas integration and source-verification check.
+* [x] Logged the experiment and metrics using MLflow with a SQLite backend.
+* [x] Saved TXT and JSON execution evidence.
+* [x] Added generated MLflow and ChromaDB artifacts to `.gitignore`.
+* [x] Executed and tested the complete W7D5 pipeline successfully.
+
+### Results
+
+* Documents loaded: 5
+* RAG queries executed: 5
+* Verified source matches: 5/5
+* Source match rate: 100%
+* Ragas version: 0.4.3
+* MLflow experiment: `W7D5_Multi_Document_RAG`
+* MLflow run ID: `0c661e25dd414c6eabdbdc16db1be451`
+
+### Observations
+
+* LangGraph successfully connected retrieval and generation into a workflow.
+* Ollama generated answers using the retrieved document context.
+* CrewAI successfully executed the retrieval and generation explanation task.
+* Model-generated content should still be reviewed for factual accuracy.
+* The Ragas work in this task was an integration and source-verification check, not a full Ragas metric evaluation.
+* The generated MLflow database was excluded from Git because it is a runtime artifact.
+
+### Evidence
+
+* `w7d5_multi_document_rag.py`
+* `w7d5_data/`
+* `output_evidence/w7d5/multi_document_rag_results.txt`
+* `output_evidence/w7d5/multi_document_rag_results.json`
+
+### Completion
+
+W7D5 multi-document RAG implementation, integration checks, execution, and evidence collection were completed successfully.
+
+
+

@@ -1,0 +1,173 @@
+======================================================================
+W7D3: LLAMAINDEX — DOCUMENT INDEXING & RAG
+======================================================================
+
+CONFIGURATION
+----------------------------------------------------------------------
+Text documents: 5
+Evaluation questions: 10
+Ollama LLM: llama3.2:3b
+Ollama embedding model: nomic-embed-text
+LlamaIndex LLM context window: 2048
+Similarity top-k: 1
+
+LLAMAINDEX DEFAULT VECTOR STORE
+----------------------------------------------------------------------
+1. What is Python?
+Answer: A high-level, general-purpose programming language.
+Retrieved sources: ['01_python_programming.txt']
+Expected source: 01_python_programming.txt
+Source verified: True
+Latency: 14646.59 ms
+
+2. What do functions do in Python?
+Answer: Functions help organize programs, improve code reuse, and reduce repetition by allowing you to group a set of statements together that perform a specific task, making your code more modular and easier to maintain.
+Retrieved sources: ['01_python_programming.txt']
+Expected source: 01_python_programming.txt
+Source verified: True
+Latency: 5198.28 ms
+
+3. What is data preprocessing?
+Answer: Data preprocessing is the process of handling missing or duplicate values, and ensuring data is in a consistent format for further analysis.
+Retrieved sources: ['02_data_science.txt']
+Expected source: 02_data_science.txt
+Source verified: True
+Latency: 4182.84 ms
+
+4. What is exploratory data analysis?
+Answer: It is a method of investigating a dataset to discover interesting and useful information.
+Retrieved sources: ['02_data_science.txt']
+Expected source: 02_data_science.txt
+Source verified: True
+Latency: 1556.01 ms
+
+5. What is logistic regression?
+Answer: It estimates the probability of a class, often used for binary classification problems.
+Retrieved sources: ['03_machine_learning_models.txt']
+Expected source: 03_machine_learning_models.txt
+Source verified: True
+Latency: 3213.38 ms
+
+6. What does a decision tree use to make predictions?
+Answer: Predictions are made by recursively splitting data using features and decision rules, and then classifying the resulting subsets into a single predicted class.
+Retrieved sources: ['03_machine_learning_models.txt']
+Expected source: 03_machine_learning_models.txt
+Source verified: True
+Latency: 2658.17 ms
+
+7. What is backpropagation?
+Answer: Backpropagation is a method used to calculate the gradients of the loss function with respect to the model parameters, allowing for the update of the parameters during training.
+Retrieved sources: ['04_deep_learning.txt']
+Expected source: 04_deep_learning.txt
+Source verified: True
+Latency: 4532.60 ms
+
+8. What is an activation function?
+Answer: Activation functions introduce non-linearity into neural networks, allowing them to learn more complex patterns from data. They are essential components of the neural network architecture, enabling the network to represent and process non-linear relationships.
+Retrieved sources: ['04_deep_learning.txt']
+Expected source: 04_deep_learning.txt
+Source verified: True
+Latency: 3550.32 ms
+
+9. What is BM25?
+Answer: BM25 is a term-based ranking algorithm that scores documents based on the frequency of query terms, the frequency of terms in the document, and the length of the document.
+Retrieved sources: ['05_information_retrieval.txt']
+Expected source: 05_information_retrieval.txt
+Source verified: True
+Latency: 4612.46 ms
+
+10. What is dense retrieval?
+Answer: Dense retrieval is a method of retrieving documents that represents both queries and documents as vectors and uses vector similarity to match them, allowing for semantic matching rather than term-based matching.
+Retrieved sources: ['05_information_retrieval.txt']
+Expected source: 05_information_retrieval.txt
+Source verified: True
+Latency: 3004.36 ms
+
+Source verification: 10/10
+Average query latency: 4715.50 ms
+
+LLAMAINDEX + CHROMADB VECTOR STORE
+----------------------------------------------------------------------
+1. What is Python?
+Answer: A programming language that is known for its simplicity and readability, allowing users to write clear and concise code with minimal syntax.
+Retrieved sources: ['01_python_programming.txt']
+Expected source: 01_python_programming.txt
+Source verified: True
+Latency: 3935.24 ms
+
+2. What do functions do in Python?
+Answer: Functions help organize programs, improve code reuse, and reduce repetition by providing a way to encapsulate a specific task, making the code more manageable and efficient.
+Retrieved sources: ['01_python_programming.txt']
+Expected source: 01_python_programming.txt
+Source verified: True
+Latency: 2781.35 ms
+
+3. What is data preprocessing?
+Answer: Data preprocessing is a step in the data science process that involves handling issues with the raw data, such as missing values, duplicates, and inconsistent formats, to make it suitable for further analysis.
+Retrieved sources: ['02_data_science.txt']
+Expected source: 02_data_science.txt
+Source verified: True
+Latency: 5320.44 ms
+
+4. What is exploratory data analysis?
+Answer: Exploratory data analysis is the process of using summaries and visualizations to understand patterns, distributions, relationships, and unusual observations in a dataset, in order to prepare the data for further analysis.
+Retrieved sources: ['02_data_science.txt']
+Expected source: 02_data_science.txt
+Source verified: True
+Latency: 5366.72 ms
+
+5. What is logistic regression?
+Answer: Logistic regression is a method used to estimate the probability of a class or outcome, often employed in binary classification problems.
+Retrieved sources: ['03_machine_learning_models.txt']
+Expected source: 03_machine_learning_models.txt
+Source verified: True
+Latency: 3730.92 ms
+
+6. What does a decision tree use to make predictions?
+Answer: A decision tree makes predictions by recursively splitting data using features and decision rules.
+Retrieved sources: ['03_machine_learning_models.txt']
+Expected source: 03_machine_learning_models.txt
+Source verified: True
+Latency: 1713.52 ms
+
+7. What is backpropagation?
+Answer: Backpropagation is a process used to calculate the gradients of the loss with respect to model parameters, allowing the parameters to be updated during training.
+Retrieved sources: ['04_deep_learning.txt']
+Expected source: 04_deep_learning.txt
+Source verified: True
+Latency: 3964.02 ms
+
+8. What is an activation function?
+Answer: Activation functions introduce non-linearity into neural networks, enabling them to learn more complex patterns from data.
+Retrieved sources: ['04_deep_learning.txt']
+Expected source: 04_deep_learning.txt
+Source verified: True
+Latency: 2043.99 ms
+
+9. What is BM25?
+Answer: BM25 is a term-based ranking algorithm used for information retrieval. It scores documents based on query term frequency, document frequency, and document length, providing a weighted ranking of documents for a given query.
+Retrieved sources: ['05_information_retrieval.txt']
+Expected source: 05_information_retrieval.txt
+Source verified: True
+Latency: 4970.94 ms
+
+10. What is dense retrieval?
+Answer: Dense retrieval is a method that represents queries and documents as vectors and retrieves documents using vector similarity, allowing semantic matching.
+Retrieved sources: ['05_information_retrieval.txt']
+Expected source: 05_information_retrieval.txt
+Source verified: True
+Latency: 2272.85 ms
+
+Source verification: 10/10
+Average query latency: 3610.00 ms
+
+LATENCY COMPARISON
+----------------------------------------------------------------------
+Default vector store average: 4715.50 ms
+ChromaDB average: 3610.00 ms
+Latency difference: -1105.50 ms
+
+MANUAL EVALUATION
+----------------------------------------------------------------------
+Each answer was checked against the expected source document. Source verification confirms whether the query engine retrieved the document containing the expected information.
+The same 10 questions were evaluated using both the default LlamaIndex vector store and ChromaDB.

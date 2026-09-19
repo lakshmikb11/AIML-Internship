@@ -1,0 +1,7 @@
+Logistic regression is commonly used for classification problems,
+especially binary classification. It estimates the probability of
+a class.
+
+A decision tree makes predictions by recursively splitting data using
+features and decision rules. Splits can be selected using measures
+such as Gini impurity or information gain.

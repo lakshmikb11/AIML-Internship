@@ -1,0 +1,1 @@
+Vector databases store numerical representations called embeddings and allow similarity searches. They are commonly used in RAG systems to retrieve documents that are semantically related to a user's query.

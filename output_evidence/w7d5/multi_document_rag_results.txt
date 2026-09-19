@@ -1,0 +1,66 @@
+W7D5 MULTI-DOCUMENT RAG RESULTS
+======================================================================
+
+Ragas version: 0.4.3
+Ollama model: llama3.2:3b
+Documents: 5
+Queries: 5
+Source verification: 5/5
+
+Query 1: What is Python used for?
+Sources: 01_python.txt, 05_vector_database.txt
+Answer: Python is used in artificial intelligence, machine learning, data analysis, automation, and web development.
+Latency: 11171.5 ms
+
+Query 2: What is supervised learning?
+Sources: 02_supervised_learning.txt, 01_python.txt
+Answer: Supervised learning is a machine learning approach where a model learns from labeled training data, predicting categories (classification) or continuous numerical values (regression).
+Latency: 3200.02 ms
+
+Query 3: What is overfitting?
+Sources: 03_overfitting.txt, 01_python.txt
+Answer: Overfitting happens when a machine learning model learns the training data too closely and performs poorly on unseen data.
+Latency: 2291.24 ms
+
+Query 4: What does RAG mean?
+Sources: 04_rag.txt, 05_vector_database.txt
+Answer: RAG stands for Retrieval-Augmented Generation.
+Latency: 1186.22 ms
+
+Query 5: Why are vector databases useful in RAG?
+Sources: 05_vector_database.txt, 04_rag.txt
+Answer: Vector databases are useful in RAG because they allow similarity searches, enabling the retrieval of semantically related documents to provide context for a language model.
+Latency: 2620.45 ms
+
+======================================================================
+CREWAI RESULT
+======================================================================
+**Retrieval and Generation in Multi-Document RAG Systems**
+
+**Retrieval:**
+In a multi-document RAG system, retrieval is done by first ranking the relevance of individual documents by calculating their similarity to the query using various metrics such as term frequency-inverse document frequency (TF-IDF), Cosine similarity, or other relevance scoring algorithms. The most relevant documents are then selected as candidate documents, which are then used as input to the answer generation module.
+
+**Generation:**
+Context-aware answer generation in a multi-document RAG system involves leveraging the retrieved documents to generate coherent and concise answers. This is achieved by:
+1. **Incorporating document features**: The generation model is trained to incorporate features from the retrieved documents, such as summary statistics, key phrases, and entity mentions.
+2. **Contextualized understanding**: The model is designed to understand the context of the query by incorporating knowledge from the retrieved documents, enabling the generation of answers that are relevant to the query.
+3. **Textualization**: The generation model is trained to produce human-readable answers that accurately convey the context and requirements of the query, often utilizing techniques such as language modeling, sequence generation, or neural text generation algorithms.
+
+The answer generation module incorporates the insights and knowledge gained from the retrieval module to produce accurate, informative, and coherent answers.
+
+======================================================================
+RAGAS INTEGRATION CHECK
+======================================================================
+{
+  "ragas_version": "0.4.3",
+  "evaluated_questions": 5,
+  "expected_source_matches": 5,
+  "source_match_rate": 1.0,
+  "evaluation_note": "Ragas 0.4.3 imported successfully. Source verification was performed against the known W7D5 document corpus."
+}
+
+======================================================================
+MLFLOW RUN
+======================================================================
+Run ID: 0c661e25dd414c6eabdbdc16db1be451
+Database: C:\Users\laksh\Documents\CynarisInternship\AIML Internship\output_evidence\w7d5\mlflow.db

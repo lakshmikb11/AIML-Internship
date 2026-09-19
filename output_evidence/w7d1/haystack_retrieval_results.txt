@@ -1,0 +1,187 @@
+======================================================================
+W7D1: HAYSTACK RETRIEVAL EVALUATION
+======================================================================
+
+HAYSTACK PIPELINE ARCHITECTURE
+----------------------------------------------------------------------
+PDF Converter: PyPDFToDocument
+Document Store: InMemoryDocumentStore
+BM25 Retriever: InMemoryBM25Retriever
+Dense Retriever: InMemoryEmbeddingRetriever
+Dense Model: sentence-transformers/all-MiniLM-L6-v2
+
+DATASET
+----------------------------------------------------------------------
+Number of PDF documents: 5
+Number of evaluation questions: 10
+Dense embedding dimension: 384
+Top-K retrieval: 2
+
+EVALUATION QUESTIONS
+----------------------------------------------------------------------
+1. What is supervised learning?
+   Expected source: 01_machine_learning_fundamentals.pdf
+2. What is overfitting in machine learning?
+   Expected source: 01_machine_learning_fundamentals.pdf
+3. What activation function is commonly used in hidden layers of neural networks?
+   Expected source: 02_neural_networks.pdf
+4. What does backpropagation calculate?
+   Expected source: 02_neural_networks.pdf
+5. What is tokenization in natural language processing?
+   Expected source: 03_natural_language_processing.pdf
+6. What do transformers use to model relationships between tokens?
+   Expected source: 03_natural_language_processing.pdf
+7. What is object detection in computer vision?
+   Expected source: 04_computer_vision.pdf
+8. What is image segmentation?
+   Expected source: 04_computer_vision.pdf
+9. What is BM25?
+   Expected source: 05_retrieval_augmented_generation.pdf
+10. What is dense retrieval?
+   Expected source: 05_retrieval_augmented_generation.pdf
+
+
+BM25 RETRIEVAL RESULTS
+----------------------------------------------------------------------
+
+Question 1: What is supervised learning?
+Expected: 01_machine_learning_fundamentals.pdf
+Retrieved: 01_machine_learning_fundamentals.pdf, 02_neural_networks.pdf
+Top-1: 01_machine_learning_fundamentals.pdf
+Correct: True
+
+Question 2: What is overfitting in machine learning?
+Expected: 01_machine_learning_fundamentals.pdf
+Retrieved: 01_machine_learning_fundamentals.pdf, 02_neural_networks.pdf
+Top-1: 01_machine_learning_fundamentals.pdf
+Correct: True
+
+Question 3: What activation function is commonly used in hidden layers of neural networks?
+Expected: 02_neural_networks.pdf
+Retrieved: 02_neural_networks.pdf, 04_computer_vision.pdf
+Top-1: 02_neural_networks.pdf
+Correct: True
+
+Question 4: What does backpropagation calculate?
+Expected: 02_neural_networks.pdf
+Retrieved: 02_neural_networks.pdf, 01_machine_learning_fundamentals.pdf
+Top-1: 02_neural_networks.pdf
+Correct: True
+
+Question 5: What is tokenization in natural language processing?
+Expected: 03_natural_language_processing.pdf
+Retrieved: 03_natural_language_processing.pdf, 02_neural_networks.pdf
+Top-1: 03_natural_language_processing.pdf
+Correct: True
+
+Question 6: What do transformers use to model relationships between tokens?
+Expected: 03_natural_language_processing.pdf
+Retrieved: 03_natural_language_processing.pdf, 05_retrieval_augmented_generation.pdf
+Top-1: 03_natural_language_processing.pdf
+Correct: True
+
+Question 7: What is object detection in computer vision?
+Expected: 04_computer_vision.pdf
+Retrieved: 04_computer_vision.pdf, 02_neural_networks.pdf
+Top-1: 04_computer_vision.pdf
+Correct: True
+
+Question 8: What is image segmentation?
+Expected: 04_computer_vision.pdf
+Retrieved: 04_computer_vision.pdf, 02_neural_networks.pdf
+Top-1: 04_computer_vision.pdf
+Correct: True
+
+Question 9: What is BM25?
+Expected: 05_retrieval_augmented_generation.pdf
+Retrieved: 05_retrieval_augmented_generation.pdf, 02_neural_networks.pdf
+Top-1: 05_retrieval_augmented_generation.pdf
+Correct: True
+
+Question 10: What is dense retrieval?
+Expected: 05_retrieval_augmented_generation.pdf
+Retrieved: 05_retrieval_augmented_generation.pdf, 03_natural_language_processing.pdf
+Top-1: 05_retrieval_augmented_generation.pdf
+Correct: True
+
+BM25 Precision@1: 100.00%
+
+
+DENSE RETRIEVAL RESULTS
+----------------------------------------------------------------------
+
+Question 1: What is supervised learning?
+Expected: 01_machine_learning_fundamentals.pdf
+Retrieved: 01_machine_learning_fundamentals.pdf, 04_computer_vision.pdf
+Top-1: 01_machine_learning_fundamentals.pdf
+Correct: True
+
+Question 2: What is overfitting in machine learning?
+Expected: 01_machine_learning_fundamentals.pdf
+Retrieved: 01_machine_learning_fundamentals.pdf, 04_computer_vision.pdf
+Top-1: 01_machine_learning_fundamentals.pdf
+Correct: True
+
+Question 3: What activation function is commonly used in hidden layers of neural networks?
+Expected: 02_neural_networks.pdf
+Retrieved: 02_neural_networks.pdf, 03_natural_language_processing.pdf
+Top-1: 02_neural_networks.pdf
+Correct: True
+
+Question 4: What does backpropagation calculate?
+Expected: 02_neural_networks.pdf
+Retrieved: 02_neural_networks.pdf, 03_natural_language_processing.pdf
+Top-1: 02_neural_networks.pdf
+Correct: True
+
+Question 5: What is tokenization in natural language processing?
+Expected: 03_natural_language_processing.pdf
+Retrieved: 03_natural_language_processing.pdf, 01_machine_learning_fundamentals.pdf
+Top-1: 03_natural_language_processing.pdf
+Correct: True
+
+Question 6: What do transformers use to model relationships between tokens?
+Expected: 03_natural_language_processing.pdf
+Retrieved: 03_natural_language_processing.pdf, 05_retrieval_augmented_generation.pdf
+Top-1: 03_natural_language_processing.pdf
+Correct: True
+
+Question 7: What is object detection in computer vision?
+Expected: 04_computer_vision.pdf
+Retrieved: 04_computer_vision.pdf, 01_machine_learning_fundamentals.pdf
+Top-1: 04_computer_vision.pdf
+Correct: True
+
+Question 8: What is image segmentation?
+Expected: 04_computer_vision.pdf
+Retrieved: 04_computer_vision.pdf, 02_neural_networks.pdf
+Top-1: 04_computer_vision.pdf
+Correct: True
+
+Question 9: What is BM25?
+Expected: 05_retrieval_augmented_generation.pdf
+Retrieved: 05_retrieval_augmented_generation.pdf, 02_neural_networks.pdf
+Top-1: 05_retrieval_augmented_generation.pdf
+Correct: True
+
+Question 10: What is dense retrieval?
+Expected: 05_retrieval_augmented_generation.pdf
+Retrieved: 05_retrieval_augmented_generation.pdf, 04_computer_vision.pdf
+Top-1: 05_retrieval_augmented_generation.pdf
+Correct: True
+
+Dense Precision@1: 100.00%
+
+
+BM25 VS DENSE RETRIEVAL
+----------------------------------------------------------------------
+BM25 Precision@1: 100.00%
+Dense Precision@1: 100.00%
+Difference (Dense - BM25): +0.00%
+
+
+MANUAL EVALUATION NOTE
+----------------------------------------------------------------------
+Retrieval quality was evaluated using the top-1 retrieved document for each of the 10 questions. A result was marked correct when the top-ranked document matched the expected source PDF.
+
+The same ten questions were used for both BM25 and dense retrieval to provide a consistent comparison.

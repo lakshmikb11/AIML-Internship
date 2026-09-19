@@ -7,3 +7,9 @@ venv/
 
 # Generated ChromaDB database
 chroma_db/
+
+# W7D5 generated MLflow database
+output_evidence/w7d5/mlflow.db
+
+# W7D3 generated ChromaDB database
+w7d3_chroma_db/

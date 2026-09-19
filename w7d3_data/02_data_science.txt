@@ -1,0 +1,9 @@
+Data science combines statistics, programming, and domain knowledge
+to extract useful information from data.
+
+Data preprocessing prepares raw data for analysis by handling missing
+values, duplicates, inconsistent formats, and other data quality issues.
+
+Exploratory data analysis (EDA) uses summaries and visualizations to
+understand patterns, distributions, relationships, and unusual
+observations in a dataset.

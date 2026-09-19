@@ -1,0 +1,9 @@
+Information retrieval finds relevant information from a collection
+of documents.
+
+BM25 is a term-based ranking algorithm that scores documents using
+query term frequency, document frequency, and document length.
+
+Dense retrieval represents queries and documents as vectors and
+retrieves documents using vector similarity, allowing semantic
+matching.
