@@ -1104,5 +1104,54 @@ W7D3 practical tasks were completed and tested successfully. All 10 queries were
 
 W7D4 practical tasks were completed and tested successfully. Ollama local inference was verified, the custom API script successfully completed 5 prompt tests, and both local models were compared using the same 3 questions. Response differences were documented and evidence was saved successfully.
 
+## W7D5: Multi-document RAG System
+
+### Tasks Completed
+
+* [x] Created a separate five-document knowledge corpus in `w7d5_data/`.
+* [x] Implemented a multi-document RAG pipeline using LangGraph.
+* [x] Implemented document retrieval and answer generation nodes.
+* [x] Connected the pipeline to the local Ollama model `llama3.2:3b`.
+* [x] Ran five questions against the document collection.
+* [x] Verified the expected source documents for all five questions.
+* [x] Achieved a source verification rate of 5/5, or 100%.
+* [x] Integrated CrewAI using an agent, task, and crew.
+* [x] Imported and verified Ragas version 0.4.3.
+* [x] Performed a Ragas integration and source-verification check.
+* [x] Logged the experiment and metrics using MLflow with a SQLite backend.
+* [x] Saved TXT and JSON execution evidence.
+* [x] Added generated MLflow and ChromaDB artifacts to `.gitignore`.
+* [x] Executed and tested the complete W7D5 pipeline successfully.
+
+### Results
+
+* Documents loaded: 5
+* RAG queries executed: 5
+* Verified source matches: 5/5
+* Source match rate: 100%
+* Ragas version: 0.4.3
+* MLflow experiment: `W7D5_Multi_Document_RAG`
+* MLflow run ID: `0c661e25dd414c6eabdbdc16db1be451`
+
+### Observations
+
+* LangGraph successfully connected retrieval and generation into a workflow.
+* Ollama generated answers using the retrieved document context.
+* CrewAI successfully executed the retrieval and generation explanation task.
+* Model-generated content should still be reviewed for factual accuracy.
+* The Ragas work in this task was an integration and source-verification check, not a full Ragas metric evaluation.
+* The generated MLflow database was excluded from Git because it is a runtime artifact.
+
+### Evidence
+
+* `w7d5_multi_document_rag.py`
+* `w7d5_data/`
+* `output_evidence/w7d5/multi_document_rag_results.txt`
+* `output_evidence/w7d5/multi_document_rag_results.json`
+
+### Completion
+
+W7D5 multi-document RAG implementation, integration checks, execution, and evidence collection were completed successfully.
+
 
 
