@@ -1,0 +1,1 @@
+Overfitting happens when a machine learning model learns the training data too closely and performs poorly on unseen data. Regularization, cross-validation, and simpler models can help reduce overfitting.

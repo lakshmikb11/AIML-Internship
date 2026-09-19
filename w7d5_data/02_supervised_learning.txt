@@ -1,0 +1,1 @@
+Supervised learning is a machine learning approach where a model learns from labeled training data. Classification predicts categories, while regression predicts continuous numerical values.
