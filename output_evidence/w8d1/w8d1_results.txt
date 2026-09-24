@@ -1,0 +1,80 @@
+W8D1 Production RAG - Dockerised ML API Evidence
+
+1. Ruff
+Command:
+ruff check .\w4d4_fastapi_model_serving.py .\test_w8d1_api.py
+
+Result:
+All checks passed!
+
+2. Pytest
+Command:
+pytest -q .\test_w8d1_api.py
+
+Result:
+2 passed
+
+3. Docker Image
+Image:
+cynaris-ml-api:w8d1
+
+Docker build:
+SUCCESS
+
+4. Docker Container
+Container:
+cynaris-ml-api-w8d1
+
+Port:
+8000:8000
+
+Container status:
+RUNNING
+
+5. Health Endpoint
+GET http://localhost:8000/health
+
+HTTP Status:
+200 OK
+
+Response:
+{"status":"healthy","model_loaded":true,"model":"Linear Regression"}
+
+6. Prediction Endpoint
+POST /predict
+
+Input:
+MedInc=5.0
+HouseAge=20.0
+AveRooms=6.0
+AveBedrms=1.0
+Population=1000.0
+AveOccup=3.0
+Latitude=35.0
+Longitude=-119.0
+
+HTTP Status:
+200 OK
+
+Prediction:
+2.3637009665281496
+
+Target:
+MedHouseVal
+
+7. Docker Documentation
+Dockerfile created for Python 3.13 slim image.
+FastAPI application exposed on port 8000.
+Existing W4D4 FastAPI model-serving application is containerised as the production API layer.
+W4D1/W4D3 model artifact is copied into the container.
+
+8. CI/CD
+GitHub Actions workflow created:
+.github/workflows/w8d1-ci-cd.yml
+
+Pipeline stages:
+Lint -> Test -> Docker Build -> Docker Push
+
+Docker Hub authentication uses GitHub Actions secrets:
+DOCKERHUB_USERNAME
+DOCKERHUB_TOKEN
