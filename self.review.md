@@ -1206,6 +1206,57 @@ The `top_k=3` configuration produced a higher mean evaluation score than the `to
 ## Conclusion
 
 W8D2 successfully demonstrated Ragas-based evaluation of the multi-document RAG pipeline and an experiment comparing retrieval configurations.
+@"
+# W8D3 Self Review
+
+## Objective
+
+Build and evaluate a Haystack retrieval pipeline using five PDF documents and compare BM25 retrieval with dense embedding-based retrieval.
+
+## Completed Tasks
+
+- [x] Created a separate W8D3 Haystack implementation.
+- [x] Added five PDF documents to the W8D3 dataset.
+- [x] Loaded PDF documents using PyPDFToDocument.
+- [x] Stored documents in InMemoryDocumentStore.
+- [x] Evaluated InMemoryBM25Retriever on 10 questions.
+- [x] Evaluated InMemoryEmbeddingRetriever on the same 10 questions.
+- [x] Used sentence-transformers/all-MiniLM-L6-v2 for dense embeddings.
+- [x] Compared retrieval Precision@1.
+- [x] Saved retrieval results and comparison evidence.
+
+## Results
+
+| Retriever | Questions | Correct Top-1 | Precision@1 |
+|---|---:|---:|---:|
+| BM25 | 10 | 10 | 100% |
+| Dense | 10 | 10 | 100% |
+
+The difference between BM25 and dense retrieval was 0 percentage points on this evaluation dataset.
+
+## Evidence
+
+- `output_evidence/w8d3/haystack_retrieval_results.txt`
+- `output_evidence/w8d3/bm25_vs_dense_comparison.md`
+
+## What I Learned
+
+BM25 uses lexical matching between the query and documents, while dense retrieval represents queries and documents using embeddings and compares their semantic similarity.
+
+Both approaches correctly identified the expected source document for all ten evaluation questions.
+
+## Limitations
+
+- The evaluation used only five PDF documents.
+- Only ten questions were evaluated.
+- Relevance labels were manually defined.
+- The evaluation focused on retrieval Precision@1.
+- Results may differ on larger or more complex datasets.
+
+## Conclusion
+
+The W8D3 Haystack retrieval evaluation was completed successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the selected ten-question evaluation dataset.
+"@ | Set-Content .\output_evidence\w8d3\self_review.md -Encoding utf8
 
 
 

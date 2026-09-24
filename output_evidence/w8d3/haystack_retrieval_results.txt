@@ -1,0 +1,152 @@
+======================================================================
+W8D3: HAYSTACK RETRIEVAL — BM25 & DENSE RETRIEVAL
+======================================================================
+
+DATASET
+----------------------------------------------------------------------
+Number of PDF documents: 5
+Number of evaluation questions: 10
+Top-K retrieval: 2
+Dense embedding model: sentence-transformers/all-MiniLM-L6-v2
+
+HAYSTACK ARCHITECTURE
+----------------------------------------------------------------------
+PDF files -> PyPDFToDocument -> InMemoryDocumentStore -> BM25 Retriever
+PDF files -> PyPDFToDocument -> InMemoryDocumentStore -> Dense Embedding Retriever
+
+Note: The installed current Haystack API does not expose the older Reader component referenced in the assignment. The implementation therefore uses the currently supported retrieval components.
+
+BM25 RETRIEVAL RESULTS
+----------------------------------------------------------------------
+1. What is Python?
+Expected:  01_python_programming.pdf
+Retrieved: ['01_python_programming.pdf', '04_deep_learning.pdf']
+Top-1:     01_python_programming.pdf
+Result:    CORRECT
+
+2. What do functions do in Python?
+Expected:  01_python_programming.pdf
+Retrieved: ['01_python_programming.pdf', '04_deep_learning.pdf']
+Top-1:     01_python_programming.pdf
+Result:    CORRECT
+
+3. What is data preprocessing?
+Expected:  02_data_science.pdf
+Retrieved: ['02_data_science.pdf', '04_deep_learning.pdf']
+Top-1:     02_data_science.pdf
+Result:    CORRECT
+
+4. What is exploratory data analysis?
+Expected:  02_data_science.pdf
+Retrieved: ['02_data_science.pdf', '01_python_programming.pdf']
+Top-1:     02_data_science.pdf
+Result:    CORRECT
+
+5. What is logistic regression commonly used for?
+Expected:  03_machine_learning_models.pdf
+Retrieved: ['03_machine_learning_models.pdf', '04_deep_learning.pdf']
+Top-1:     03_machine_learning_models.pdf
+Result:    CORRECT
+
+6. What does a decision tree use to make predictions?
+Expected:  03_machine_learning_models.pdf
+Retrieved: ['03_machine_learning_models.pdf', '05_information_retrieval.pdf']
+Top-1:     03_machine_learning_models.pdf
+Result:    CORRECT
+
+7. What is backpropagation?
+Expected:  04_deep_learning.pdf
+Retrieved: ['04_deep_learning.pdf', '01_python_programming.pdf']
+Top-1:     04_deep_learning.pdf
+Result:    CORRECT
+
+8. What activation function is commonly used in neural networks?
+Expected:  04_deep_learning.pdf
+Retrieved: ['04_deep_learning.pdf', '03_machine_learning_models.pdf']
+Top-1:     04_deep_learning.pdf
+Result:    CORRECT
+
+9. What is BM25?
+Expected:  05_information_retrieval.pdf
+Retrieved: ['05_information_retrieval.pdf', '04_deep_learning.pdf']
+Top-1:     05_information_retrieval.pdf
+Result:    CORRECT
+
+10. What is dense retrieval?
+Expected:  05_information_retrieval.pdf
+Retrieved: ['05_information_retrieval.pdf', '04_deep_learning.pdf']
+Top-1:     05_information_retrieval.pdf
+Result:    CORRECT
+
+DENSE RETRIEVAL RESULTS
+----------------------------------------------------------------------
+1. What is Python?
+Expected:  01_python_programming.pdf
+Retrieved: ['01_python_programming.pdf', '02_data_science.pdf']
+Top-1:     01_python_programming.pdf
+Result:    CORRECT
+
+2. What do functions do in Python?
+Expected:  01_python_programming.pdf
+Retrieved: ['01_python_programming.pdf', '04_deep_learning.pdf']
+Top-1:     01_python_programming.pdf
+Result:    CORRECT
+
+3. What is data preprocessing?
+Expected:  02_data_science.pdf
+Retrieved: ['02_data_science.pdf', '03_machine_learning_models.pdf']
+Top-1:     02_data_science.pdf
+Result:    CORRECT
+
+4. What is exploratory data analysis?
+Expected:  02_data_science.pdf
+Retrieved: ['02_data_science.pdf', '03_machine_learning_models.pdf']
+Top-1:     02_data_science.pdf
+Result:    CORRECT
+
+5. What is logistic regression commonly used for?
+Expected:  03_machine_learning_models.pdf
+Retrieved: ['03_machine_learning_models.pdf', '02_data_science.pdf']
+Top-1:     03_machine_learning_models.pdf
+Result:    CORRECT
+
+6. What does a decision tree use to make predictions?
+Expected:  03_machine_learning_models.pdf
+Retrieved: ['03_machine_learning_models.pdf', '02_data_science.pdf']
+Top-1:     03_machine_learning_models.pdf
+Result:    CORRECT
+
+7. What is backpropagation?
+Expected:  04_deep_learning.pdf
+Retrieved: ['04_deep_learning.pdf', '02_data_science.pdf']
+Top-1:     04_deep_learning.pdf
+Result:    CORRECT
+
+8. What activation function is commonly used in neural networks?
+Expected:  04_deep_learning.pdf
+Retrieved: ['04_deep_learning.pdf', '03_machine_learning_models.pdf']
+Top-1:     04_deep_learning.pdf
+Result:    CORRECT
+
+9. What is BM25?
+Expected:  05_information_retrieval.pdf
+Retrieved: ['05_information_retrieval.pdf', '04_deep_learning.pdf']
+Top-1:     05_information_retrieval.pdf
+Result:    CORRECT
+
+10. What is dense retrieval?
+Expected:  05_information_retrieval.pdf
+Retrieved: ['05_information_retrieval.pdf', '04_deep_learning.pdf']
+Top-1:     05_information_retrieval.pdf
+Result:    CORRECT
+
+FINAL COMPARISON
+----------------------------------------------------------------------
+BM25 Precision@1:   100.00%
+Dense Precision@1: 100.00%
+Difference:         +0.00%
+
+MANUAL EVALUATION
+----------------------------------------------------------------------
+Each question was manually evaluated by checking whether the top-ranked retrieved PDF matched the expected source.
+Precision@1 measures the proportion of questions for which the top-ranked document was the expected document.
