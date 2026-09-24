@@ -1,0 +1,15 @@
+Machine Learning Research Notes
+
+Machine learning is a branch of artificial intelligence in which systems
+learn patterns from data and use those patterns to make predictions or
+decisions.
+
+Supervised learning uses labelled training data. Common supervised
+learning algorithms include linear regression, logistic regression,
+decision trees, random forests, and support vector machines.
+
+Unsupervised learning works with data without target labels. Clustering
+and dimensionality reduction are common unsupervised learning techniques.
+
+A typical machine learning workflow includes data preparation, feature
+engineering, model training, evaluation, and deployment.
