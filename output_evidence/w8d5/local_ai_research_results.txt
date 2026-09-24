@@ -1,0 +1,25 @@
+W8D5 Local AI Research Assistant - Runtime Evidence
+
+Model:
+llama3.2:3b
+
+Question:
+What is RAG and how can a local AI assistant use retrieved research notes?
+
+Generated Answer:
+RAG (Retrieval-Augmented Generation) is a technique that combines information retrieval with generative language models. A local AI assistant can use retrieved research notes from RAG by first retrieving relevant documents or document chunks, then providing that context to a language model. This approach can help a local AI assistant answer questions using a controlled knowledge collection, rather than relying solely on the model's parameters.
+
+Retrieved Sources:
+- rag_research.txt
+- machine_learning_research.txt
+
+Generation Latency:
+40.556 seconds
+
+Validation:
+- Ollama model available locally: llama3.2:3b
+- Local research notes loaded successfully
+- Relevant RAG research document retrieved
+- Local LLM generated an answer successfully
+- Source filenames displayed in the result
+- Automated tests: 5/5 passed

@@ -1325,3 +1325,47 @@ The W8 work demonstrates:
 W8D4 documentation, testing, and basic code review were completed successfully.
 
 The project-integrity review passed all 8 checks, and the W8D4 pytest suite passed all 5 tests.
+
+# W8D5 Self Review — Local AI Research Assistant
+
+## Implementation
+- Built a local AI research assistant prototype using a 3M-style architecture.
+- Model component uses the local Ollama `llama3.2:3b` model.
+- Memory/retrieval component uses local research notes stored in `w8d5_data`.
+- Retrieval is implemented using keyword overlap between the question and research notes.
+- The assistant builds a grounded prompt using the retrieved research context.
+- MLOps/reproducibility component records run metadata in JSON format.
+
+## Research Data
+The prototype uses three separate local research documents:
+- `python_research.txt`
+- `machine_learning_research.txt`
+- `rag_research.txt`
+
+## Validation
+- Automated test suite completed successfully.
+- Test result: 5/5 tests passed.
+- Ollama local model was available and executed successfully.
+- The demonstration question retrieved relevant research sources.
+- Generated answer was based on the retrieved local research context.
+- Runtime evidence was recorded in `local_ai_research_results.txt`.
+- Run metadata was generated in `run_metadata.json`.
+
+## Runtime Result
+- Model: `llama3.2:3b`
+- Retrieved sources:
+  - `rag_research.txt`
+  - `machine_learning_research.txt`
+- Generation latency: 40.556 seconds
+
+## Code Quality
+- Functions are separated by responsibility.
+- Type hints and docstrings are included.
+- Code uses Python standard-library components for the Ollama HTTP request.
+- Comments and documentation explain the main pipeline components.
+- W8D5 files and evidence are kept separate from previous week data.
+
+## Git
+- W8D5 changes will be committed using at least two descriptive commits.
+- Changes will be pushed to `feat/aiml-W8-Lakshmi`.
+- Existing PR #10 will be used for the W8D5 work.
