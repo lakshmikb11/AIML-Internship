@@ -1,0 +1,33 @@
+W8D2 - RAGAS EVALUATION RESULTS
+================================================================================
+
+LLM: llama3.2:3b
+Embedding: nomic-embed-text:latest
+Metrics: Faithfulness, Answer Relevancy, Context Precision, Context Recall
+
+BASELINE
+--------------------------------------------------------------------------------
+Chunk size: 300
+Top K: 2
+faithfulness: 0.9024
+answer_relevancy: 0.8883
+context_precision: 1.0000
+context_recall: 0.8450
+Mean score: 0.9089
+
+OPTIMIZED
+--------------------------------------------------------------------------------
+Chunk size: 300
+Top K: 3
+faithfulness: 0.9250
+answer_relevancy: 0.8934
+context_precision: 1.0000
+context_recall: 0.9057
+Mean score: 0.9310
+
+COMPARISON
+--------------------------------------------------------------------------------
+Status: IMPROVED
+Baseline mean: 0.9089
+Optimized mean: 0.9310
+Selected top_k: 3
