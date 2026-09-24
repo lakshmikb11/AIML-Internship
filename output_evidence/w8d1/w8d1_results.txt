@@ -2,7 +2,7 @@ W8D1 Production RAG - Dockerised ML API Evidence
 
 1. Ruff
 Command:
-ruff check .\w4d4_fastapi_model_serving.py .\test_w8d1_api.py
+ruff check .\w8d1_dockerised_ml_api.py .\test_w8d1_api.py
 
 Result:
 All checks passed!
@@ -65,8 +65,8 @@ MedHouseVal
 7. Docker Documentation
 Dockerfile created for Python 3.13 slim image.
 FastAPI application exposed on port 8000.
-Existing W4D4 FastAPI model-serving application is containerised as the production API layer.
-W4D1/W4D3 model artifact is copied into the container.
+The W8D1 FastAPI ML API is containerised as the production API layer.
+W4D3 model artifact is copied into the container.
 
 8. CI/CD
 GitHub Actions workflow created:
