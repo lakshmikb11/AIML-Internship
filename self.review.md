@@ -1153,5 +1153,59 @@ W7D4 practical tasks were completed and tested successfully. Ollama local infere
 
 W7D5 multi-document RAG implementation, integration checks, execution, and evidence collection were completed successfully.
 
+# W8D2 Self Review - Ragas Evaluation
+
+## Objective
+
+Evaluate the W7D5 multi-document RAG pipeline using Ragas and compare a baseline retrieval configuration with an optimization candidate.
+
+## Implementation
+
+* Evaluated 10 RAG question-answer samples.
+* Used 5 W7D5 source documents.
+* LLM: `llama3.2:3b` via Ollama.
+* Embeddings: `nomic-embed-text:latest`.
+* Ragas metrics:
+
+  * Faithfulness
+  * Answer Relevancy
+  * Context Precision
+  * Context Recall
+* Baseline retrieval: `top_k=2`.
+* Optimization candidate: `top_k=3`.
+
+## Results
+
+| Metric            | Baseline top_k=2 | Optimized top_k=3 |
+| ----------------- | ---------------: | ----------------: |
+| Faithfulness      |           0.9024 |            0.9250 |
+| Answer Relevancy  |           0.8883 |            0.8934 |
+| Context Precision |           1.0000 |            1.0000 |
+| Context Recall    |           0.8450 |            0.9057 |
+| Mean              |           0.9089 |            0.9310 |
+
+## Outcome
+
+The `top_k=3` configuration produced a higher mean evaluation score than the `top_k=2` baseline and was selected by the evaluation script.
+
+## Evidence
+
+* `output_evidence/w8d2/qa_pairs.json`
+* `output_evidence/w8d2/ragas_evaluation_results.json`
+* `output_evidence/w8d2/ragas_evaluation_results.txt`
+
+## Validation
+
+* Python compilation succeeded.
+* All 5 W7D5 documents loaded successfully.
+* Structured LLM output using JSON schema initialized successfully.
+* All 40 baseline metric evaluations completed.
+* All 40 optimized metric evaluations completed.
+* Valid numeric Ragas scores were produced for all four metrics.
+
+## Conclusion
+
+W8D2 successfully demonstrated Ragas-based evaluation of the multi-document RAG pipeline and an experiment comparing retrieval configurations.
+
 
 
