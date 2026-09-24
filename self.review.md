@@ -1206,7 +1206,7 @@ The `top_k=3` configuration produced a higher mean evaluation score than the `to
 ## Conclusion
 
 W8D2 successfully demonstrated Ragas-based evaluation of the multi-document RAG pipeline and an experiment comparing retrieval configurations.
-@"
+
 # W8D3 Self Review
 
 ## Objective
@@ -1256,7 +1256,72 @@ Both approaches correctly identified the expected source document for all ten ev
 ## Conclusion
 
 The W8D3 Haystack retrieval evaluation was completed successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the selected ten-question evaluation dataset.
-"@ | Set-Content .\output_evidence\w8d3\self_review.md -Encoding utf8
 
+# W8D4 Self-Review — Documentation, Testing & Code Review
 
+## Objective
 
+Complete documentation, testing, and code review for the Week 8 AI/ML 3M work.
+
+## Implementation
+
+Created `w8d4_documentation_testing_review.py` to perform automated project-integrity checks across the Week 8 work.
+
+The review validates the presence of:
+
+* W8D1 FastAPI model-serving implementation
+* W8D1 Docker configuration
+* W8D2 Ragas evaluation implementation
+* W8D3 Haystack retrieval implementation
+* W8D2 evaluation evidence
+* W8D3 retrieval evidence
+* W8D4 automated tests
+* W8D4 evidence directory
+
+## Project Review Results
+
+* Checks performed: 8
+* Checks passed: 8
+* Checks failed: 0
+* Overall status: PASS
+
+## Automated Testing
+
+The W8D4 pytest suite contains 5 validation tests.
+
+Test results:
+
+* Tests collected: 5
+* Tests passed: 5
+* Tests failed: 0
+* Execution time: 0.11 seconds
+
+## Code Review
+
+The review focused on project integrity, maintainability, and reproducibility.
+
+### Checks Performed
+
+* Verified required implementation files.
+* Verified the Docker configuration.
+* Verified W8D2 and W8D3 evaluation evidence.
+* Verified the W8D4 testing infrastructure.
+* Verified the W8D4 evidence directory.
+* Added clear comments and docstrings to the W8D4 review code.
+* Confirmed that automated tests provide repeatable validation.
+
+## AI/ML 3M Alignment
+
+The W8 work demonstrates:
+
+* AI/ML implementation and evaluation.
+* MLOps-oriented Dockerization.
+* Retrieval and Ragas evaluation.
+* Automated testing.
+* Documentation and reproducible project validation.
+
+## Outcome
+
+W8D4 documentation, testing, and basic code review were completed successfully.
+
+The project-integrity review passed all 8 checks, and the W8D4 pytest suite passed all 5 tests.
