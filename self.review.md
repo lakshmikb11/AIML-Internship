@@ -1153,5 +1153,219 @@ W7D4 practical tasks were completed and tested successfully. Ollama local infere
 
 W7D5 multi-document RAG implementation, integration checks, execution, and evidence collection were completed successfully.
 
+# W8D2 Self Review - Ragas Evaluation
 
+## Objective
 
+Evaluate the W7D5 multi-document RAG pipeline using Ragas and compare a baseline retrieval configuration with an optimization candidate.
+
+## Implementation
+
+* Evaluated 10 RAG question-answer samples.
+* Used 5 W7D5 source documents.
+* LLM: `llama3.2:3b` via Ollama.
+* Embeddings: `nomic-embed-text:latest`.
+* Ragas metrics:
+
+  * Faithfulness
+  * Answer Relevancy
+  * Context Precision
+  * Context Recall
+* Baseline retrieval: `top_k=2`.
+* Optimization candidate: `top_k=3`.
+
+## Results
+
+| Metric            | Baseline top_k=2 | Optimized top_k=3 |
+| ----------------- | ---------------: | ----------------: |
+| Faithfulness      |           0.9024 |            0.9250 |
+| Answer Relevancy  |           0.8883 |            0.8934 |
+| Context Precision |           1.0000 |            1.0000 |
+| Context Recall    |           0.8450 |            0.9057 |
+| Mean              |           0.9089 |            0.9310 |
+
+## Outcome
+
+The `top_k=3` configuration produced a higher mean evaluation score than the `top_k=2` baseline and was selected by the evaluation script.
+
+## Evidence
+
+* `output_evidence/w8d2/qa_pairs.json`
+* `output_evidence/w8d2/ragas_evaluation_results.json`
+* `output_evidence/w8d2/ragas_evaluation_results.txt`
+
+## Validation
+
+* Python compilation succeeded.
+* All 5 W7D5 documents loaded successfully.
+* Structured LLM output using JSON schema initialized successfully.
+* All 40 baseline metric evaluations completed.
+* All 40 optimized metric evaluations completed.
+* Valid numeric Ragas scores were produced for all four metrics.
+
+## Conclusion
+
+W8D2 successfully demonstrated Ragas-based evaluation of the multi-document RAG pipeline and an experiment comparing retrieval configurations.
+
+# W8D3 Self Review
+
+## Objective
+
+Build and evaluate a Haystack retrieval pipeline using five PDF documents and compare BM25 retrieval with dense embedding-based retrieval.
+
+## Completed Tasks
+
+- [x] Created a separate W8D3 Haystack implementation.
+- [x] Added five PDF documents to the W8D3 dataset.
+- [x] Loaded PDF documents using PyPDFToDocument.
+- [x] Stored documents in InMemoryDocumentStore.
+- [x] Evaluated InMemoryBM25Retriever on 10 questions.
+- [x] Evaluated InMemoryEmbeddingRetriever on the same 10 questions.
+- [x] Used sentence-transformers/all-MiniLM-L6-v2 for dense embeddings.
+- [x] Compared retrieval Precision@1.
+- [x] Saved retrieval results and comparison evidence.
+
+## Results
+
+| Retriever | Questions | Correct Top-1 | Precision@1 |
+|---|---:|---:|---:|
+| BM25 | 10 | 10 | 100% |
+| Dense | 10 | 10 | 100% |
+
+The difference between BM25 and dense retrieval was 0 percentage points on this evaluation dataset.
+
+## Evidence
+
+- `output_evidence/w8d3/haystack_retrieval_results.txt`
+- `output_evidence/w8d3/bm25_vs_dense_comparison.md`
+
+## What I Learned
+
+BM25 uses lexical matching between the query and documents, while dense retrieval represents queries and documents using embeddings and compares their semantic similarity.
+
+Both approaches correctly identified the expected source document for all ten evaluation questions.
+
+## Limitations
+
+- The evaluation used only five PDF documents.
+- Only ten questions were evaluated.
+- Relevance labels were manually defined.
+- The evaluation focused on retrieval Precision@1.
+- Results may differ on larger or more complex datasets.
+
+## Conclusion
+
+The W8D3 Haystack retrieval evaluation was completed successfully. Both BM25 and dense retrieval achieved 100% Precision@1 on the selected ten-question evaluation dataset.
+
+# W8D4 Self-Review — Documentation, Testing & Code Review
+
+## Objective
+
+Complete documentation, testing, and code review for the Week 8 AI/ML 3M work.
+
+## Implementation
+
+Created `w8d4_documentation_testing_review.py` to perform automated project-integrity checks across the Week 8 work.
+
+The review validates the presence of:
+
+* W8D1 FastAPI model-serving implementation
+* W8D1 Docker configuration
+* W8D2 Ragas evaluation implementation
+* W8D3 Haystack retrieval implementation
+* W8D2 evaluation evidence
+* W8D3 retrieval evidence
+* W8D4 automated tests
+* W8D4 evidence directory
+
+## Project Review Results
+
+* Checks performed: 8
+* Checks passed: 8
+* Checks failed: 0
+* Overall status: PASS
+
+## Automated Testing
+
+The W8D4 pytest suite contains 5 validation tests.
+
+Test results:
+
+* Tests collected: 5
+* Tests passed: 5
+* Tests failed: 0
+* Execution time: 0.11 seconds
+
+## Code Review
+
+The review focused on project integrity, maintainability, and reproducibility.
+
+### Checks Performed
+
+* Verified required implementation files.
+* Verified the Docker configuration.
+* Verified W8D2 and W8D3 evaluation evidence.
+* Verified the W8D4 testing infrastructure.
+* Verified the W8D4 evidence directory.
+* Added clear comments and docstrings to the W8D4 review code.
+* Confirmed that automated tests provide repeatable validation.
+
+## AI/ML 3M Alignment
+
+The W8 work demonstrates:
+
+* AI/ML implementation and evaluation.
+* MLOps-oriented Dockerization.
+* Retrieval and Ragas evaluation.
+* Automated testing.
+* Documentation and reproducible project validation.
+
+## Outcome
+
+W8D4 documentation, testing, and basic code review were completed successfully.
+
+The project-integrity review passed all 8 checks, and the W8D4 pytest suite passed all 5 tests.
+
+# W8D5 Self Review — Local AI Research Assistant
+
+## Implementation
+- Built a local AI research assistant prototype using a 3M-style architecture.
+- Model component uses the local Ollama `llama3.2:3b` model.
+- Memory/retrieval component uses local research notes stored in `w8d5_data`.
+- Retrieval is implemented using keyword overlap between the question and research notes.
+- The assistant builds a grounded prompt using the retrieved research context.
+- MLOps/reproducibility component records run metadata in JSON format.
+
+## Research Data
+The prototype uses three separate local research documents:
+- `python_research.txt`
+- `machine_learning_research.txt`
+- `rag_research.txt`
+
+## Validation
+- Automated test suite completed successfully.
+- Test result: 5/5 tests passed.
+- Ollama local model was available and executed successfully.
+- The demonstration question retrieved relevant research sources.
+- Generated answer was based on the retrieved local research context.
+- Runtime evidence was recorded in `local_ai_research_results.txt`.
+- Run metadata was generated in `run_metadata.json`.
+
+## Runtime Result
+- Model: `llama3.2:3b`
+- Retrieved sources:
+  - `rag_research.txt`
+  - `machine_learning_research.txt`
+- Generation latency: 40.556 seconds
+
+## Code Quality
+- Functions are separated by responsibility.
+- Type hints and docstrings are included.
+- Code uses Python standard-library components for the Ollama HTTP request.
+- Comments and documentation explain the main pipeline components.
+- W8D5 files and evidence are kept separate from previous week data.
+
+## Git
+- W8D5 changes will be committed using at least two descriptive commits.
+- Changes will be pushed to `feat/aiml-W8-Lakshmi`.
+- Existing PR #10 will be used for the W8D5 work.

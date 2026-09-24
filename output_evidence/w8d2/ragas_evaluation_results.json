@@ -1,0 +1,39 @@
+{
+  "project": "W8D2 Ragas Evaluation",
+  "llm": "llama3.2:3b",
+  "embedding_model": "nomic-embed-text:latest",
+  "metrics": [
+    "faithfulness",
+    "answer_relevancy",
+    "context_precision",
+    "context_recall"
+  ],
+  "baseline": {
+    "chunk_size": 300,
+    "top_k": 2,
+    "metrics": {
+      "faithfulness": 0.9023809523809524,
+      "answer_relevancy": 0.8882885758114177,
+      "context_precision": 0.9999999999250001,
+      "context_recall": 0.845
+    },
+    "mean_score": 0.9089173820293426
+  },
+  "optimized": {
+    "chunk_size": 300,
+    "top_k": 3,
+    "metrics": {
+      "faithfulness": 0.925,
+      "answer_relevancy": 0.8933862901701035,
+      "context_precision": 0.9999999999250001,
+      "context_recall": 0.9057142857142857
+    },
+    "mean_score": 0.9310251439523474
+  },
+  "comparison": {
+    "status": "IMPROVED",
+    "baseline_mean": 0.9089173820293426,
+    "optimized_mean": 0.9310251439523474,
+    "selected_top_k": 3
+  }
+}

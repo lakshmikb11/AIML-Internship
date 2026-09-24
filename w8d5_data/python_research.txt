@@ -1,0 +1,13 @@
+Python Research Notes
+
+Python is a high-level programming language commonly used for automation,
+data analysis, machine learning, web development, and scripting.
+
+Python uses dynamic typing and supports object-oriented, functional, and
+procedural programming styles.
+
+Important Python libraries for AI and machine learning include NumPy,
+pandas, scikit-learn, PyTorch, and TensorFlow.
+
+Python is widely used in AI applications because of its readable syntax
+and large ecosystem of scientific and machine learning libraries.

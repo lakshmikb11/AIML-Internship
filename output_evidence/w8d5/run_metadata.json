@@ -1,0 +1,17 @@
+{
+  "model": "llama3.2:3b",
+  "question": "What is RAG and how can a local AI assistant use retrieved research notes?",
+  "retrieved_sources": [
+    {
+      "file": "rag_research.txt",
+      "score": 11
+    },
+    {
+      "file": "machine_learning_research.txt",
+      "score": 6
+    }
+  ],
+  "retrieval_count": 2,
+  "latency_seconds": 40.556,
+  "success": true
+}

@@ -1,0 +1,17 @@
+RAG Research Notes
+
+Retrieval-Augmented Generation, or RAG, combines information retrieval
+with generative language models.
+
+A RAG system first retrieves relevant documents or document chunks and
+then provides that retrieved context to a language model.
+
+RAG can help a local AI assistant answer questions using a controlled
+knowledge collection instead of relying only on information contained
+in the model's parameters.
+
+Important RAG components include document ingestion, retrieval,
+context construction, generation, and source attribution.
+
+Local RAG systems can use local embedding models, vector databases,
+keyword retrieval, or other retrieval techniques.
