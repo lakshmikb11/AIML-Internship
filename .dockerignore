@@ -1,0 +1,17 @@
+venv/
+.git/
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+chroma_db/
+w7d3_chroma_db/
+w7d1_data/
+w7d2_data/
+w7d3_data/
+w7d5_data/
+output_evidence/w7d1/
+output_evidence/w7d2/
+output_evidence/w7d3/
+output_evidence/w7d4/
+output_evidence/w7d5/
