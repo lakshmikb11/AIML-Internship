@@ -1369,3 +1369,55 @@ The prototype uses three separate local research documents:
 - W8D5 changes will be committed using at least two descriptive commits.
 - Changes will be pushed to `feat/aiml-W8-Lakshmi`.
 - Existing PR #10 will be used for the W8D5 work.
+
+## W9D1 — CrewAI Multi-Agent Research Crew
+
+### Task Completed
+
+Implemented a CrewAI multi-agent research workflow for the topic **"Recent developments in Generative AI"**.
+
+The workflow contains three sequential roles:
+
+1. **AI Researcher** — researches the requested topic.
+2. **Technical Writer** — converts research findings into a structured technical report.
+3. **Research Reviewer** — reviews the report for factual consistency, completeness, clarity, organization, and unsupported claims.
+
+### Implementation
+
+* Added `w9d1_crewai_multi_agent_research.py`.
+* Configured Ollama with `llama3.2:3b`.
+* Implemented a baseline knowledge-only workflow.
+* Added Serper web-search integration for the researcher agent.
+* Added environment-variable based configuration for `SERPER_API_KEY`.
+* Added separate evidence output for baseline and web-enabled executions.
+* Added a before/after workflow comparison.
+
+### Validation
+
+Python syntax validation completed successfully with:
+
+`python -m py_compile .\w9d1_crewai_multi_agent_research.py`
+
+The baseline CrewAI workflow executed successfully.
+
+The web-enabled CrewAI workflow also completed its agent pipeline. The Serper tool was invoked, but the API returned **403 Unauthorized**, so live web results were not successfully retrieved.
+
+This limitation was documented honestly in:
+
+`output_evidence/w9d1/before_after_comparison.md`
+
+### Evidence
+
+* `output_evidence/w9d1/baseline_research_results.txt`
+* `output_evidence/w9d1/web_enabled_research_results.txt`
+* `output_evidence/w9d1/before_after_comparison.md`
+
+### Learning Outcome
+
+This task demonstrated how multiple specialized CrewAI agents can work together in a sequential research pipeline. It also demonstrated how an external web-search tool can be integrated into an agent and highlighted the importance of API authentication when building web-grounded AI workflows.
+
+### Self Review
+
+The implementation satisfies the main W9D1 workflow requirements: multi-agent research, technical writing, research review, baseline execution, web-search integration, evidence generation, and comparison documentation.
+
+The remaining limitation is the Serper API authorization failure. A future execution with valid Serper credentials would allow the web-enabled workflow to retrieve and cite current external sources.
