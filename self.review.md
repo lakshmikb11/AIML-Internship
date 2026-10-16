@@ -1421,3 +1421,40 @@ This task demonstrated how multiple specialized CrewAI agents can work together 
 The implementation satisfies the main W9D1 workflow requirements: multi-agent research, technical writing, research review, baseline execution, web-search integration, evidence generation, and comparison documentation.
 
 The remaining limitation is the Serper API authorization failure. A future execution with valid Serper credentials would allow the web-enabled workflow to retrieve and cite current external sources.
+
+
+## W9D2 — CrewAI Tools: Web Search and Code Validation
+
+### Deliverables
+- [x] Implemented `w9d2_crewai_tools_research.py`.
+- [x] Defined Researcher, Writer, and Reviewer agents with roles, goals, and backstories.
+- [x] Created research, writing, and review tasks.
+- [x] Ran the baseline research crew using the local `llama3.2:3b` model.
+- [x] Added a web-search attempt with an explicit configuration check.
+- [x] Added a safe Python syntax validation using `compile()` without executing supplied code.
+- [x] Saved baseline, tool-assisted attempt, code-validation, run-metadata, and comparison evidence under `output_evidence/w9d2/`.
+
+### Validation Results
+- CrewAI version: 1.15.22.
+- Baseline run: completed.
+- Python syntax validation: passed.
+- Web search: skipped because `SERPER_API_KEY` was not configured.
+- Live source verification: not completed.
+- Accuracy improvement from live web data: not established.
+
+### Reflection
+The baseline crew completed the research, writing, and review workflow. The review highlighted that references and claims should be verified rather than assumed to be reliable. The code validation safely checked syntax without executing generated code.
+
+The web-search integration could not be validated against live search results because the required API key was unavailable. Therefore, the tool-assisted output is not presented as live-web-grounded research. A follow-up run with a valid search API configuration is needed to verify source retrieval and compare the quality of the results.
+
+### Self-Review Checklist
+- [x] Implementation file created.
+- [x] Three agents and their tasks configured.
+- [x] Baseline crew executed.
+- [x] Code validation passed.
+- [x] Evidence files generated and inspected.
+- [x] Limitations documented honestly.
+- [ ] Live web search verified using actual search results.
+- [ ] Final Git checks completed.
+- [ ] At least two descriptive commits created and pushed.
+- [ ] Existing W9 pull request and CI checks verified.
