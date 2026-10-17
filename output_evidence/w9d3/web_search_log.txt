@@ -1,0 +1,31 @@
+# W9D3 Web Search Evidence
+
+Search calls recorded: 1
+
+Successful search calls: 1
+
+Failed or empty search calls: 0
+
+
+
+SEARCH_SUCCEEDED: 5 results for practical applications of generative AI in software development recent developments
+
+Title: How GenAI Transforms Software Development in 11 Ways (2026)
+URL: https://www.index.dev/blog/genai-software-development-use-cases
+Snippet: Jun 18, 2026 · 11 generative AI use cases transforming software development in 2026, from AI code review to agentic coding, plus the risks, current models, and a strategy checklist.
+
+Title: Generative AI and the Transformation of Software Development ...
+URL: https://arxiv.org/html/2510.10819v1
+Snippet: Oct 12, 2025 · Our analysis provides a comprehensive overview of the ongoing generational shift in software development, delineating new roles, skills, and best practices for harnessing AI in an effective and responsible manner.
+
+Title: The State of Generative AI in Software Development: Insights ...
+URL: https://arxiv.org/html/2603.16975v1
+Snippet: Mar 17, 2026 · Generative Artificial Intelligence (GenAI) rapidly transforms software engineering, yet existing research remains fragmented across individual tasks in the Software Development Lifecycle. This study integrates a systematic literature review with a survey of 65 software developers.
+
+Title: AI in software development - IBM
+URL: https://www.ibm.com/think/topics/ai-in-software-development
+Snippet: Oct 7, 2024 · AI, particularly generative AI (gen AI) and large language models (LLMs), streamline the development cycle by automating key steps, from idea generation and requirement gathering to coding and testing. Operating in collaboration with human developers, gen AI transforms ideas into requirements.
+
+Title: 7 Practical Uses of GenAI in Modern Software Development
+URL: https://www.monarch-innovation.com/insights/generative-ai-software-development
+Snippet: Jun 5, 2026 · Generative AI (GenAI) has evolved from experimental technology into a practical business tool that is transforming how software is designed, developed,…

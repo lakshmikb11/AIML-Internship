@@ -1458,3 +1458,39 @@ The web-search integration could not be validated against live search results be
 - [ ] Final Git checks completed.
 - [ ] At least two descriptive commits created and pushed.
 - [ ] Existing W9 pull request and CI checks verified.
+
+## W9D3 — Building a Research Crew: Multi-Agent Pipeline
+
+### Deliverables
+- [x] Created `w9d3_crewai_research_crew.py`.
+- [x] Defined Researcher, Writer, and Reviewer agents.
+- [x] Configured a sequential research pipeline.
+- [x] Executed the baseline pipeline without web search.
+- [x] Integrated DuckDuckGo web search using the `ddgs` package.
+- [x] Executed the web-enhanced pipeline.
+- [x] Saved baseline results, web research results, search logs, comparison report, and run metadata under `output_evidence/w9d3/`.
+
+### Validation Results
+- Local model: `llama3.2:3b`.
+- Python version: 3.13.5.
+- Baseline pipeline: completed successfully.
+- Web-enhanced pipeline: completed.
+- Search evidence: one successful search call returned five results.
+- Failed or empty search calls: zero.
+- Research quality improvement: not established.
+- Independent verification of source URLs and claims: pending.
+
+### Reflection
+This task demonstrated how specialized CrewAI agents can collaborate in a sequential research pipeline and how DuckDuckGo search results can be incorporated into a research workflow.
+
+The web-enhanced report still contains questionable source assessments and claims that require independent verification. The baseline also includes references that have not been verified. Retrieving search results alone does not establish the accuracy of the final report or prove that the web-enhanced version is better.
+
+### Self-Review Checklist
+- [x] Implementation and agent configuration completed.
+- [x] Baseline and web-enhanced pipelines executed.
+- [x] Evidence files generated and inspected.
+- [x] Limitations documented honestly.
+- [ ] Independent source and URL verification completed.
+- [ ] Final code and Git checks completed.
+- [ ] At least two descriptive commits created and pushed.
+- [ ] Pull request and CI checks verified.
