@@ -1534,3 +1534,27 @@ The web-enhanced report still contains questionable source assessments and claim
 ### Reflection
 
 The task demonstrated how prompt-based chains, conversation memory, and tool execution can be combined in a local LLM application. The next improvement would be to migrate to a supported modern memory/checkpointing API and integrate a real search provider if required.
+## W9D5 — Automated Research Report Agent
+
+### Implementation and tests
+- [x] Implemented the automated research report pipeline using CrewAI, LangGraph, MLflow, and Ragas integration.
+- [x] Python syntax check passed.
+- [x] Unit tests passed: 7/7.
+- [x] Full pipeline completed using `llama3.2:3b`.
+- [x] Collected 5 sources and generated a report with applications, benefits, limitations, and implementation risks.
+- [x] Saved source search log, research report, quality review, Ragas evaluation output, and run metadata.
+- [x] MLflow run recorded: `b656c064a73143e49f81e400a3a89bd3`.
+
+### Limitations
+- [ ] Ragas evaluation timed out; the faithfulness result is `NaN`, so no valid score was obtained.
+- [ ] The quality review identified unsupported claims about productivity, code quality, and cost savings.
+- [ ] Source quality and report claims require human verification.
+
+### Git and delivery checklist
+- [x] `git diff --check` passed before these edits.
+- [ ] Ignore generated MLflow tracking files.
+- [ ] Re-run tests and inspect Git status.
+- [ ] Commit implementation/tests and evidence/self-review in at least two descriptive commits.
+- [ ] Push the W9 branch and verify the existing pull request and checks.
+
+**Outcome:** The main pipeline completed and generated evidence. Ragas evaluation and report factual quality remain partially unverified.
