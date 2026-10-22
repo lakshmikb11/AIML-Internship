@@ -1369,3 +1369,192 @@ The prototype uses three separate local research documents:
 - W8D5 changes will be committed using at least two descriptive commits.
 - Changes will be pushed to `feat/aiml-W8-Lakshmi`.
 - Existing PR #10 will be used for the W8D5 work.
+
+## W9D1 — CrewAI Multi-Agent Research Crew
+
+### Task Completed
+
+Implemented a CrewAI multi-agent research workflow for the topic **"Recent developments in Generative AI"**.
+
+The workflow contains three sequential roles:
+
+1. **AI Researcher** — researches the requested topic.
+2. **Technical Writer** — converts research findings into a structured technical report.
+3. **Research Reviewer** — reviews the report for factual consistency, completeness, clarity, organization, and unsupported claims.
+
+### Implementation
+
+* Added `w9d1_crewai_multi_agent_research.py`.
+* Configured Ollama with `llama3.2:3b`.
+* Implemented a baseline knowledge-only workflow.
+* Added Serper web-search integration for the researcher agent.
+* Added environment-variable based configuration for `SERPER_API_KEY`.
+* Added separate evidence output for baseline and web-enabled executions.
+* Added a before/after workflow comparison.
+
+### Validation
+
+Python syntax validation completed successfully with:
+
+`python -m py_compile .\w9d1_crewai_multi_agent_research.py`
+
+The baseline CrewAI workflow executed successfully.
+
+The web-enabled CrewAI workflow also completed its agent pipeline. The Serper tool was invoked, but the API returned **403 Unauthorized**, so live web results were not successfully retrieved.
+
+This limitation was documented honestly in:
+
+`output_evidence/w9d1/before_after_comparison.md`
+
+### Evidence
+
+* `output_evidence/w9d1/baseline_research_results.txt`
+* `output_evidence/w9d1/web_enabled_research_results.txt`
+* `output_evidence/w9d1/before_after_comparison.md`
+
+### Learning Outcome
+
+This task demonstrated how multiple specialized CrewAI agents can work together in a sequential research pipeline. It also demonstrated how an external web-search tool can be integrated into an agent and highlighted the importance of API authentication when building web-grounded AI workflows.
+
+### Self Review
+
+The implementation satisfies the main W9D1 workflow requirements: multi-agent research, technical writing, research review, baseline execution, web-search integration, evidence generation, and comparison documentation.
+
+The remaining limitation is the Serper API authorization failure. A future execution with valid Serper credentials would allow the web-enabled workflow to retrieve and cite current external sources.
+
+
+## W9D2 — CrewAI Tools: Web Search and Code Validation
+
+### Deliverables
+- [x] Implemented `w9d2_crewai_tools_research.py`.
+- [x] Defined Researcher, Writer, and Reviewer agents with roles, goals, and backstories.
+- [x] Created research, writing, and review tasks.
+- [x] Ran the baseline research crew using the local `llama3.2:3b` model.
+- [x] Added a web-search attempt with an explicit configuration check.
+- [x] Added a safe Python syntax validation using `compile()` without executing supplied code.
+- [x] Saved baseline, tool-assisted attempt, code-validation, run-metadata, and comparison evidence under `output_evidence/w9d2/`.
+
+### Validation Results
+- CrewAI version: 1.15.22.
+- Baseline run: completed.
+- Python syntax validation: passed.
+- Web search: skipped because `SERPER_API_KEY` was not configured.
+- Live source verification: not completed.
+- Accuracy improvement from live web data: not established.
+
+### Reflection
+The baseline crew completed the research, writing, and review workflow. The review highlighted that references and claims should be verified rather than assumed to be reliable. The code validation safely checked syntax without executing generated code.
+
+The web-search integration could not be validated against live search results because the required API key was unavailable. Therefore, the tool-assisted output is not presented as live-web-grounded research. A follow-up run with a valid search API configuration is needed to verify source retrieval and compare the quality of the results.
+
+### Self-Review Checklist
+- [x] Implementation file created.
+- [x] Three agents and their tasks configured.
+- [x] Baseline crew executed.
+- [x] Code validation passed.
+- [x] Evidence files generated and inspected.
+- [x] Limitations documented honestly.
+- [ ] Live web search verified using actual search results.
+- [ ] Final Git checks completed.
+- [ ] At least two descriptive commits created and pushed.
+- [ ] Existing W9 pull request and CI checks verified.
+
+## W9D3 — Building a Research Crew: Multi-Agent Pipeline
+
+### Deliverables
+- [x] Created `w9d3_crewai_research_crew.py`.
+- [x] Defined Researcher, Writer, and Reviewer agents.
+- [x] Configured a sequential research pipeline.
+- [x] Executed the baseline pipeline without web search.
+- [x] Integrated DuckDuckGo web search using the `ddgs` package.
+- [x] Executed the web-enhanced pipeline.
+- [x] Saved baseline results, web research results, search logs, comparison report, and run metadata under `output_evidence/w9d3/`.
+
+### Validation Results
+- Local model: `llama3.2:3b`.
+- Python version: 3.13.5.
+- Baseline pipeline: completed successfully.
+- Web-enhanced pipeline: completed.
+- Search evidence: one successful search call returned five results.
+- Failed or empty search calls: zero.
+- Research quality improvement: not established.
+- Independent verification of source URLs and claims: pending.
+
+### Reflection
+This task demonstrated how specialized CrewAI agents can collaborate in a sequential research pipeline and how DuckDuckGo search results can be incorporated into a research workflow.
+
+The web-enhanced report still contains questionable source assessments and claims that require independent verification. The baseline also includes references that have not been verified. Retrieving search results alone does not establish the accuracy of the final report or prove that the web-enhanced version is better.
+
+### Self-Review Checklist
+- [x] Implementation and agent configuration completed.
+- [x] Baseline and web-enhanced pipelines executed.
+- [x] Evidence files generated and inspected.
+- [x] Limitations documented honestly.
+- [ ] Independent source and URL verification completed.
+- [ ] Final code and Git checks completed.
+- [ ] At least two descriptive commits created and pushed.
+- [ ] Pull request and CI checks verified.
+
+## W9D4 — CrewAI + LangChain: Hybrid Agent Systems
+
+### Deliverables checklist
+
+- [x] Built a LangChain chain using PromptTemplate, Ollama ChatOllama, and StrOutputParser.
+- [x] Tested the chain with five inputs — 5/5 passed.
+- [x] Added ConversationBufferMemory and tested five conversation turns.
+- [x] Verified that all five user messages were retained in conversation history.
+- [x] Implemented a two-tool agent with a WebSearchStub and Calculator.
+- [x] Executed three agent tasks — 3/3 passed.
+- [x] Verified calculator outputs: `(125 * 8) + 75 = 1075` and `144 / 12 = 12.0`.
+- [x] Clearly identified the web-search tool as a simulated stub, not a live search engine.
+- [x] Saved execution evidence to `output_evidence/w9d4/w9d4_test_results.txt`.
+- [x] Saved run metadata to `output_evidence/w9d4/run_metadata.json`.
+- [ ] Review evidence files and confirm their contents.
+- [ ] Create at least two descriptive Git commits.
+- [ ] Push the branch and open or update the GitHub pull request.
+- [ ] Verify the pull request and required checks.
+
+### Test results
+
+| Component | Result |
+|---|---:|
+| LangChain chain | 5/5 |
+| Conversation memory | 5/5 |
+| Two-tool agent | 3/3 |
+| Total programmed checks | 13/13 |
+
+### Implementation notes
+
+- Model: `llama3.2:3b` through Ollama.
+- The tool-routing implementation executes the selected tools and uses the language model to summarize their observations.
+- Web search is simulated; no live search results are claimed.
+- LangChain emitted deprecation warnings for ConversationBufferMemory and its associated message-history implementation. The warnings did not prevent successful execution.
+- All 13 programmed checks passed in the latest run. Generated answers should still be reviewed for accuracy.
+
+### Reflection
+
+The task demonstrated how prompt-based chains, conversation memory, and tool execution can be combined in a local LLM application. The next improvement would be to migrate to a supported modern memory/checkpointing API and integrate a real search provider if required.
+## W9D5 — Automated Research Report Agent
+
+### Implementation and tests
+- [x] Implemented the automated research report pipeline using CrewAI, LangGraph, MLflow, and Ragas integration.
+- [x] Python syntax check passed.
+- [x] Unit tests passed: 7/7.
+- [x] Full pipeline completed using `llama3.2:3b`.
+- [x] Collected 5 sources and generated a report with applications, benefits, limitations, and implementation risks.
+- [x] Saved source search log, research report, quality review, Ragas evaluation output, and run metadata.
+- [x] MLflow run recorded: `b656c064a73143e49f81e400a3a89bd3`.
+
+### Limitations
+- [ ] Ragas evaluation timed out; the faithfulness result is `NaN`, so no valid score was obtained.
+- [ ] The quality review identified unsupported claims about productivity, code quality, and cost savings.
+- [ ] Source quality and report claims require human verification.
+
+### Git and delivery checklist
+- [x] `git diff --check` passed before these edits.
+- [ ] Ignore generated MLflow tracking files.
+- [ ] Re-run tests and inspect Git status.
+- [ ] Commit implementation/tests and evidence/self-review in at least two descriptive commits.
+- [ ] Push the W9 branch and verify the existing pull request and checks.
+
+**Outcome:** The main pipeline completed and generated evidence. Ragas evaluation and report factual quality remain partially unverified.

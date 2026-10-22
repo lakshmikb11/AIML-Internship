@@ -1,0 +1,120 @@
+W9D4 — LangChain + Ollama Hybrid Agent Systems
+Start time (UTC): 2026-10-22T08:10:30.749799+00:00
+Model: llama3.2:3b
+Environment: local Ollama
+Web search: simulated stub only; no live search performed
+
+========================================================================
+PART 1 — LANGCHAIN CHAIN: FIVE INPUTS
+========================================================================
+
+Test 1: Explain machine learning in simple English.
+Answer: Machine learning is a way for computers to learn and get better at doing things on their own. It's like how you learn new things in school - you start with simple things and get better and better. Computers use special math to look at lots of data and find patterns, so they can make good guesses or decisions. This helps computers do things like recognize pictures, understand speech, and even make predictions about what might happen next.
+Status: PASS
+
+Test 2: What is the purpose of a Python function?
+Answer: A Python function is a block of code that can be used multiple times in a program. Its purpose is to perform a specific task, like calculating the area of a rectangle or converting text to uppercase. Functions help make code more organized, reusable, and easier to understand. They also make it easier to modify or extend the code later.
+Status: PASS
+
+Test 3: Explain overfitting with one short example.
+Answer: Overfitting is when a model is too good at fitting the training data, but not good at fitting new, unseen data. This happens when a model is too complex and has too many parameters. For example, imagine a model that tries to draw every single line and curve of a picture, but can't draw anything new or different. This model is overfitting because it's too good at fitting the original picture, but can't generalize to new pictures.
+Status: PASS
+
+Test 4: What is a vector database used for?
+Answer: A vector database is used to store and manage large amounts of data that can be represented as vectors, such as images, text, or audio. It helps to quickly find similar data points by calculating the distance between vectors. This is useful in applications like image search, natural language processing, and recommendation systems. It also helps to reduce the storage space needed for large datasets.
+Status: PASS
+
+Test 5: Give two practical uses of generative AI in software development.
+Answer: Generative AI can help with code completion and suggestions. It can also generate boilerplate code, such as HTML, CSS, and JavaScript, to speed up development. This can save time and reduce errors. Additionally, generative AI can help with testing and debugging by generating test cases and identifying potential issues.
+Status: PASS
+
+Chain summary: 5/5 passed
+
+========================================================================
+PART 2 — CONVERSATION MEMORY: FIVE TURNS
+========================================================================
+
+Turn 1
+User: My project is called Hybrid Agent Systems.
+Assistant: That sounds like an interesting project. What's Hybrid Agent Systems about?
+Memory check: PASS
+
+Turn 2
+User: I am using the Ollama model llama3.2:3b.
+Assistant: The Ollama model llama3.2:3b is a large language model. Hybrid Agent Systems is a project that combines different types of artificial intelligence to create more powerful and flexible systems. Can you tell me more about what you're working on?
+Memory check: PASS
+
+Turn 3
+User: My project has a chain, conversation memory, and a two-tool agent.
+Assistant: That sounds like a interesting approach. A chain, conversation memory, and a two-tool agent are all components that can help improve the flexibility and power of your Hybrid Agent Systems. Can you tell me more about how these components work together?
+Memory check: PASS
+
+Turn 4
+User: Which model did I say I am using?
+Assistant: You mentioned you're using the Ollama model llama3.2:3b.
+Memory check: PASS
+
+Turn 5
+User: What are the three main components of my project?
+Assistant: You mentioned a chain, conversation memory, and a two-tool agent. These are the three main components of your Hybrid Agent Systems project.
+Memory check: PASS
+
+Final memory verification:
+All five user messages retained: True
+Final history length: 1058 characters
+
+Full conversation history:
+Human: My project is called Hybrid Agent Systems.
+AI: That sounds like an interesting project. What's Hybrid Agent Systems about?
+Human: I am using the Ollama model llama3.2:3b.
+AI: The Ollama model llama3.2:3b is a large language model. Hybrid Agent Systems is a project that combines different types of artificial intelligence to create more powerful and flexible systems. Can you tell me more about what you're working on?
+Human: My project has a chain, conversation memory, and a two-tool agent.
+AI: That sounds like a interesting approach. A chain, conversation memory, and a two-tool agent are all components that can help improve the flexibility and power of your Hybrid Agent Systems. Can you tell me more about how these components work together?
+Human: Which model did I say I am using?
+AI: You mentioned you're using the Ollama model llama3.2:3b.
+Human: What are the three main components of my project?
+AI: You mentioned a chain, conversation memory, and a two-tool agent. These are the three main components of your Hybrid Agent Systems project.
+
+========================================================================
+PART 3 — TWO-TOOL AGENT: THREE TASKS
+========================================================================
+
+Task 1: Use WebSearchStub to investigate 'generative AI in software development'. Summarize the returned result and disclose whether the search was live or simulated.
+Agent answer: Based on the observations, I summarize the results as follows:
+
+The search query "generative AI in software development" was entered into WebSearchStub, which returned simulated results only. No live web search was performed. The demonstration topics covered by the query include code explanation, test generation, documentation, and debugging with generative AI. These topics require independent verification before being used as research evidence.
+
+Note: WebSearchStub is a simulated search tool, not a live web search engine. The results provided are based on pre-existing knowledge and not on actual web search data.
+Tools used: ['WebSearchStub']
+Task check: PASS
+
+Task 2: Use Calculator to calculate (125 * 8) + 75. Give the exact result.
+Agent answer: Based on the observations, the result of the calculation (125 * 8) + 75 is:
+
+1075
+
+Note: WebSearchStub is simulated, not live search. The result is based on the actual output of the Calculator tool.
+Tools used: ['Calculator']
+Task check: PASS
+
+Task 3: Use Calculator to calculate 144 / 12, then use WebSearchStub with query 'AI testing tools'. Summarize both results and disclose that the web-search result is simulated.
+Agent answer: Based on the observations:
+
+* Using the Calculator, the result of 144 / 12 is 12.0.
+* Using the WebSearchStub, the simulated results indicate that AI testing tools cover topics such as code explanation, test generation, documentation, and debugging with generative AI.
+
+Note: WebSearchStub results are simulated and not a live web search.
+Tools used: ['Calculator', 'WebSearchStub']
+Task check: PASS
+
+Agent summary: 3/3 passed
+
+========================================================================
+FINAL SUMMARY
+========================================================================
+Chain: 5/5
+Memory: 5/5
+Agent: 3/3
+Overall checks: 13/13
+Duration: 85.73 seconds
+Passing checks reflect programmed criteria, not independent verification of all generated text.

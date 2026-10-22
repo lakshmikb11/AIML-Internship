@@ -1,0 +1,9 @@
+# W9D2 Safe Python Code Validation
+
+Sample code:
+```python
+numbers = [1, 2, 3]
+result = sum(numbers)
+```
+
+Result: Python syntax validation passed. The code was compiled for syntax checking only; it was not executed.

@@ -1,0 +1,25 @@
+# W9D5 Source Search Log
+
+- Topic: Recent practical applications of generative AI in software development
+- Time (UTC): 2026-10-22T09:44:00.230557+00:00
+- Status: Retrieved 5 web sources.
+
+1. How GenAI Transforms Software Development in 11 Ways (2026)
+URL: https://www.index.dev/blog/genai-software-development-use-cases
+Summary: Jun 18, 2026 · 11 generative AI use cases transforming software development in 2026, from AI code review to agentic coding, plus the risks, current models, and a strategy checklist.
+
+2. AI in software development - IBM
+URL: https://www.ibm.com/think/topics/ai-in-software-development
+Summary: Oct 7, 2024 · AI, particularly generative AI (gen AI) and large language models (LLMs), streamline the development cycle by automating key steps, from idea generation and requirement gathering to coding and testing. Operating in collaboration with human developers, gen AI transforms ideas into requirements.
+
+3. Generative AI and the Transformation of Software Development ...
+URL: https://arxiv.org/html/2510.10819v1
+Summary: Oct 12, 2025 · Our analysis provides a comprehensive overview of the ongoing generational shift in software development, delineating new roles, skills, and best practices for harnessing AI in an effective and responsible manner.
+
+4. Top 10 Generative AI Use Cases in Software Development
+URL: https://vegavid.com/blog/generative-ai-use-cases-in-software-development
+Summary: Sep 22, 2026 · In this guide, we'll cover the role generative AI plays in software development services, the business benefits it delivers, ten detailed and practical use cases you can apply today, best practices for adopting it responsibly, and where this technology is headed next.
+
+5. Generative AI For Software Development: Benefits And Key Use ...
+URL: https://devcom.com/tech-blog/generative-ai-for-software-development-benefits-and-key-use-cases/
+Summary: May 30, 2025 · Generative AI is revolutionizing software development by streamlining processes like coding, testing, and debugging. Explore the advantages and challenges that come with integrating AI into the software development lifecycle, as well as key applications.
