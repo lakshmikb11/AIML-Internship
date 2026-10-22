@@ -1494,3 +1494,43 @@ The web-enhanced report still contains questionable source assessments and claim
 - [ ] Final code and Git checks completed.
 - [ ] At least two descriptive commits created and pushed.
 - [ ] Pull request and CI checks verified.
+
+## W9D4 — CrewAI + LangChain: Hybrid Agent Systems
+
+### Deliverables checklist
+
+- [x] Built a LangChain chain using PromptTemplate, Ollama ChatOllama, and StrOutputParser.
+- [x] Tested the chain with five inputs — 5/5 passed.
+- [x] Added ConversationBufferMemory and tested five conversation turns.
+- [x] Verified that all five user messages were retained in conversation history.
+- [x] Implemented a two-tool agent with a WebSearchStub and Calculator.
+- [x] Executed three agent tasks — 3/3 passed.
+- [x] Verified calculator outputs: `(125 * 8) + 75 = 1075` and `144 / 12 = 12.0`.
+- [x] Clearly identified the web-search tool as a simulated stub, not a live search engine.
+- [x] Saved execution evidence to `output_evidence/w9d4/w9d4_test_results.txt`.
+- [x] Saved run metadata to `output_evidence/w9d4/run_metadata.json`.
+- [ ] Review evidence files and confirm their contents.
+- [ ] Create at least two descriptive Git commits.
+- [ ] Push the branch and open or update the GitHub pull request.
+- [ ] Verify the pull request and required checks.
+
+### Test results
+
+| Component | Result |
+|---|---:|
+| LangChain chain | 5/5 |
+| Conversation memory | 5/5 |
+| Two-tool agent | 3/3 |
+| Total programmed checks | 13/13 |
+
+### Implementation notes
+
+- Model: `llama3.2:3b` through Ollama.
+- The tool-routing implementation executes the selected tools and uses the language model to summarize their observations.
+- Web search is simulated; no live search results are claimed.
+- LangChain emitted deprecation warnings for ConversationBufferMemory and its associated message-history implementation. The warnings did not prevent successful execution.
+- All 13 programmed checks passed in the latest run. Generated answers should still be reviewed for accuracy.
+
+### Reflection
+
+The task demonstrated how prompt-based chains, conversation memory, and tool execution can be combined in a local LLM application. The next improvement would be to migrate to a supported modern memory/checkpointing API and integrate a real search provider if required.
