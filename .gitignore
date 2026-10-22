@@ -13,3 +13,8 @@ output_evidence/w7d5/mlflow.db
 
 # W7D3 generated ChromaDB database
 w7d3_chroma_db/
+# W9D5 generated MLflow tracking data
+/mlflow.db
+/mlflow.db-shm
+/mlflow.db-wal
+/mlruns/
