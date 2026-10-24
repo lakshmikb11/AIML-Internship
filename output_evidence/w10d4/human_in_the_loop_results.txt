@@ -1,0 +1,67 @@
+=================================================================
+W10D4: HUMAN-IN-THE-LOOP WITH LANGGRAPH
+=================================================================
+Graph nodes: classify -> route -> respond
+Conditional routing: approval_required / general
+
+PART 1: FIVE INPUT TESTS
+-----------------------------------------------------------------
+
+Test 1: Explain what LangGraph is.
+Classification: general
+Route: classify -> respond
+Response: General request processed successfully: Explain what LangGraph is.
+Test 1: PASS
+
+Test 2: How does conversation memory work?
+Classification: general
+Route: classify -> respond
+Response: General request processed successfully: How does conversation memory work?
+Test 2: PASS
+
+Test 3: Please send this email to my manager.
+Classification: approval_required
+Route: classify -> route -> respond
+Interrupt detected: PASS
+Simulated human decision: approved
+Human decision: approved
+Response: Request approved by a human. The simulated action is authorized.
+Decision validation: PASS
+Test 3: PASS
+
+Test 4: Delete my account.
+Classification: approval_required
+Route: classify -> route -> respond
+Interrupt detected: PASS
+Simulated human decision: rejected
+Human decision: rejected
+Response: Request rejected by a human. The simulated action was not authorized.
+Decision validation: PASS
+Test 4: PASS
+
+Test 5: Explain conditional edges in LangGraph.
+Classification: general
+Route: classify -> respond
+Response: General request processed successfully: Explain conditional edges in LangGraph.
+Test 5: PASS
+
+PART 2: EXPLICIT PAUSE AND RESUME
+-----------------------------------------------------------------
+Status: PAUSED — human input required
+Interrupt details: [Interrupt(value={'message': 'Human approval required before proceeding.', 'request': 'Please send this email to my manager.', 'options': ['approved', 'rejected']}, id='7823aa06a8c890c64ffa610922cf9398', response_schema=None)]
+Submitting simulated human decision: approved
+Human decision: approved
+Final response: Request approved by a human. The simulated action is authorized.
+Pause and resume validation: PASS
+
+PART 3: FINAL VALIDATION
+-----------------------------------------------------------------
+Five input tests: 5/5 PASS
+Conditional routing: PASS
+Human interrupt: PASS
+Human approvals: 1
+Human rejections: 1
+Graph resumed after human input: PASS
+All assertions passed.
+
+W10D4 DEMONSTRATION COMPLETED SUCCESSFULLY.

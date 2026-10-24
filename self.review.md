@@ -1651,3 +1651,43 @@ The LangGraph state machine correctly classifies five test inputs and routes the
 The graph correctly classified and routed five inputs. Human review successfully interrupted and resumed execution. SQLite checkpointing recovered the previous conversation state after the checkpoint store was closed and reopened, and the graph retained two conversation turns. All local validation checks passed.
 
 The demonstration uses a temporary SQLite database, which is removed after testing. A persistent database path would be needed for conversations to survive across separate program runs in normal use.
+
+
+## W10D4 — Human-in-the-Loop with LangGraph
+
+### Tasks Completed
+- [x] Built a three-node LangGraph: classify → route → respond.
+- [x] Implemented conditional routing based on classification output.
+- [x] Tested the graph with five different inputs.
+- [x] Added a human-in-the-loop interrupt for approval-required requests.
+- [x] Verified human approval and rejection paths.
+- [x] Demonstrated pausing and resuming the graph using Command(resume=...).
+- [x] Validated routing and decisions using assertions.
+- [x] Saved execution evidence to output_evidence/w10d4/human_in_the_loop_results.txt.
+
+### Test Results
+- Five input tests: 5/5 passed.
+- Conditional routing: Passed.
+- Human interrupt: Passed.
+- Approval path: Passed.
+- Rejection path: Passed.
+- Pause and resume: Passed.
+- Final assertions: Passed.
+
+### Evidence
+- Script: w10d4_human_in_the_loop.py
+- Output: output_evidence/w10d4/human_in_the_loop_results.txt
+
+### Self-Review
+- [x] Code executes successfully.
+- [x] Three graph nodes are configured.
+- [x] Conditional routing works as expected.
+- [x] Human approval and rejection are handled.
+- [x] Interrupt and resume behavior is verified.
+- [x] Output evidence is saved.
+- [ ] Changes committed with at least two descriptive commits.
+- [ ] Changes pushed to the remote branch.
+- [ ] Pull request and CI checks verified.
+
+### Notes
+Human decisions are simulated for testing. No real emails are sent and no accounts are deleted.
