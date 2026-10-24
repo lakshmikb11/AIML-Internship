@@ -1691,3 +1691,40 @@ The demonstration uses a temporary SQLite database, which is removed after testi
 
 ### Notes
 Human decisions are simulated for testing. No real emails are sent and no accounts are deleted.
+ 
+
+## W10D5 — Stateful Customer Support Agent
+
+### Tasks and Deliverables
+- [x] Built a stateful customer support agent using LangGraph.
+- [x] Implemented customer intent classification and request routing.
+- [x] Verified persistent conversation history across turns.
+- [x] Implemented human approval and rejection for sensitive requests.
+- [x] Added optional CrewAI/Ollama response generation with a fallback.
+- [x] Configured MLflow experiment logging.
+- [x] Added graceful handling when Ragas evaluation context is missing.
+- [x] Saved execution evidence to `output_evidence/w10d5/support_agent_results.txt`.
+
+### Test Results
+- [x] Full project test suite: 27 passed.
+- [x] Five customer intent cases passed.
+- [x] Conversation history persistence test passed.
+- [x] Sensitive-request approval and rejection tests passed.
+- [x] Ragas missing-context handling test passed.
+- [ ] Ragas evaluation with valid context completed — currently skipped because the evaluation context is empty.
+
+### Files
+- `w10d5_stateful_customer_support_agent.py`
+- `tests/test_w10d5_stateful_customer_support_agent.py`
+- `output_evidence/w10d5/support_agent_results.txt`
+
+### Git and PR Checklist
+- [x] Confirmed branch `feat/aiml-W10-Lakshmi`.
+- [x] Ran `git diff --check` successfully.
+- [ ] Commit implementation and tests.
+- [ ] Commit evidence and self-review separately.
+- [ ] Push the branch to GitHub.
+- [ ] Verify the existing pull request and CI checks.
+
+### Self-Review
+The support agent classifies requests, routes them appropriately, and retains conversation history across turns. Sensitive actions require human approval, and rejected requests do not execute the protected action. The complete project test suite passed with 27 tests. MLflow logging ran without the earlier tracking URI warning. Ragas evaluation remains incomplete because the demonstration currently supplies an empty context; this limitation is documented rather than reported as a successful evaluation.
