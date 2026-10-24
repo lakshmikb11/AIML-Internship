@@ -1,0 +1,29 @@
+W10D1 LangGraph Stateful Agent — Execution Evidence
+=======================================================
+
+Test 1: What is LangGraph?
+Classification: question
+Review required: False
+Response: I received your question: What is LangGraph?. This demo graph classified it as a question.
+
+Test 2: Explain conditional routing
+Classification: question
+Review required: False
+Response: I received your question: Explain conditional routing. This demo graph classified it as a question.
+
+Test 3: Hello, agent!
+Classification: general
+Review required: False
+Response: I received your message: Hello, agent!. This demo graph classified it as general input.
+
+Test 4: Delete the old project files
+Status: PAUSED for human review
+Interrupt: {'message': 'Review this requested action before proceeding.', 'user_input': 'Delete the old project files', 'classification': 'action', 'question': "Type 'approve' or 'reject' to continue."}
+Human decision: approve
+Response: Human approval received. The request is approved for demonstration; no external action was performed.
+
+Test 5: Send an email to the team
+Status: PAUSED for human review
+Interrupt: {'message': 'Review this requested action before proceeding.', 'user_input': 'Send an email to the team', 'classification': 'action', 'question': "Type 'approve' or 'reject' to continue."}
+Human decision: reject
+Response: Action not approved. No action was performed.

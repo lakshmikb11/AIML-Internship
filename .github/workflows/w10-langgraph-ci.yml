@@ -1,0 +1,33 @@
+
+name: W10 LangGraph CI
+
+on:
+  push:
+    branches:
+      - "feat/aiml-W10-Lakshmi"
+  pull_request:
+    branches:
+      - "feat/aiml-W9-Lakshmi"
+
+jobs:
+  langgraph-test:
+    name: LangGraph Persistence Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run W10D3 graph and persistence checks
+        run: |
+          python w10d3_langgraph_persistent_conversations.py
