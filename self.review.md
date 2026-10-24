@@ -1568,3 +1568,42 @@ The task demonstrated how prompt-based chains, conversation memory, and tool exe
 - [x] Verified that the pull request contains 2 commits and 5 changed files.
 - [ ] Verify GitHub Actions status when a relevant workflow run is available.
 - [ ] Complete code review and merge the pull request when ready.
+
+## W10D2 — LangGraph State Machines & Conditional Edges
+
+### Tasks completed
+
+- [x] Built a LangGraph state machine with three nodes: `classify`, `route`, and `respond`.
+- [x] Implemented conditional edges to select the next node based on message classification.
+- [x] Tested five inputs covering greetings, technical issues, urgent requests, and general questions.
+- [x] Corrected greeting classification to use whole-word matching.
+- [x] Verified routing results: 5/5 tests passed.
+- [x] Implemented human-in-the-loop interruption using LangGraph `interrupt()`.
+- [x] Resumed graph execution using `Command(resume=...)` and a checkpointer.
+- [x] Verified that human feedback was included in the final response.
+- [x] Saved and inspected output evidence at `output_evidence/w10d2/run_results.txt`.
+
+### Validation results
+
+- Routing tests: 5/5 passed.
+- Human-in-the-loop pause: Passed.
+- Human-in-the-loop resume: Passed.
+- Evidence generation: Passed.
+
+### Files
+
+- `w10d2_langgraph_state_machine.py`
+- `output_evidence/w10d2/run_results.txt`
+
+### Git and PR checklist
+
+- [ ] Create or verify branch `feat/aiml-W10-Lakshmi`.
+- [ ] Commit implementation with a descriptive message.
+- [ ] Commit evidence and self-review with a second descriptive message.
+- [ ] Push the branch to GitHub.
+- [ ] Create a pull request or update the appropriate existing W10 PR.
+- [ ] Verify GitHub checks and PR status.
+
+### Self-review
+
+The LangGraph state machine correctly classifies five test inputs and routes them to the expected handling paths. Human review interrupts execution, accepts feedback, and resumes through a checkpointed graph. All local routing and interruption checks passed.

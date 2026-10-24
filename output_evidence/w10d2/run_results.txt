@@ -1,0 +1,15 @@
+W10D2: LangGraph State Machines & Conditional Edges
+Three nodes: classify -> route -> respond
+=== FIVE ROUTING TESTS ===
+Test 1: 'Hello there!' | category=greeting | route=friendly_response | PASS
+Test 2: 'I have a Python error' | category=technical | route=technical_support | PASS
+Test 3: 'This is an urgent emergency' | category=urgent | route=priority_support | PASS
+Test 4: 'Can you explain machine learning?' | category=general | route=general_support | PASS
+Test 5: 'There is a bug in my code' | category=technical | route=technical_support | PASS
+Routing tests: 5/5 passed
+
+=== HUMAN-IN-THE-LOOP TEST ===
+PAUSED: {'message': 'Human review required before responding.', 'user_input': 'Please help with a Python bug.', 'category': 'technical', 'route': 'technical_support', 'question': 'Approve this route or provide feedback.'}
+Human feedback: Approved. Explain the likely cause and suggest a fix.
+RESUMED RESPONSE: Handled as 'technical' via 'technical_support'. Human review: Approved. Explain the likely cause and suggest a fix.
+Human-in-the-loop test: PASS
