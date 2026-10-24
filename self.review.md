@@ -1607,3 +1607,47 @@ The task demonstrated how prompt-based chains, conversation memory, and tool exe
 ### Self-review
 
 The LangGraph state machine correctly classifies five test inputs and routes them to the expected handling paths. Human review interrupts execution, accepts feedback, and resumes through a checkpointed graph. All local routing and interruption checks passed.
+
+## W10D3 — LangGraph + Memory: Persistent Conversations
+
+### Tasks completed
+
+- [x] Built a three-node LangGraph: `classify → route → respond`.
+- [x] Implemented conditional routing based on message classification.
+- [x] Tested five inputs and verified all expected routes.
+- [x] Added a human-in-the-loop interrupt using LangGraph `interrupt()`.
+- [x] Tested pausing, providing human feedback, and resuming execution.
+- [x] Added conversation history to the graph state.
+- [x] Configured SQLite checkpointing using `SqliteSaver`.
+- [x] Closed and reopened the SQLite checkpoint store and recovered the previous conversation state.
+- [x] Verified that two conversation turns were retained under the same thread ID.
+- [x] Saved and inspected output evidence.
+
+### Validation results
+
+- Routing tests: 5/5 passed.
+- Human-in-the-loop pause/resume: Passed.
+- SQLite checkpoint recovery: Passed.
+- Conversation history persistence test: Passed.
+- Evidence generation: Passed.
+
+### Files
+
+- `w10d3_langgraph_persistent_conversations.py`
+- `output_evidence/w10d3/run_results.txt`
+
+### Git and PR checklist
+
+- [ ] Confirm branch `feat/aiml-W10-Lakshmi`.
+- [ ] Commit implementation with a descriptive message.
+- [ ] Commit evidence and self-review with a second descriptive message.
+- [ ] Ensure the SQLite checkpoint dependency is documented.
+- [ ] Push the branch to GitHub.
+- [ ] Update the appropriate W10 pull request.
+- [ ] Check PR status and required reviews.
+
+### Self-review
+
+The graph correctly classified and routed five inputs. Human review successfully interrupted and resumed execution. SQLite checkpointing recovered the previous conversation state after the checkpoint store was closed and reopened, and the graph retained two conversation turns. All local validation checks passed.
+
+The demonstration uses a temporary SQLite database, which is removed after testing. A persistent database path would be needed for conversations to survive across separate program runs in normal use.
