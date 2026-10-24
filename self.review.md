@@ -1558,30 +1558,13 @@ The task demonstrated how prompt-based chains, conversation memory, and tool exe
 - [ ] Push the W9 branch and verify the existing pull request and checks.
 
 **Outcome:** The main pipeline completed and generated evidence. Ragas evaluation and report factual quality remain partially unverified.
-## W10D1 — LangGraph: Stateful Agent Graphs
-
-### Deliverables checklist
-- [x] Built a LangGraph state graph with `classify`, `route`, and `respond` nodes.
-- [x] Added conditional routing based on input classification.
-- [x] Tested five inputs: two questions, one general message, and two action requests.
-- [x] Implemented human-in-the-loop interruption and resume using LangGraph.
-- [x] Verified the approval path and rejection path.
-- [x] Saved execution evidence to `output_evidence/w10d1/run_results.txt`.
-- [x] Added automated tests for classification, routing, interrupt/resume, and rejection.
-- [x] All three automated tests passed.
-
-### Validation results
-- Test command: `python -m pytest tests/test_w10d1_langgraph.py -v`
-- Result: **3 passed**
-- Human approval: verified; no external action was performed.
-- Human rejection: verified; the action was not approved.
-- Additional test evidence: `output_evidence/w10d1/pytest_results.txt`
-
-### Learning outcome
-Implemented a stateful LangGraph workflow with conditional edges, checkpointing, and a human-review interrupt. Verified that action requests pause for a human decision and resume with either approval or rejection.
-
-### Remaining Git tasks
-- [ ] Review changed files and ensure no unrelated files are included.
-- [ ] Create at least two descriptive commits.
-- [ ] Push `feat/aiml-W10-Lakshmi` to GitHub.
-- [ ] Open a pull request and check its status.
+### Git and pull request status
+- [x] Reviewed the changed files; the PR contains the W10D1 implementation, tests, execution evidence, and self-review.
+- [x] Created two descriptive commits:
+  - `feat: langgraph — stateful agent graph with routing`
+  - `docs: add W10D1 LangGraph self-review`
+- [x] Pushed `feat/aiml-W10-Lakshmi` to GitHub.
+- [x] Created pull request #12: W10D1: LangGraph — Stateful Agent Graphs.
+- [x] Verified that the pull request contains 2 commits and 5 changed files.
+- [ ] Verify GitHub Actions status when a relevant workflow run is available.
+- [ ] Complete code review and merge the pull request when ready.
