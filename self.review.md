@@ -1728,3 +1728,36 @@ Human decisions are simulated for testing. No real emails are sent and no accoun
 
 ### Self-Review
 The support agent classifies requests, routes them appropriately, and retains conversation history across turns. Sensitive actions require human approval, and rejected requests do not execute the protected action. The complete project test suite passed with 27 tests. MLflow logging ran without the earlier tracking URI warning. Ragas evaluation remains incomplete because the demonstration currently supplies an empty context; this limitation is documented rather than reported as a successful evaluation.
+
+## W11D1 — MLflow Experiment Tracking and Model Registry
+
+### Requirements and Implementation
+- [x] Added MLflow and scikit-learn dependencies to `requirements.txt`.
+- [x] Trained and tracked five RandomForestRegressor hyperparameter experiments using the scikit-learn diabetes dataset.
+- [x] Logged experiment parameters, RMSE, R², and model artifacts in MLflow.
+- [x] Compared five runs and selected the best run using R².
+- [x] Registered the best model as `w11d1_best_diabetes_model`, version 1.
+- [x] Loaded the registered model and verified its predictions.
+- [x] Started the MLflow model-serving endpoint on port 5001 and tested `/invocations` successfully.
+
+### Results
+- Best experiment: Experiment 1
+- Parameters: `n_estimators=50`, `max_depth=3`, `min_samples_split=2`
+- RMSE: `53.5094`
+- R²: `0.4596`
+- Registered model: `w11d1_best_diabetes_model`, version 1
+- REST API test: Passed; prediction returned successfully.
+
+### Evidence
+- `output_evidence/w11d1/w11d1_experiment_results.txt`
+
+### Validation
+- [x] Five experiments completed.
+- [x] Best model registered and reloaded.
+- [x] Model-serving API returned a prediction.
+- [x] `git diff --check` passed.
+- [ ] MLflow UI visually inspected.
+- [ ] Changes committed, pushed, and pull request checks verified.
+
+### Reflection
+MLflow tracking and model registration provide a reproducible record of experiments and make the selected model available for serving. The REST API test confirmed that the registered model could accept a request and return a prediction.

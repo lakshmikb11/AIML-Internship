@@ -1,0 +1,48 @@
+W11D1: MLflow Experiment Tracking
+=======================================================
+MLflow version: 3.16.1
+Tracking URI: sqlite:///mlflow.db
+Experiment: W11D1_MLflow_Experiment_Tracking
+Model registry name: w11d1_best_diabetes_model
+
+Experiment 1
+  Run ID: fea482e1203d4b2fb725c33a97d51f68
+  Parameters: {'n_estimators': 50, 'max_depth': 3, 'min_samples_split': 2}
+  RMSE: 53.5094
+  R2 score: 0.4596
+
+Experiment 2
+  Run ID: 3ebec85c05754b21887cec6aafc8159e
+  Parameters: {'n_estimators': 100, 'max_depth': 5, 'min_samples_split': 2}
+  RMSE: 53.6803
+  R2 score: 0.4561
+
+Experiment 3
+  Run ID: 1c654c9002d74c509edf7c745d640fc9
+  Parameters: {'n_estimators': 150, 'max_depth': 8, 'min_samples_split': 2}
+  RMSE: 54.4904
+  R2 score: 0.4396
+
+Experiment 4
+  Run ID: b0118a38e4d2464caeaf9bf67afd206f
+  Parameters: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 4}
+  RMSE: 54.3185
+  R2 score: 0.4431
+
+Experiment 5
+  Run ID: 40bf415f2a7544feae54c177773d9340
+  Parameters: {'n_estimators': 200, 'max_depth': 10, 'min_samples_split': 5}
+  RMSE: 54.6150
+  R2 score: 0.4370
+
+BEST MODEL
+Best run ID: fea482e1203d4b2fb725c33a97d51f68
+Best parameters: {'n_estimators': 50, 'max_depth': 3, 'min_samples_split': 2}
+Registered version: 1
+Registered URI: models:/w11d1_best_diabetes_model/1
+Reloaded R2 score: 0.4596
+Reloaded RMSE: 53.5094
+Sample predictions: [168.06, 178.42, 163.07, 229.14, 118.38]
+
+STATUS: All five experiments completed successfully.
+STATUS: Best model registered and reloaded successfully.
