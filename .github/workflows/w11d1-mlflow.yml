@@ -1,0 +1,45 @@
+
+name: W11D1 MLflow Experiment Tracking
+
+on:
+  push:
+    branches:
+      - feat/aiml-W11-Lakshmi
+  pull_request:
+    branches:
+      - feat/aiml-W10-Lakshmi
+
+permissions:
+  contents: read
+
+jobs:
+  mlflow-experiment:
+    name: Validate MLflow Experiments and Model Registry
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Validate Python syntax
+        run: |
+          python -m py_compile w11d1_mlflow_experiment_tracking.py
+
+      - name: Run MLflow experiment tracking
+        run: |
+          python w11d1_mlflow_experiment_tracking.py
+
+      - name: Verify experiment evidence
+        run: |
+          test -s output_evidence/w11d1/w11d1_experiment_results.txt
+          echo "W11D1 experiment evidence exists and is not empty."
