@@ -1,0 +1,11 @@
+{
+  "experiment_name": "W11D2_MLflow_Model_Registry",
+  "model_name": "w11d2_best_diabetes_model",
+  "model_version": "3",
+  "registered_model_uri": "models:/w11d2_best_diabetes_model/3",
+  "best_run_id": "07975698d5d349d0a4864882174548f1",
+  "selection_metric": "rmse",
+  "best_rmse": 53.50944715875773,
+  "best_r2_score": 0.45957362658826195,
+  "tracking_uri": "sqlite:///mlflow.db"
+}

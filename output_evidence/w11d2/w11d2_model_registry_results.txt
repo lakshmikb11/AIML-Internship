@@ -1,0 +1,40 @@
+W11D2: MLflow Model Registry and Versioning
+=======================================================
+MLflow version: 3.16.1
+Experiment: W11D2_MLflow_Model_Registry
+Training samples: 353
+Testing samples: 89
+Completed experiments: 5
+
+EXPERIMENT COMPARISON (BEST RMSE FIRST)
+ rank                           run_id              run_name  n_estimators  max_depth  min_samples_split      rmse  r2_score
+    1 07975698d5d349d0a4864882174548f1 w11d2_random_forest_1            50        3.0                  2 53.509447  0.459574
+    2 5292559f915b43acaac419c3052a1a9c w11d2_random_forest_2           100        5.0                  2 53.680342  0.456116
+    3 0011fcee6f1349a5bf3d740b4dfa97c0 w11d2_random_forest_4           100        NaN                  4 54.318498  0.443108
+    4 27c30ff5dced43158156e32747c27183 w11d2_random_forest_3           150        8.0                  2 54.490419  0.439577
+    5 69fc7b8d0d8b43b4992b44eab3c1023d w11d2_random_forest_5           200       10.0                  5 54.615030  0.437011
+
+REGISTERED MODEL
+Model name: w11d2_best_diabetes_model
+Version: 3
+URI: models:/w11d2_best_diabetes_model/3
+Source run ID: 07975698d5d349d0a4864882174548f1
+Verified RMSE: 53.5094
+Verified R2 score: 0.4596
+Sample predictions: [168.06, 178.42, 163.07, 229.14, 118.38]
+
+STATUS: Five experiments completed.
+STATUS: Best model registered and reloaded.
+STATUS: Registered predictions verified.
+
+MODEL SERVING COMMAND (run from repository root):
+mlflow models serve --model-uri models:/w11d2_best_diabetes_model/3 --host 127.0.0.1 --port 5001 --env-manager local
+
+MODEL SERVING VERIFICATION
+Endpoint: http://127.0.0.1:5001/invocations
+HTTP request: POST
+Input format: Named JSON columns matching the model signature
+Status: SUCCESS
+Prediction returned: 200.7088865531454
+Registered model: w11d2_best_diabetes_model
+Registered version: 3

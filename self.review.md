@@ -1761,3 +1761,28 @@ The support agent classifies requests, routes them appropriately, and retains co
 
 ### Reflection
 MLflow tracking and model registration provide a reproducible record of experiments and make the selected model available for serving. The REST API test confirmed that the registered model could accept a request and return a prediction.
+
+## W11D2 — MLflow Model Registry and Versioning
+
+### Requirements and implementation
+- [x] Created `w11d2_mlflow_model_registry.py`.
+- [x] Configured MLflow experiment tracking with SQLite.
+- [x] Trained and tracked five Random Forest experiments with different hyperparameters.
+- [x] Logged model parameters, metrics, and model artifacts.
+- [x] Compared experiments by RMSE and R².
+- [x] Registered the best model as `w11d2_best_diabetes_model`, version 3.
+- [x] Reloaded the registered model and verified predictions.
+
+### Validation and evidence
+- [x] All five experiment runs completed.
+- [x] Best run RMSE: 53.5094.
+- [x] Best run R²: 0.4596.
+- [x] Successfully tested the MLflow serving endpoint at `http://127.0.0.1:5001/invocations`.
+- [x] Received a prediction of approximately 200.7089 from the REST endpoint.
+- [x] Saved experiment comparison, registry results, and model metadata under `output_evidence/w11d2/`.
+- [ ] Confirm the model-serving screenshot is saved in `output_evidence/w11d2/`.
+- [ ] Inspect all changes and run final repository checks.
+- [ ] Create at least two descriptive commits, push the branch, and verify the pull request and checks.
+
+### Reflection
+Successfully tracked five model configurations, selected the best-performing run by RMSE, registered and reloaded the model, and verified inference through the MLflow REST API. The endpoint required named JSON inputs matching the model signature.
