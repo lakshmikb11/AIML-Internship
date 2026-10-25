@@ -1,4 +1,5 @@
-
 langgraph
 langgraph-checkpoint-sqlite
 typing-extensions
+mlflow==3.16.1
+scikit-learn==1.9.0
